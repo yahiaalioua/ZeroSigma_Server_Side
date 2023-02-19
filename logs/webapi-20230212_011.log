@@ -1,0 +1,45 @@
+2023-02-12 18:31:12.638 +01:00  INF  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='UserAuthDb' AND TABLE_NAME='__EFMigrationsHistory';
+2023-02-12 18:31:12.699 +01:00  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='UserAuthDb' AND TABLE_NAME='__EFMigrationsHistory';
+2023-02-12 18:31:12.727 +01:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2023-02-12 18:31:12.766 +01:00  INF  Applying migration '20230212172715_initial'.
+2023-02-12 18:31:12.833 +01:00  ERR  Failed executing DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE `Users` (
+    `Id` int NOT NULL AUTO_INCREMENT,
+    `Name` varchar(50) NOT NULL,
+    `Email` varchar(100) NOT NULL,
+    `Password` varchar(128) NOT NULL,
+    `Token` varchar(max) NOT NULL,
+    `Salt` varchar(64) NOT NULL,
+    PRIMARY KEY (`Id`)
+);
+2023-02-12 18:31:44.308 +01:00  INF  Now listening on: https://localhost:7063
+2023-02-12 18:31:44.350 +01:00  INF  Now listening on: http://localhost:5174
+2023-02-12 18:31:44.358 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-02-12 18:31:44.359 +01:00  INF  Hosting environment: Development
+2023-02-12 18:31:44.359 +01:00  INF  Content root path: C:\GA\C# OOP\AngularAuthApi\AngularAuthApi\AngularAuthApi\
+2023-02-12 18:31:44.800 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/index.html - -
+2023-02-12 18:31:45.191 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/index.html - - - 200 - text/html;charset=utf-8 395.2403ms
+2023-02-12 18:31:45.272 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_vs/browserLink - -
+2023-02-12 18:31:45.273 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - -
+2023-02-12 18:31:45.276 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 2.6714ms
+2023-02-12 18:31:45.330 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 57.7051ms
+2023-02-12 18:31:45.519 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - -
+2023-02-12 18:31:45.732 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 212.6071ms
+2023-02-12 18:32:00.407 +01:00  INF  Now listening on: https://localhost:7063
+2023-02-12 18:32:00.434 +01:00  INF  Now listening on: http://localhost:5174
+2023-02-12 18:32:00.438 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-02-12 18:32:00.439 +01:00  INF  Hosting environment: Development
+2023-02-12 18:32:00.439 +01:00  INF  Content root path: C:\GA\C# OOP\AngularAuthApi\AngularAuthApi\AngularAuthApi\
+2023-02-12 18:32:00.896 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/index.html - -
+2023-02-12 18:32:01.245 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/index.html - - - 200 - text/html;charset=utf-8 352.8794ms
+2023-02-12 18:32:01.362 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_vs/browserLink - -
+2023-02-12 18:32:01.362 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - -
+2023-02-12 18:32:01.366 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 3.8378ms
+2023-02-12 18:32:01.400 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 37.9632ms
+2023-02-12 18:32:01.572 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - -
+2023-02-12 18:32:01.710 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 138.5068ms

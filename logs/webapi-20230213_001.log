@@ -1,0 +1,37 @@
+2023-02-13 16:13:23.861 +01:00  INF  Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='UserAuthDb' AND TABLE_NAME='__EFMigrationsHistory';
+2023-02-13 16:13:23.915 +01:00  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='UserAuthDb' AND TABLE_NAME='__EFMigrationsHistory';
+2023-02-13 16:13:23.949 +01:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2023-02-13 16:13:23.976 +01:00  INF  Applying migration '20230213151249_changes'.
+2023-02-13 16:13:24.053 +01:00  ERR  Failed executing DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `Users` MODIFY `Salt` varbinary NULL;
+2023-02-13 16:14:46.631 +01:00  INF  Now listening on: https://localhost:7063
+2023-02-13 16:14:46.661 +01:00  INF  Now listening on: http://localhost:5174
+2023-02-13 16:14:46.665 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-02-13 16:14:46.666 +01:00  INF  Hosting environment: Development
+2023-02-13 16:14:46.666 +01:00  INF  Content root path: C:\GA\C# OOP\AngularAuthApi\AngularAuthApi\AngularAuthApi\
+2023-02-13 16:14:47.121 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/index.html - -
+2023-02-13 16:14:47.503 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/index.html - - - 200 - text/html;charset=utf-8 385.6466ms
+2023-02-13 16:14:47.614 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_vs/browserLink - -
+2023-02-13 16:14:47.620 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - -
+2023-02-13 16:14:47.624 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 3.5661ms
+2023-02-13 16:14:47.708 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 94.9486ms
+2023-02-13 16:14:47.859 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - -
+2023-02-13 16:14:48.100 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 241.6415ms
+2023-02-13 16:14:59.876 +01:00  INF  Now listening on: https://localhost:7063
+2023-02-13 16:14:59.914 +01:00  INF  Now listening on: http://localhost:5174
+2023-02-13 16:14:59.921 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-02-13 16:14:59.922 +01:00  INF  Hosting environment: Development
+2023-02-13 16:14:59.922 +01:00  INF  Content root path: C:\GA\C# OOP\AngularAuthApi\AngularAuthApi\AngularAuthApi\
+2023-02-13 16:15:00.311 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/index.html - -
+2023-02-13 16:15:00.703 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/index.html - - - 200 - text/html;charset=utf-8 395.0216ms
+2023-02-13 16:15:00.804 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - -
+2023-02-13 16:15:00.804 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_vs/browserLink - -
+2023-02-13 16:15:00.809 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 4.2386ms
+2023-02-13 16:15:00.841 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 36.6989ms
+2023-02-13 16:15:01.023 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - -
+2023-02-13 16:15:01.172 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 149.5702ms

@@ -1,0 +1,194 @@
+2023-02-17 12:25:29.755 +01:00  INF  User profile is available. Using 'C:\Users\yahia alioua\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-02-17 12:25:30.164 +01:00  INF  Now listening on: https://localhost:7063
+2023-02-17 12:25:30.164 +01:00  INF  Now listening on: http://localhost:5174
+2023-02-17 12:25:30.171 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-02-17 12:25:30.172 +01:00  INF  Hosting environment: Development
+2023-02-17 12:25:30.172 +01:00  INF  Content root path: C:\GA\C# OOP\AngularAuthApi\AngularAuthApi\AngularAuthApi\
+2023-02-17 12:25:30.931 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/index.html - -
+2023-02-17 12:25:31.777 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/index.html - - - 200 - text/html;charset=utf-8 852.6927ms
+2023-02-17 12:25:31.874 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_vs/browserLink - -
+2023-02-17 12:25:31.874 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - -
+2023-02-17 12:25:31.880 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 5.7592ms
+2023-02-17 12:25:31.982 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 107.4631ms
+2023-02-17 12:25:32.110 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - -
+2023-02-17 12:25:32.291 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 180.6235ms
+2023-02-17 12:25:40.654 +01:00  INF  Request starting HTTP/2 OPTIONS https://localhost:7063/api/user/Register - -
+2023-02-17 12:25:40.691 +01:00  INF  CORS policy execution successful.
+2023-02-17 12:25:40.695 +01:00  INF  Request finished HTTP/2 OPTIONS https://localhost:7063/api/user/Register - - - 204 - - 41.4070ms
+2023-02-17 12:25:40.707 +01:00  INF  Request starting HTTP/2 POST https://localhost:7063/api/user/Register application/json 66
+2023-02-17 12:25:40.711 +01:00  INF  CORS policy execution successful.
+2023-02-17 12:25:40.801 +01:00  INF  Executing endpoint 'AngularAuthApi.Controllers.AuthController.RegisterUser (AngularAuthApi)'
+2023-02-17 12:25:40.871 +01:00  INF  Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(AngularAuthApi.Entities.User) on controller AngularAuthApi.Controllers.AuthController (AngularAuthApi).
+2023-02-17 12:25:43.375 +01:00  INF  Executed DbCommand (14ms) [Parameters=[@__userEmail_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Users` AS `u`
+    WHERE `u`.`Email` = @__userEmail_0)
+2023-02-17 12:25:43.402 +01:00  INF  Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-02-17 12:25:43.437 +01:00  INF  Executed action AngularAuthApi.Controllers.AuthController.RegisterUser (AngularAuthApi) in 2556.2033ms
+2023-02-17 12:25:43.437 +01:00  INF  Executed endpoint 'AngularAuthApi.Controllers.AuthController.RegisterUser (AngularAuthApi)'
+2023-02-17 12:25:43.446 +01:00  INF  Request finished HTTP/2 POST https://localhost:7063/api/user/Register application/json 66 - 400 - application/json;+charset=utf-8 2738.6663ms
+2023-02-17 12:26:02.600 +01:00  INF  Request starting HTTP/2 OPTIONS https://localhost:7063/api/user/Register - -
+2023-02-17 12:26:02.601 +01:00  INF  CORS policy execution successful.
+2023-02-17 12:26:02.601 +01:00  INF  Request finished HTTP/2 OPTIONS https://localhost:7063/api/user/Register - - - 204 - - 1.3426ms
+2023-02-17 12:26:02.606 +01:00  INF  Request starting HTTP/2 POST https://localhost:7063/api/user/Register application/json 65
+2023-02-17 12:26:02.606 +01:00  INF  CORS policy execution successful.
+2023-02-17 12:26:02.607 +01:00  INF  Executing endpoint 'AngularAuthApi.Controllers.AuthController.RegisterUser (AngularAuthApi)'
+2023-02-17 12:26:02.607 +01:00  INF  Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(AngularAuthApi.Entities.User) on controller AngularAuthApi.Controllers.AuthController (AngularAuthApi).
+2023-02-17 12:26:02.614 +01:00  INF  Executed DbCommand (1ms) [Parameters=[@__userEmail_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Users` AS `u`
+    WHERE `u`.`Email` = @__userEmail_0)
+2023-02-17 12:26:03.214 +01:00  INF  Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 100), @p1='?' (Size = 50), @p2='?' (Size = 128), @p3='?' (Size = 128) (DbType = Binary), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Users` (`Email`, `Name`, `Password`, `Salt`, `Token`)
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT `Id`
+FROM `Users`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2023-02-17 12:26:03.284 +01:00  INF  Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-02-17 12:26:03.285 +01:00  INF  Executed action AngularAuthApi.Controllers.AuthController.RegisterUser (AngularAuthApi) in 677.6618ms
+2023-02-17 12:26:03.285 +01:00  INF  Executed endpoint 'AngularAuthApi.Controllers.AuthController.RegisterUser (AngularAuthApi)'
+2023-02-17 12:26:03.285 +01:00  INF  Request finished HTTP/2 POST https://localhost:7063/api/user/Register application/json 65 - 200 - application/json;+charset=utf-8 678.9517ms
+2023-02-17 12:28:16.292 +01:00  INF  Request starting HTTP/2 OPTIONS https://localhost:7063/api/user/Register - -
+2023-02-17 12:28:16.293 +01:00  INF  CORS policy execution successful.
+2023-02-17 12:28:16.294 +01:00  INF  Request finished HTTP/2 OPTIONS https://localhost:7063/api/user/Register - - - 204 - - 1.5018ms
+2023-02-17 12:28:16.320 +01:00  INF  Request starting HTTP/2 POST https://localhost:7063/api/user/Register application/json 62
+2023-02-17 12:28:16.320 +01:00  INF  CORS policy execution successful.
+2023-02-17 12:28:16.326 +01:00  INF  Executing endpoint 'AngularAuthApi.Controllers.AuthController.RegisterUser (AngularAuthApi)'
+2023-02-17 12:28:16.326 +01:00  INF  Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(AngularAuthApi.Entities.User) on controller AngularAuthApi.Controllers.AuthController (AngularAuthApi).
+2023-02-17 12:28:16.488 +01:00  INF  Executed DbCommand (1ms) [Parameters=[@__userEmail_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Users` AS `u`
+    WHERE `u`.`Email` = @__userEmail_0)
+2023-02-17 12:28:16.811 +01:00  INF  Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 100), @p1='?' (Size = 50), @p2='?' (Size = 128), @p3='?' (Size = 128) (DbType = Binary), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Users` (`Email`, `Name`, `Password`, `Salt`, `Token`)
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT `Id`
+FROM `Users`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2023-02-17 12:28:16.816 +01:00  INF  Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-02-17 12:28:16.817 +01:00  INF  Executed action AngularAuthApi.Controllers.AuthController.RegisterUser (AngularAuthApi) in 490.2403ms
+2023-02-17 12:28:16.817 +01:00  INF  Executed endpoint 'AngularAuthApi.Controllers.AuthController.RegisterUser (AngularAuthApi)'
+2023-02-17 12:28:16.817 +01:00  INF  Request finished HTTP/2 POST https://localhost:7063/api/user/Register application/json 62 - 200 - application/json;+charset=utf-8 497.4812ms
+2023-02-17 12:29:10.679 +01:00  INF  Request starting HTTP/2 OPTIONS https://localhost:7063/api/user/Authenticate - -
+2023-02-17 12:29:10.679 +01:00  INF  CORS policy execution successful.
+2023-02-17 12:29:10.680 +01:00  INF  Request finished HTTP/2 OPTIONS https://localhost:7063/api/user/Authenticate - - - 204 - - 1.5293ms
+2023-02-17 12:29:10.696 +01:00  INF  Request starting HTTP/2 POST https://localhost:7063/api/user/Authenticate application/json 48
+2023-02-17 12:29:10.697 +01:00  INF  CORS policy execution successful.
+2023-02-17 12:29:10.697 +01:00  INF  Executing endpoint 'AngularAuthApi.Controllers.AuthController.Authenticate (AngularAuthApi)'
+2023-02-17 12:29:10.705 +01:00  INF  Route matched with {action = "Authenticate", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(AngularAuthApi.DTOS.LoginDto) on controller AngularAuthApi.Controllers.AuthController (AngularAuthApi).
+2023-02-17 12:29:10.798 +01:00  INF  Executed DbCommand (1ms) [Parameters=[@__user_Email_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`Email`, `u`.`Name`, `u`.`Password`, `u`.`Salt`, `u`.`Token`
+FROM `Users` AS `u`
+WHERE `u`.`Email` = @__user_Email_0
+LIMIT 1
+2023-02-17 12:29:11.341 +01:00  INF  Executing OkObjectResult, writing value of type 'AngularAuthApi.Entities.Responses.AuthUserResponse'.
+2023-02-17 12:29:11.343 +01:00  INF  Executed action AngularAuthApi.Controllers.AuthController.Authenticate (AngularAuthApi) in 637.6865ms
+2023-02-17 12:29:11.343 +01:00  INF  Executed endpoint 'AngularAuthApi.Controllers.AuthController.Authenticate (AngularAuthApi)'
+2023-02-17 12:29:11.343 +01:00  INF  Request finished HTTP/2 POST https://localhost:7063/api/user/Authenticate application/json 48 - 200 - application/json;+charset=utf-8 646.7084ms
+2023-02-17 12:31:12.691 +01:00  INF  Request starting HTTP/2 OPTIONS https://localhost:7063/api/user/Register - -
+2023-02-17 12:31:12.691 +01:00  INF  CORS policy execution successful.
+2023-02-17 12:31:12.691 +01:00  INF  Request finished HTTP/2 OPTIONS https://localhost:7063/api/user/Register - - - 204 - - 0.6797ms
+2023-02-17 12:31:12.698 +01:00  INF  Request starting HTTP/2 POST https://localhost:7063/api/user/Register application/json 61
+2023-02-17 12:31:12.698 +01:00  INF  CORS policy execution successful.
+2023-02-17 12:31:12.698 +01:00  INF  Executing endpoint 'AngularAuthApi.Controllers.AuthController.RegisterUser (AngularAuthApi)'
+2023-02-17 12:31:12.698 +01:00  INF  Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(AngularAuthApi.Entities.User) on controller AngularAuthApi.Controllers.AuthController (AngularAuthApi).
+2023-02-17 12:31:12.702 +01:00  INF  Executed DbCommand (1ms) [Parameters=[@__userEmail_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Users` AS `u`
+    WHERE `u`.`Email` = @__userEmail_0)
+2023-02-17 12:31:13.048 +01:00  INF  Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 100), @p1='?' (Size = 50), @p2='?' (Size = 128), @p3='?' (Size = 128) (DbType = Binary), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Users` (`Email`, `Name`, `Password`, `Salt`, `Token`)
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT `Id`
+FROM `Users`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2023-02-17 12:31:13.064 +01:00  INF  Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-02-17 12:31:13.064 +01:00  INF  Executed action AngularAuthApi.Controllers.AuthController.RegisterUser (AngularAuthApi) in 365.6756ms
+2023-02-17 12:31:13.064 +01:00  INF  Executed endpoint 'AngularAuthApi.Controllers.AuthController.RegisterUser (AngularAuthApi)'
+2023-02-17 12:31:13.064 +01:00  INF  Request finished HTTP/2 POST https://localhost:7063/api/user/Register application/json 61 - 200 - application/json;+charset=utf-8 366.6411ms
+2023-02-17 12:33:32.313 +01:00  INF  Request starting HTTP/2 OPTIONS https://localhost:7063/api/user/Register - -
+2023-02-17 12:33:32.313 +01:00  INF  CORS policy execution successful.
+2023-02-17 12:33:32.313 +01:00  INF  Request finished HTTP/2 OPTIONS https://localhost:7063/api/user/Register - - - 204 - - 0.7161ms
+2023-02-17 12:33:32.323 +01:00  INF  Request starting HTTP/2 POST https://localhost:7063/api/user/Register application/json 59
+2023-02-17 12:33:32.323 +01:00  INF  CORS policy execution successful.
+2023-02-17 12:33:32.323 +01:00  INF  Executing endpoint 'AngularAuthApi.Controllers.AuthController.RegisterUser (AngularAuthApi)'
+2023-02-17 12:33:32.323 +01:00  INF  Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(AngularAuthApi.Entities.User) on controller AngularAuthApi.Controllers.AuthController (AngularAuthApi).
+2023-02-17 12:33:32.328 +01:00  INF  Executed DbCommand (1ms) [Parameters=[@__userEmail_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Users` AS `u`
+    WHERE `u`.`Email` = @__userEmail_0)
+2023-02-17 12:33:32.661 +01:00  INF  Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 100), @p1='?' (Size = 50), @p2='?' (Size = 128), @p3='?' (Size = 128) (DbType = Binary), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Users` (`Email`, `Name`, `Password`, `Salt`, `Token`)
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT `Id`
+FROM `Users`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2023-02-17 12:33:32.679 +01:00  INF  Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-02-17 12:33:32.679 +01:00  INF  Executed action AngularAuthApi.Controllers.AuthController.RegisterUser (AngularAuthApi) in 355.4805ms
+2023-02-17 12:33:32.679 +01:00  INF  Executed endpoint 'AngularAuthApi.Controllers.AuthController.RegisterUser (AngularAuthApi)'
+2023-02-17 12:33:32.679 +01:00  INF  Request finished HTTP/2 POST https://localhost:7063/api/user/Register application/json 59 - 200 - application/json;+charset=utf-8 356.6219ms
+2023-02-17 12:34:59.054 +01:00  INF  Request starting HTTP/2 OPTIONS https://localhost:7063/api/user/Register - -
+2023-02-17 12:34:59.054 +01:00  INF  CORS policy execution successful.
+2023-02-17 12:34:59.055 +01:00  INF  Request finished HTTP/2 OPTIONS https://localhost:7063/api/user/Register - - - 204 - - 0.5929ms
+2023-02-17 12:34:59.063 +01:00  INF  Request starting HTTP/2 POST https://localhost:7063/api/user/Register application/json 68
+2023-02-17 12:34:59.063 +01:00  INF  CORS policy execution successful.
+2023-02-17 12:34:59.064 +01:00  INF  Executing endpoint 'AngularAuthApi.Controllers.AuthController.RegisterUser (AngularAuthApi)'
+2023-02-17 12:34:59.064 +01:00  INF  Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(AngularAuthApi.Entities.User) on controller AngularAuthApi.Controllers.AuthController (AngularAuthApi).
+2023-02-17 12:34:59.066 +01:00  INF  Executed DbCommand (1ms) [Parameters=[@__userEmail_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Users` AS `u`
+    WHERE `u`.`Email` = @__userEmail_0)
+2023-02-17 12:34:59.066 +01:00  INF  Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-02-17 12:34:59.067 +01:00  INF  Executed action AngularAuthApi.Controllers.AuthController.RegisterUser (AngularAuthApi) in 3.0368ms
+2023-02-17 12:34:59.067 +01:00  INF  Executed endpoint 'AngularAuthApi.Controllers.AuthController.RegisterUser (AngularAuthApi)'
+2023-02-17 12:34:59.067 +01:00  INF  Request finished HTTP/2 POST https://localhost:7063/api/user/Register application/json 68 - 400 - application/json;+charset=utf-8 3.7612ms
+2023-02-17 12:35:04.629 +01:00  INF  Request starting HTTP/2 OPTIONS https://localhost:7063/api/user/Register - -
+2023-02-17 12:35:04.629 +01:00  INF  CORS policy execution successful.
+2023-02-17 12:35:04.629 +01:00  INF  Request finished HTTP/2 OPTIONS https://localhost:7063/api/user/Register - - - 204 - - 0.5939ms
+2023-02-17 12:35:04.637 +01:00  INF  Request starting HTTP/2 POST https://localhost:7063/api/user/Register application/json 70
+2023-02-17 12:35:04.637 +01:00  INF  CORS policy execution successful.
+2023-02-17 12:35:04.637 +01:00  INF  Executing endpoint 'AngularAuthApi.Controllers.AuthController.RegisterUser (AngularAuthApi)'
+2023-02-17 12:35:04.637 +01:00  INF  Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(AngularAuthApi.Entities.User) on controller AngularAuthApi.Controllers.AuthController (AngularAuthApi).
+2023-02-17 12:35:04.642 +01:00  INF  Executed DbCommand (1ms) [Parameters=[@__userEmail_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Users` AS `u`
+    WHERE `u`.`Email` = @__userEmail_0)
+2023-02-17 12:35:04.961 +01:00  INF  Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 100), @p1='?' (Size = 50), @p2='?' (Size = 128), @p3='?' (Size = 128) (DbType = Binary), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Users` (`Email`, `Name`, `Password`, `Salt`, `Token`)
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT `Id`
+FROM `Users`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2023-02-17 12:35:04.977 +01:00  INF  Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-02-17 12:35:04.977 +01:00  INF  Executed action AngularAuthApi.Controllers.AuthController.RegisterUser (AngularAuthApi) in 339.7142ms
+2023-02-17 12:35:04.977 +01:00  INF  Executed endpoint 'AngularAuthApi.Controllers.AuthController.RegisterUser (AngularAuthApi)'
+2023-02-17 12:35:04.977 +01:00  INF  Request finished HTTP/2 POST https://localhost:7063/api/user/Register application/json 70 - 200 - application/json;+charset=utf-8 340.5264ms
+2023-02-17 21:37:18.400 +01:00  INF  Request starting HTTP/2 OPTIONS https://localhost:7063/api/user/Register - -
+2023-02-17 21:37:18.404 +01:00  INF  CORS policy execution successful.
+2023-02-17 21:37:18.407 +01:00  INF  Request finished HTTP/2 OPTIONS https://localhost:7063/api/user/Register - - - 204 - - 7.6227ms
+2023-02-17 21:37:18.414 +01:00  INF  Request starting HTTP/2 POST https://localhost:7063/api/user/Register application/json 61
+2023-02-17 21:37:18.416 +01:00  INF  CORS policy execution successful.
+2023-02-17 21:37:18.417 +01:00  INF  Executing endpoint 'AngularAuthApi.Controllers.AuthController.RegisterUser (AngularAuthApi)'
+2023-02-17 21:37:18.420 +01:00  INF  Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(AngularAuthApi.Entities.User) on controller AngularAuthApi.Controllers.AuthController (AngularAuthApi).
+2023-02-17 21:37:18.554 +01:00  INF  Executed DbCommand (2ms) [Parameters=[@__userEmail_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Users` AS `u`
+    WHERE `u`.`Email` = @__userEmail_0)
+2023-02-17 21:37:18.852 +01:00  INF  Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 100), @p1='?' (Size = 50), @p2='?' (Size = 128), @p3='?' (Size = 128) (DbType = Binary), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Users` (`Email`, `Name`, `Password`, `Salt`, `Token`)
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT `Id`
+FROM `Users`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2023-02-17 21:37:18.856 +01:00  INF  Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-02-17 21:37:18.856 +01:00  INF  Executed action AngularAuthApi.Controllers.AuthController.RegisterUser (AngularAuthApi) in 436.1968ms
+2023-02-17 21:37:18.856 +01:00  INF  Executed endpoint 'AngularAuthApi.Controllers.AuthController.RegisterUser (AngularAuthApi)'
+2023-02-17 21:37:18.856 +01:00  INF  Request finished HTTP/2 POST https://localhost:7063/api/user/Register application/json 61 - 200 - application/json;+charset=utf-8 442.0442ms

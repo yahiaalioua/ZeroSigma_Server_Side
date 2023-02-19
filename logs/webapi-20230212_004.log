@@ -1,0 +1,37 @@
+2023-02-12 18:07:37.025 +01:00  INF  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='UserAuthDb' AND TABLE_NAME='__EFMigrationsHistory';
+2023-02-12 18:07:37.079 +01:00  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='UserAuthDb' AND TABLE_NAME='__EFMigrationsHistory';
+2023-02-12 18:07:37.114 +01:00  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2023-02-12 18:07:37.142 +01:00  INF  Applying migration '20230212165157_added_token_salt_column'.
+2023-02-12 18:07:37.204 +01:00  ERR  Failed executing DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `Users` MODIFY `Token` varchar NOT NULL;
+2023-02-12 18:08:51.233 +01:00  INF  Now listening on: https://localhost:7063
+2023-02-12 18:08:51.277 +01:00  INF  Now listening on: http://localhost:5174
+2023-02-12 18:08:51.283 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-02-12 18:08:51.284 +01:00  INF  Hosting environment: Development
+2023-02-12 18:08:51.284 +01:00  INF  Content root path: C:\GA\C# OOP\AngularAuthApi\AngularAuthApi\AngularAuthApi\
+2023-02-12 18:08:51.725 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/index.html - -
+2023-02-12 18:08:52.152 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/index.html - - - 200 - text/html;charset=utf-8 430.6602ms
+2023-02-12 18:08:52.246 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - -
+2023-02-12 18:08:52.246 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_vs/browserLink - -
+2023-02-12 18:08:52.251 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 4.6661ms
+2023-02-12 18:08:52.271 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 24.4300ms
+2023-02-12 18:08:52.451 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - -
+2023-02-12 18:08:52.609 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 158.5454ms
+2023-02-12 18:09:33.072 +01:00  INF  Now listening on: https://localhost:7063
+2023-02-12 18:09:33.103 +01:00  INF  Now listening on: http://localhost:5174
+2023-02-12 18:09:33.108 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-02-12 18:09:33.109 +01:00  INF  Hosting environment: Development
+2023-02-12 18:09:33.109 +01:00  INF  Content root path: C:\GA\C# OOP\AngularAuthApi\AngularAuthApi\AngularAuthApi\
+2023-02-12 18:09:33.517 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/index.html - -
+2023-02-12 18:09:33.880 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/index.html - - - 200 - text/html;charset=utf-8 365.7983ms
+2023-02-12 18:09:33.970 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - -
+2023-02-12 18:09:33.970 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_vs/browserLink - -
+2023-02-12 18:09:33.973 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 2.8189ms
+2023-02-12 18:09:34.006 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 36.4454ms
+2023-02-12 18:09:34.184 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - -
+2023-02-12 18:09:34.298 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 113.0624ms
