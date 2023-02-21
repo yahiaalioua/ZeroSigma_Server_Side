@@ -23,7 +23,8 @@ namespace AngularAuthApi.Authentication.OptionsSetup
                 ValidateIssuerSigningKey = true,
                 ValidIssuer = _jwtConfigOptions.Issuer,
                 ValidAudience = _jwtConfigOptions.Audience,
-                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("jdsfjhdsfhoi3ho3t84398oisehføksha"))
+                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("jdsfjhdsfhoi3ho3t84398oisehføksha")),
+                ClockSkew=TimeSpan.Zero
             };
         }
     }

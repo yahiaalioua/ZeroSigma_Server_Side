@@ -11,32 +11,26 @@ using System.Text;
 namespace AngularAuthApi.Authentication
 {
     public class JwtProvider : IJwtProvider
-    {
+    {   
+        private readonly ITokenGenerator _tokenGenerator;
         private readonly JwtConfigOptions _jwtConfigOptions;
-        public JwtProvider(IOptions<JwtConfigOptions> jwtConfigOptions)
+        public JwtProvider(IOptions<JwtConfigOptions> jwtConfigOptions, ITokenGenerator tokenGenerator)
         {
             _jwtConfigOptions = jwtConfigOptions.Value;
+            _tokenGenerator = tokenGenerator;
         }
 
         public string GenerateToken(LoginDto user)
         {
             
-            var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("jdsfjhdsfhoi3ho3t84398oisehføksha"));
-            var signinCredentials = new SigningCredentials(secretKey, SecurityAlgorithms.HmacSha256);
+            var secretKey = "jdsfjhdsfhoi3ho3t84398oisehføksha";
+     
             List<Claim> claims = new List<Claim>()
             {
                 new Claim(ClaimTypes.Email, user.Email),
             };
-            JwtSecurityToken token = new JwtSecurityToken
-                (
-                issuer: _jwtConfigOptions.Issuer,
-                audience: _jwtConfigOptions.Audience,
-                claims: claims,
-                expires: DateTime.Now.AddHours(_jwtConfigOptions.AccessTokenExpirationHours),
-                signingCredentials: signinCredentials
-                );
-            string tokenValue = new JwtSecurityTokenHandler().WriteToken(token);
-            return tokenValue;
+            return _tokenGenerator.GenerateToken(secretKey,_jwtConfigOptions.Issuer,_jwtConfigOptions.Audience,_jwtConfigOptions.AccessTokenExpirationHours,claims);
+            
 
         }
     }

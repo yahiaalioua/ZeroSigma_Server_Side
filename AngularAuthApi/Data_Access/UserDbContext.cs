@@ -8,5 +8,9 @@ namespace AngularAuthApi.Data_Access
         public UserDbContext(DbContextOptions<UserDbContext> options):base(options) { }
 
         public DbSet<User> Users { get; set; }
+        public DbSet<Auth> Auth { get; set; } 
+
+
+
     }
 }

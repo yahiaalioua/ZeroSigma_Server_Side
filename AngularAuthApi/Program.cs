@@ -4,6 +4,7 @@ using AngularAuthApi.Authentication.OptionsSetup;
 using AngularAuthApi.Data_Access;
 using AngularAuthApi.Repositories;
 using AngularAuthApi.Repositories.Abstract;
+using AngularAuthApi.Utilities;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -39,7 +40,14 @@ builder.Services.AddDbContext<UserDbContext>(options =>
 });
 builder.Services.AddScoped<IUserRepository,UserRepository>();
 builder.Services.AddScoped<IJwtProvider,JwtProvider>();
+builder.Services.AddScoped<ITokenGenerator,TokenGenerator>();
+builder.Services.AddScoped<IRefreshTokenProvider,RefreshTokenProvider>();
+builder.Services.AddScoped<IConfRefreshTokenValidationParameters,ConfRefreshTokenValidationParameters>();
+builder.Services.AddScoped<IRefreshTokenValidate,RefreshTokenValidate>();
+builder.Services.AddScoped<ITokenRepository,TokenRepository>();
+builder.Services.AddScoped<IDecodeJwt, DecodeJwt>();
 builder.Services.ConfigureOptions<JwtConfigOptionsSetup>();
+builder.Services.ConfigureOptions<RefreshJwtConfigOptionsSetup>();
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer();
 var app = builder.Build();
 

@@ -1,7 +1,10 @@
-﻿using AngularAuthApi.Authentication.Abstractions;
+﻿using AngularAuthApi.Authentication;
+using AngularAuthApi.Authentication.Abstractions;
 using AngularAuthApi.DTOS;
 using AngularAuthApi.Entities;
+using AngularAuthApi.Entities.Requests;
 using AngularAuthApi.Entities.Responses;
+using AngularAuthApi.Repositories;
 using AngularAuthApi.Repositories.Abstract;
 using AngularAuthApi.Utilities;
 using Microsoft.AspNetCore.Http;
@@ -16,11 +19,22 @@ namespace AngularAuthApi.Controllers
     {
         private readonly IUserRepository _userRepository;
         private readonly IJwtProvider _jwtProvider;
+        private readonly IRefreshTokenProvider _refreshTokenProvider;
+        private readonly IRefreshTokenValidate _refreshTokenValidate; 
+        private readonly ITokenRepository _tokenRepository;
+        private readonly IDecodeJwt _decodeJwt;
 
-        public AuthController(IUserRepository userRepository, IJwtProvider jwtProvider)
+        public AuthController(IUserRepository userRepository,
+            IJwtProvider jwtProvider, IRefreshTokenProvider refreshTokenProvider,
+            IRefreshTokenValidate refreshTokenValidate, ITokenRepository tokenRepository,
+            IDecodeJwt decodeJwt)
         {
             _userRepository = userRepository;
             _jwtProvider = jwtProvider;
+            _refreshTokenProvider = refreshTokenProvider;
+            _refreshTokenValidate = refreshTokenValidate;
+            _tokenRepository = tokenRepository;
+            _decodeJwt = decodeJwt;
         }
 
 
@@ -64,14 +78,29 @@ namespace AngularAuthApi.Controllers
                 return BadRequest(new { Message = "Wrong password", code = 1 });
             }
             string AccessToken = _jwtProvider.GenerateToken(user);
+            string RefreshToken = _refreshTokenProvider.GenerateRefreshToken(GetUser);
+            DateTime RefreshTokenExp = _decodeJwt.GetJwtExpiration(RefreshToken);
+            _tokenRepository.Create(new Auth() { Id=GetUser.Id,RefreshToken=RefreshToken,ExpiredTime=RefreshTokenExp});
             GetUser.Token= AccessToken;
             return Ok(new AuthUserResponse()
             {
                 AccessToken=GetUser.Token,
-                Email=GetUser.Email,
-                Name=GetUser.Name
+                Payload = new Payload() {Name=GetUser.Name,Email=GetUser.Email },
+                RefreshToken=RefreshToken,
+                
             });
         }
+
+        /*[HttpPost("refresh")]
+        public async Task<IActionResult> Refresh(RefreshAuthRequest refreshAuthRequest)
+        {
+            bool isValidRefreshToken = _refreshTokenValidate.Validate(refreshAuthRequest.RefreshToken);
+            if (!isValidRefreshToken)
+            {
+                return BadRequest(new { Message = "Invalid Refresh Token",Code="Auth:0070" });
+            }
+
+        }*/
 
 
     }

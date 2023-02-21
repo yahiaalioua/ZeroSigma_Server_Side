@@ -1,0 +1,105 @@
+2023-02-21 12:56:24.983 +01:00  INF  Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='UserAuthDb' AND TABLE_NAME='__EFMigrationsHistory';
+2023-02-21 12:56:25.065 +01:00  INF  Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2023-02-21 13:28:34.321 +01:00  INF  Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='UserAuthDb' AND TABLE_NAME='__EFMigrationsHistory';
+2023-02-21 13:28:34.397 +01:00  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2023-02-21 16:16:01.064 +01:00  INF  Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='UserAuthDb' AND TABLE_NAME='__EFMigrationsHistory';
+2023-02-21 16:16:01.140 +01:00  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='UserAuthDb' AND TABLE_NAME='__EFMigrationsHistory';
+2023-02-21 16:16:01.169 +01:00  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2023-02-21 16:16:01.193 +01:00  INF  Applying migration '20230221151452_add_Auth'.
+2023-02-21 16:16:01.359 +01:00  INF  Executed DbCommand (61ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE `Auth` (
+    `Id` int NOT NULL,
+    `RefreshToken` varchar(100) NULL,
+    `ExpiredTime` datetime(6) NULL,
+    PRIMARY KEY (`Id`),
+    CONSTRAINT `FK_Auth_Users_Id` FOREIGN KEY (`Id`) REFERENCES `Users` (`Id`) ON DELETE CASCADE
+);
+2023-02-21 16:16:01.365 +01:00  INF  Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20230221151452_add_Auth', '7.0.3');
+2023-02-21 19:37:01.764 +01:00  INF  User profile is available. Using 'C:\Users\yahia alioua\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-02-21 19:37:01.949 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-02-21 19:37:01.950 +01:00  INF  Hosting environment: Development
+2023-02-21 19:37:01.950 +01:00  INF  Content root path: C:\GA\C# OOP\AngularAuthApi\AngularAuthApi\AngularAuthApi\
+2023-02-21 19:37:01.980 +01:00  INF  Request starting HTTP/2 GET https://localhost:44344/swagger - -
+2023-02-21 19:37:02.191 +01:00  INF  Request finished HTTP/2 GET https://localhost:44344/swagger - - - 301 - - 214.7842ms
+2023-02-21 19:37:02.194 +01:00  INF  Request starting HTTP/2 GET https://localhost:44344/swagger/index.html - -
+2023-02-21 19:37:02.787 +01:00  INF  Request finished HTTP/2 GET https://localhost:44344/swagger/index.html - - - 200 - text/html;charset=utf-8 592.7402ms
+2023-02-21 19:37:02.851 +01:00  INF  Request starting HTTP/2 GET https://localhost:44344/swagger/swagger-ui.css - -
+2023-02-21 19:37:02.853 +01:00  INF  Request starting HTTP/2 GET https://localhost:44344/swagger/swagger-ui-bundle.js - -
+2023-02-21 19:37:02.863 +01:00  INF  Request starting HTTP/2 GET https://localhost:44344/swagger/swagger-ui-standalone-preset.js - -
+2023-02-21 19:37:02.879 +01:00  INF  Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-02-21 19:37:02.879 +01:00  INF  Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-02-21 19:37:02.879 +01:00  INF  Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-02-21 19:37:02.884 +01:00  INF  Request finished HTTP/2 GET https://localhost:44344/swagger/swagger-ui.css - - - 200 143632 text/css 32.9655ms
+2023-02-21 19:37:02.897 +01:00  INF  Request finished HTTP/2 GET https://localhost:44344/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 34.3571ms
+2023-02-21 19:37:02.921 +01:00  INF  Request starting HTTP/2 GET https://localhost:44344/_framework/aspnetcore-browser-refresh.js - -
+2023-02-21 19:37:02.931 +01:00  INF  Request finished HTTP/2 GET https://localhost:44344/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 3.9460ms
+2023-02-21 19:37:02.945 +01:00  INF  Request finished HTTP/2 GET https://localhost:44344/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 91.9094ms
+2023-02-21 19:37:02.960 +01:00  INF  Request starting HTTP/2 GET https://localhost:44344/_vs/browserLink - -
+2023-02-21 19:37:03.098 +01:00  INF  Request finished HTTP/2 GET https://localhost:44344/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 137.2266ms
+2023-02-21 19:37:03.237 +01:00  INF  Request starting HTTP/2 GET https://localhost:44344/swagger/v1/swagger.json - -
+2023-02-21 19:37:03.371 +01:00  INF  Request finished HTTP/2 GET https://localhost:44344/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 134.1680ms
+2023-02-21 19:37:26.025 +01:00  INF  Request starting HTTP/2 POST https://localhost:44344/api/user/Authenticate application/json 73
+2023-02-21 19:37:26.042 +01:00  INF  CORS policy execution successful.
+2023-02-21 19:37:26.155 +01:00  INF  Executing endpoint 'AngularAuthApi.Controllers.AuthController.Authenticate (AngularAuthApi)'
+2023-02-21 19:37:26.253 +01:00  INF  Route matched with {action = "Authenticate", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(AngularAuthApi.DTOS.LoginDto) on controller AngularAuthApi.Controllers.AuthController (AngularAuthApi).
+2023-02-21 19:37:30.180 +01:00  INF  Executed DbCommand (15ms) [Parameters=[@__user_Email_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`Email`, `u`.`Name`, `u`.`Password`, `u`.`Salt`, `u`.`Token`
+FROM `Users` AS `u`
+WHERE `u`.`Email` = @__user_Email_0
+LIMIT 1
+2023-02-21 19:37:31.580 +01:00  INF  Executing OkObjectResult, writing value of type 'AngularAuthApi.Entities.Responses.AuthUserResponse'.
+2023-02-21 19:37:31.625 +01:00  INF  Executed action AngularAuthApi.Controllers.AuthController.Authenticate (AngularAuthApi) in 5357.173ms
+2023-02-21 19:37:31.626 +01:00  INF  Executed endpoint 'AngularAuthApi.Controllers.AuthController.Authenticate (AngularAuthApi)'
+2023-02-21 19:37:31.640 +01:00  INF  Request finished HTTP/2 POST https://localhost:44344/api/user/Authenticate application/json 73 - 200 - application/json;+charset=utf-8 5614.7523ms
+2023-02-21 22:34:20.086 +01:00  INF  User profile is available. Using 'C:\Users\yahia alioua\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-02-21 22:34:20.216 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-02-21 22:34:20.217 +01:00  INF  Hosting environment: Development
+2023-02-21 22:34:20.217 +01:00  INF  Content root path: C:\GA\C# OOP\AngularAuthApi\AngularAuthApi\AngularAuthApi\
+2023-02-21 22:34:20.239 +01:00  INF  Request starting HTTP/2 GET https://localhost:44344/swagger - -
+2023-02-21 22:34:20.328 +01:00  INF  Request finished HTTP/2 GET https://localhost:44344/swagger - - - 301 - - 92.3153ms
+2023-02-21 22:34:20.332 +01:00  INF  Request starting HTTP/2 GET https://localhost:44344/swagger/index.html - -
+2023-02-21 22:34:20.622 +01:00  INF  Request finished HTTP/2 GET https://localhost:44344/swagger/index.html - - - 200 - text/html;charset=utf-8 290.2338ms
+2023-02-21 22:34:20.711 +01:00  INF  Request starting HTTP/2 GET https://localhost:44344/swagger/swagger-ui.css - -
+2023-02-21 22:34:20.714 +01:00  INF  Request starting HTTP/2 GET https://localhost:44344/swagger/swagger-ui-bundle.js - -
+2023-02-21 22:34:20.715 +01:00  INF  Request starting HTTP/2 GET https://localhost:44344/_vs/browserLink - -
+2023-02-21 22:34:20.715 +01:00  INF  Request starting HTTP/2 GET https://localhost:44344/swagger/swagger-ui-standalone-preset.js - -
+2023-02-21 22:34:20.715 +01:00  INF  Request starting HTTP/2 GET https://localhost:44344/_framework/aspnetcore-browser-refresh.js - -
+2023-02-21 22:34:20.730 +01:00  INF  Request finished HTTP/2 GET https://localhost:44344/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 5.0203ms
+2023-02-21 22:34:20.737 +01:00  INF  Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-02-21 22:34:20.737 +01:00  INF  Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-02-21 22:34:20.737 +01:00  INF  Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-02-21 22:34:20.742 +01:00  INF  Request finished HTTP/2 GET https://localhost:44344/swagger/swagger-ui.css - - - 200 143632 text/css 30.6931ms
+2023-02-21 22:34:20.757 +01:00  INF  Request finished HTTP/2 GET https://localhost:44344/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 42.1565ms
+2023-02-21 22:34:20.781 +01:00  INF  Request finished HTTP/2 GET https://localhost:44344/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 66.0245ms
+2023-02-21 22:34:20.791 +01:00  INF  Request finished HTTP/2 GET https://localhost:44344/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 76.2253ms
+2023-02-21 22:34:21.054 +01:00  INF  Request starting HTTP/2 GET https://localhost:44344/swagger/v1/swagger.json - -
+2023-02-21 22:34:21.249 +01:00  INF  Request finished HTTP/2 GET https://localhost:44344/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 195.6098ms
+2023-02-21 22:36:49.799 +01:00  INF  Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='UserAuthDb' AND TABLE_NAME='__EFMigrationsHistory';
+2023-02-21 22:36:49.846 +01:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='UserAuthDb' AND TABLE_NAME='__EFMigrationsHistory';
+2023-02-21 22:36:49.868 +01:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2023-02-21 22:36:49.888 +01:00  INF  Applying migration '20230221213614_updated_auth_table'.
+2023-02-21 22:36:50.009 +01:00  INF  Executed DbCommand (65ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `Auth` MODIFY `RefreshToken` varchar(250) NULL;
+2023-02-21 22:36:50.011 +01:00  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20230221213614_updated_auth_table', '7.0.3');
