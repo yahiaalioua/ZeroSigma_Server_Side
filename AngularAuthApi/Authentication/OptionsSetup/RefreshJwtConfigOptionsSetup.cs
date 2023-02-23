@@ -2,7 +2,7 @@
 
 namespace AngularAuthApi.Authentication.OptionsSetup
 {
-    public class RefreshJwtConfigOptionsSetup:IConfigureOptions<JwtConfigOptions>
+    public class RefreshJwtConfigOptionsSetup:IConfigureOptions<RefreshJwtConfigOptions>
     {
         private readonly IConfiguration _configuration;
 
@@ -10,9 +10,9 @@ namespace AngularAuthApi.Authentication.OptionsSetup
         {
             _configuration = configuration;
         }
-        public void Configure(JwtConfigOptions options)
+        public void Configure(RefreshJwtConfigOptions options)
         {
-            _configuration.GetSection(nameof(RefreshJwtConfigOptions)).Bind(options);
+            _configuration.GetSection("RefreshJwtConfigOptions").Bind(options);
         }
     }
 }

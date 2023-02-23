@@ -25,7 +25,7 @@ namespace AngularAuthApi.Authentication.OptionsSetup
                 ValidIssuer = _refreshJwtConfigoptions.Issuer,
                 ValidAudience = _refreshJwtConfigoptions.Audience,
                 IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("jdsfjhdsfhoi3ho3t84398oisehføkshasuperSecretKey@345fhftftffhjg6r66")),
-                ClockSkew = TimeSpan.Zero
+               
             };
 
         }

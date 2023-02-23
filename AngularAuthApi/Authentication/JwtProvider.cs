@@ -23,13 +23,13 @@ namespace AngularAuthApi.Authentication
         public string GenerateToken(LoginDto user)
         {
             
-            var secretKey = "jdsfjhdsfhoi3ho3t84398oisehføksha";
+            
      
             List<Claim> claims = new List<Claim>()
             {
                 new Claim(ClaimTypes.Email, user.Email),
             };
-            return _tokenGenerator.GenerateToken(secretKey,_jwtConfigOptions.Issuer,_jwtConfigOptions.Audience,_jwtConfigOptions.AccessTokenExpirationHours,claims);
+            return _tokenGenerator.GenerateToken(_jwtConfigOptions.AccessTokenSecretKey,_jwtConfigOptions.Issuer,_jwtConfigOptions.Audience,_jwtConfigOptions.AccessTokenExpirationHours,claims);
             
 
         }

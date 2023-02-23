@@ -9,5 +9,6 @@ namespace AngularAuthApi.Repositories.Abstract
         Task RegisterUser(User user);
         Task<bool> CheckEmailExist(string userEmail);
         string CheckPasswordStrength(string password);
+        Task<User> GetUserById(int id);
     }
 }

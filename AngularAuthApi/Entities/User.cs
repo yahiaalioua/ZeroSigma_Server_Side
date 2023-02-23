@@ -17,9 +17,8 @@ namespace AngularAuthApi.Entities
         [MaxLength(128)]
         [Required]
         public string ?Password { get; set; }
+        [MaxLength(500)]
         public string ?Token { get; set; }
-
-        [Column(TypeName = "varbinary")]
         [MaxLength(128)]
         public string ?Salt { get; set; }
         public virtual Auth Auth { get; set; }

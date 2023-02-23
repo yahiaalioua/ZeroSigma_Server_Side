@@ -24,13 +24,25 @@ namespace AngularAuthApi.Migrations
                     b.Property<int>("Id")
                         .HasColumnType("int");
 
-                    b.Property<DateTime?>("ExpiredTime")
-                        .HasMaxLength(150)
+                    b.Property<DateTime?>("ExpiredDate")
+                        .HasMaxLength(50)
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<bool>("IsActive")
+                        .HasMaxLength(10)
+                        .HasColumnType("tinyint(10)");
+
+                    b.Property<bool>("IsExpired")
+                        .HasMaxLength(10)
+                        .HasColumnType("tinyint(10)");
+
+                    b.Property<DateTime?>("IssuedDate")
+                        .HasMaxLength(50)
                         .HasColumnType("datetime(6)");
 
                     b.Property<string>("RefreshToken")
-                        .HasMaxLength(250)
-                        .HasColumnType("varchar(250)");
+                        .HasMaxLength(500)
+                        .HasColumnType("varchar(500)");
 
                     b.HasKey("Id");
 
@@ -60,10 +72,11 @@ namespace AngularAuthApi.Migrations
 
                     b.Property<byte[]>("Salt")
                         .HasMaxLength(128)
-                        .HasColumnType("varbinary");
+                        .HasColumnType("varbinary(128)");
 
                     b.Property<string>("Token")
-                        .HasColumnType("longtext");
+                        .HasMaxLength(500)
+                        .HasColumnType("varchar(500)");
 
                     b.HasKey("Id");
 

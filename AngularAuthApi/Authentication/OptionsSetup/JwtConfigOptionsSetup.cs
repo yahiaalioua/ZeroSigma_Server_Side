@@ -14,7 +14,7 @@ namespace AngularAuthApi.Authentication.OptionsSetup
 
         public void Configure(JwtConfigOptions options)
         {
-            _configuration.GetSection(nameof(JwtConfigOptions)).Bind(options);
+            _configuration.GetSection("JwtConfigOptions").Bind(options);
         }
     }
 }

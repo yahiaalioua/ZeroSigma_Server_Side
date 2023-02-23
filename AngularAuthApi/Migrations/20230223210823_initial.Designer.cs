@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AngularAuthApi.Migrations
 {
     [DbContext(typeof(UserDbContext))]
-    [Migration("20230221151452_add_Auth")]
-    partial class addAuth
+    [Migration("20230223210823_initial")]
+    partial class initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -27,13 +27,25 @@ namespace AngularAuthApi.Migrations
                     b.Property<int>("Id")
                         .HasColumnType("int");
 
-                    b.Property<DateTime?>("ExpiredTime")
+                    b.Property<DateTime?>("ExpiredDate")
+                        .HasMaxLength(50)
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<bool>("IsActive")
+                        .HasMaxLength(10)
+                        .HasColumnType("tinyint(10)");
+
+                    b.Property<bool>("IsExpired")
+                        .HasMaxLength(10)
+                        .HasColumnType("tinyint(10)");
+
+                    b.Property<DateTime?>("IssuedDate")
                         .HasMaxLength(50)
                         .HasColumnType("datetime(6)");
 
                     b.Property<string>("RefreshToken")
-                        .HasMaxLength(100)
-                        .HasColumnType("varchar(100)");
+                        .HasMaxLength(500)
+                        .HasColumnType("varchar(500)");
 
                     b.HasKey("Id");
 
@@ -63,10 +75,11 @@ namespace AngularAuthApi.Migrations
 
                     b.Property<byte[]>("Salt")
                         .HasMaxLength(128)
-                        .HasColumnType("varbinary");
+                        .HasColumnType("varbinary(128)");
 
                     b.Property<string>("Token")
-                        .HasColumnType("longtext");
+                        .HasMaxLength(500)
+                        .HasColumnType("varchar(500)");
 
                     b.HasKey("Id");
 

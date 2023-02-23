@@ -30,6 +30,7 @@ namespace AngularAuthApi.Repositories
             user.Password = PasswordHasher.HashPasword(user.Password, out var salt);
             user.Token = " ";
             user.Salt = Convert.ToHexString(salt);
+            user.Auth=new Auth() { Id= user.Id };
             await _context.Users.AddAsync(user);
             await _context.SaveChangesAsync();
         }
@@ -53,6 +54,10 @@ namespace AngularAuthApi.Repositories
                 message.Append("Your password should contain at least one special character");
             }
             return message.ToString();
+        }
+        public async Task<User> GetUserById(int id)
+        {
+            return await _context.Users.FirstOrDefaultAsync(u=> u.Id == id);
         }
     }
 }

@@ -13,7 +13,7 @@ namespace AngularAuthApi.Authentication
             _ConfRefreshParameters = confRefreshParameters;
         }
 
-        public bool Validate(string refreshToken)
+        public  bool Validate(string refreshToken)
         {
             TokenValidationParameters tokenValidationParameters = _ConfRefreshParameters.Parameters();
             JwtSecurityTokenHandler tokenHandler = new JwtSecurityTokenHandler();
