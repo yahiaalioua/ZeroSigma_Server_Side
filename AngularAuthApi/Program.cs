@@ -45,6 +45,7 @@ builder.Services.AddScoped<IRefreshTokenProvider,RefreshTokenProvider>();
 builder.Services.AddScoped<IConfRefreshTokenValidationParameters,ConfRefreshTokenValidationParameters>();
 builder.Services.AddScoped<IRefreshTokenValidate,RefreshTokenValidate>();
 builder.Services.AddScoped<ITokenRepository,TokenRepository>();
+builder.Services.AddScoped<IAuthenticator,Authenticator>();
 builder.Services.AddScoped<IDecodeJwt, DecodeJwt>();
 builder.Services.ConfigureOptions<JwtConfigOptionsSetup>();
 builder.Services.ConfigureOptions<RefreshJwtConfigOptionsSetup>();

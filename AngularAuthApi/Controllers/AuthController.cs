@@ -18,22 +18,19 @@ namespace AngularAuthApi.Controllers
     public class AuthController : ControllerBase
     {
         private readonly IUserRepository _userRepository;
-        private readonly IJwtProvider _jwtProvider;
-        private readonly IRefreshTokenProvider _refreshTokenProvider;
         private readonly IRefreshTokenValidate _refreshTokenValidate;
-
+        private readonly IAuthenticator _authenticator;
         private readonly ITokenRepository _tokenRepository;
 
 
-        public AuthController(IUserRepository userRepository,
-            IJwtProvider jwtProvider, IRefreshTokenProvider refreshTokenProvider,
-            ITokenRepository tokenRepository, IRefreshTokenValidate refreshTokenValidate)
+        public AuthController(IUserRepository userRepository,            
+            ITokenRepository tokenRepository, IRefreshTokenValidate refreshTokenValidate, 
+            IAuthenticator authenticator)
         {
             _userRepository = userRepository;
-            _jwtProvider = jwtProvider;
-            _refreshTokenProvider = refreshTokenProvider;
             _tokenRepository = tokenRepository;
             _refreshTokenValidate = refreshTokenValidate;
+            _authenticator = authenticator;
         }
 
 
@@ -82,21 +79,10 @@ namespace AngularAuthApi.Controllers
             {
                 return BadRequest(new { Message = "Wrong password", code = 1 });
             }
-            string AccessToken = _jwtProvider.GenerateToken(user);
-            string RefreshToken = _refreshTokenProvider.GenerateRefreshToken(GetUser);
-            GetUser.Token = AccessToken;
-            Auth auth = await _tokenRepository.GetAuthDataById(GetUser.Id);
-            Auth updatedAuth = await _tokenRepository.UpdatedAuth(GetUser, RefreshToken);
-            await _tokenRepository.UpdateAuth(auth.Id, updatedAuth);
+            AuthUserResponse response =await _authenticator.AuthenticateResponse(user, GetUser);
            
 
-            return Ok(new AuthUserResponse()
-            {
-                AccessToken = GetUser.Token,
-                Payload = new Payload() { Name = GetUser.Name, Email = GetUser.Email },
-                RefreshToken = RefreshToken,
-
-            });
+            return Ok(response);
         }
 
         [HttpPost("refresh")]
@@ -118,18 +104,9 @@ namespace AngularAuthApi.Controllers
             {
                 return NotFound(new { Message = "User do not exist", code = 2 });
             }
-            string AccessToken = _jwtProvider.GenerateToken(new LoginDto() { Email = user.Email, Password = user.Password });
-            string RefreshToken = _refreshTokenProvider.GenerateRefreshToken(user);
-
-            user.Token = AccessToken;
-            return Ok(new AuthUserResponse()
-            {
-                AccessToken = user.Token,
-                Payload = new Payload() { Name = user.Name, Email = user.Email },
-                RefreshToken = RefreshToken,
-
-            });
-
+            AuthUserResponse resp=await _authenticator.AuthenticateRefreshToken(user);
+            
+            return Ok(resp);
 
         }
     }

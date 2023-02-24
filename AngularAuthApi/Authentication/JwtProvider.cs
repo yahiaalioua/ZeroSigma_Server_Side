@@ -29,7 +29,7 @@ namespace AngularAuthApi.Authentication
             {
                 new Claim(ClaimTypes.Email, user.Email),
             };
-            return _tokenGenerator.GenerateToken(_jwtConfigOptions.AccessTokenSecretKey,_jwtConfigOptions.Issuer,_jwtConfigOptions.Audience,_jwtConfigOptions.AccessTokenExpirationHours,claims);
+            return _tokenGenerator.GenerateToken(_jwtConfigOptions.AccessTokenSecretKey,_jwtConfigOptions.Issuer,_jwtConfigOptions.Audience,_jwtConfigOptions.AccessTokenExpirationMinutes,claims);
             
 
         }

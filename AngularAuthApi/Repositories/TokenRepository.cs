@@ -13,13 +13,14 @@ namespace AngularAuthApi.Repositories
     public class TokenRepository : ITokenRepository
     {
         private readonly UserDbContext _context;
-     
         private readonly IDecodeJwt _decodeJwt;
+        private readonly IRefreshTokenProvider _refreshTokenProvider;
 
-        public TokenRepository(UserDbContext context, IDecodeJwt decodeJwt)
+        public TokenRepository(UserDbContext context, IDecodeJwt decodeJwt, IRefreshTokenProvider refreshTokenProvider)
         {
             _context = context;
             _decodeJwt = decodeJwt;
+            _refreshTokenProvider = refreshTokenProvider;
         }
         public async Task Create(Auth auth)
         {
@@ -43,11 +44,18 @@ namespace AngularAuthApi.Repositories
             _context.SaveChanges();
             
         }
+        public async Task UpdateAccesToken(int id, string accessToken)
+        {
+            User user= await _context.Users.FirstOrDefaultAsync(u=>u.Id == id);
+            user.Token= accessToken;
+            _context.Users.Update(user);
+            _context.SaveChanges();
+        }
         public async Task <Auth>UpdatedAuth(User user,string refreshToken)
         {
             string RefreshToken = refreshToken;
             DateTime RefreshTokenExp = _decodeJwt.GetJwtExpiration(RefreshToken);
-            DateTime RefreshTokenIssued = _decodeJwt.GetJwtIssued(RefreshToken);
+            DateTime RefreshTokenIssued = DateTime.UtcNow;
             bool RefreshTokenExpired = _decodeJwt.IsExpired(RefreshToken);
             bool RefreshTokenActive = _decodeJwt.IsActive(RefreshToken);
             Auth UpdatetdAUth = new Auth()
@@ -64,6 +72,14 @@ namespace AngularAuthApi.Repositories
         {
             Auth RefreshToken=await _context.Auth.FirstOrDefaultAsync(a=>a.RefreshToken==refreshToken);
             return RefreshToken;
-        }        
+        }
+        
+        public async Task RotateRefreshToken(User user,string refreshToken) 
+        {
+            Auth CurrentAuth=await GetAuthDataById(user.Id);
+            CurrentAuth.RefreshToken=refreshToken;
+            _context.Auth.Update(CurrentAuth);
+            _context.SaveChanges();
+        }
     }
 }
