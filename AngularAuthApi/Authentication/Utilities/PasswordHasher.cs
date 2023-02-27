@@ -1,7 +1,7 @@
 ﻿using System.Security.Cryptography;
 using System.Text;
 
-namespace AngularAuthApi.Utilities
+namespace AngularAuthApi.Authentication.Utilities
 {
     public class PasswordHasher
     {

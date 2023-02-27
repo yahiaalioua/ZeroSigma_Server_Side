@@ -1,4 +1,4 @@
-﻿namespace AngularAuthApi.Utilities
+﻿namespace AngularAuthApi.Authentication.Utilities.Abstract
 {
     public interface IDecodeJwt
     {

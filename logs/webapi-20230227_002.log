@@ -1,0 +1,25 @@
+2023-02-27 16:37:06.043 +01:00  INF  Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='zerosigmaauthdb' AND TABLE_NAME='__EFMigrationsHistory';
+2023-02-27 16:37:06.097 +01:00  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='zerosigmaauthdb' AND TABLE_NAME='__EFMigrationsHistory';
+2023-02-27 16:37:06.123 +01:00  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2023-02-27 16:37:06.150 +01:00  INF  Applying migration '20230227153642_added_userInfo_table'.
+2023-02-27 16:37:06.270 +01:00  INF  Executed DbCommand (35ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE `UserInfo` (
+    `Id` int NOT NULL,
+    `Name` varchar(50) NULL,
+    `Email` varchar(100) NULL,
+    `Linkedin` varchar(100) NULL,
+    `Facebook` varchar(100) NULL,
+    `YouTube` varchar(100) NULL,
+    `Website` varchar(50) NULL,
+    `AboutMe` varchar(200) NULL,
+    PRIMARY KEY (`Id`),
+    CONSTRAINT `FK_UserInfo_Users_Id` FOREIGN KEY (`Id`) REFERENCES `Users` (`Id`) ON DELETE CASCADE
+);
+2023-02-27 16:37:06.272 +01:00  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20230227153642_added_userInfo_table', '7.0.3');

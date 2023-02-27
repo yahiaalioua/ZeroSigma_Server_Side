@@ -1,5 +1,5 @@
 ﻿using AngularAuthApi.Authentication.Abstractions;
-using AngularAuthApi.DTOS;
+using AngularAuthApi.Authentication.DTOS;
 using AngularAuthApi.Entities;
 using Google.Protobuf.WellKnownTypes;
 using Microsoft.Extensions.Options;

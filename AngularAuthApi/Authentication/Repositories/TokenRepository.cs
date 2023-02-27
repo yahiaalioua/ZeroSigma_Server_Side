@@ -1,14 +1,11 @@
 ﻿using AngularAuthApi.Authentication.Abstractions;
-using AngularAuthApi.Authentication;
 using AngularAuthApi.Data_Access;
-using AngularAuthApi.DTOS;
 using AngularAuthApi.Entities;
-using AngularAuthApi.Utilities;
 using Microsoft.EntityFrameworkCore;
-using System.Runtime.CompilerServices;
-using AngularAuthApi.Entities.Requests;
+using AngularAuthApi.Authentication.Repositories.Abstract;
+using AngularAuthApi.Authentication.Utilities.Abstract;
 
-namespace AngularAuthApi.Repositories
+namespace AngularAuthApi.Authentication.Repositories
 {
     public class TokenRepository : ITokenRepository
     {
@@ -29,29 +26,30 @@ namespace AngularAuthApi.Repositories
         }
         public async Task<Auth> GetAuthDataById(int id)
         {
-            Auth auth= await _context.Auth.FirstOrDefaultAsync(a=>a.Id == id);
+            Auth auth = await _context.Auth.FirstOrDefaultAsync(a => a.Id == id);
             return auth;
         }
         public async Task UpdateAuth(int id, Auth auth)
         {
-            Auth Getauth= await _context.Auth.FirstOrDefaultAsync(a => a.Id == id);
-            { Getauth.IssuedDate = auth.IssuedDate;
+            Auth Getauth = await _context.Auth.FirstOrDefaultAsync(a => a.Id == id);
+            {
+                Getauth.IssuedDate = auth.IssuedDate;
                 Getauth.RefreshToken = auth.RefreshToken;
-                Getauth.ExpiredDate= auth.ExpiredDate;
+                Getauth.ExpiredDate = auth.ExpiredDate;
                 Getauth.IsExpired = auth.IsExpired;
             }
             _context.Auth.Update(Getauth);
             _context.SaveChanges();
-            
+
         }
         public async Task UpdateAccesToken(int id, string accessToken)
         {
-            User user= await _context.Users.FirstOrDefaultAsync(u=>u.Id == id);
-            user.Token= accessToken;
+            User user = await _context.Users.FirstOrDefaultAsync(u => u.Id == id);
+            user.Token = accessToken;
             _context.Users.Update(user);
             _context.SaveChanges();
         }
-        public async Task <Auth>UpdatedAuth(User user,string refreshToken)
+        public async Task<Auth> UpdatedAuth(User user, string refreshToken)
         {
             string RefreshToken = refreshToken;
             DateTime RefreshTokenExp = _decodeJwt.GetJwtExpiration(RefreshToken);
@@ -68,16 +66,16 @@ namespace AngularAuthApi.Repositories
             };
             return UpdatetdAUth;
         }
-        public async Task<Auth>GetByRefreshToken(string refreshToken)
+        public async Task<Auth> GetByRefreshToken(string refreshToken)
         {
-            Auth RefreshToken=await _context.Auth.FirstOrDefaultAsync(a=>a.RefreshToken==refreshToken);
+            Auth RefreshToken = await _context.Auth.FirstOrDefaultAsync(a => a.RefreshToken == refreshToken);
             return RefreshToken;
         }
-        
-        public async Task RotateRefreshToken(User user,string refreshToken) 
+
+        public async Task RotateRefreshToken(User user, string refreshToken)
         {
-            Auth CurrentAuth=await GetAuthDataById(user.Id);
-            CurrentAuth.RefreshToken=refreshToken;
+            Auth CurrentAuth = await GetAuthDataById(user.Id);
+            CurrentAuth.RefreshToken = refreshToken;
             _context.Auth.Update(CurrentAuth);
             _context.SaveChanges();
         }

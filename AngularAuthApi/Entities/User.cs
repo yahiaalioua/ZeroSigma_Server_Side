@@ -22,6 +22,7 @@ namespace AngularAuthApi.Entities
         [MaxLength(128)]
         public string ?Salt { get; set; }
         public virtual Auth Auth { get; set; }
+        public virtual UserInfo UserInfo { get; set; }
 
     }
 }

@@ -1,7 +1,7 @@
-﻿using AngularAuthApi.DTOS;
+﻿using AngularAuthApi.Authentication.DTOS;
 using AngularAuthApi.Entities;
 
-namespace AngularAuthApi.Repositories.Abstract
+namespace AngularAuthApi.Authentication.Repositories.Abstract
 {
     public interface IUserRepository
     {

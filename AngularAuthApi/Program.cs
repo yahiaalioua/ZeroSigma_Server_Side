@@ -1,10 +1,11 @@
 using AngularAuthApi.Authentication;
 using AngularAuthApi.Authentication.Abstractions;
 using AngularAuthApi.Authentication.OptionsSetup;
+using AngularAuthApi.Authentication.Repositories;
+using AngularAuthApi.Authentication.Repositories.Abstract;
+using AngularAuthApi.Authentication.Utilities;
+using AngularAuthApi.Authentication.Utilities.Abstract;
 using AngularAuthApi.Data_Access;
-using AngularAuthApi.Repositories;
-using AngularAuthApi.Repositories.Abstract;
-using AngularAuthApi.Utilities;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;

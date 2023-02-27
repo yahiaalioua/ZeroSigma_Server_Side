@@ -1,6 +1,7 @@
 ﻿using System.IdentityModel.Tokens.Jwt;
+using AngularAuthApi.Authentication.Utilities.Abstract;
 
-namespace AngularAuthApi.Utilities
+namespace AngularAuthApi.Authentication.Utilities
 {
     public class DecodeJwt : IDecodeJwt
     {
@@ -23,7 +24,7 @@ namespace AngularAuthApi.Utilities
             var jwt = token;
             var handler = new JwtSecurityTokenHandler();
             var Token = handler.ReadJwtToken(jwt);
-            var dateNow= DateTime.UtcNow;
+            var dateNow = DateTime.UtcNow;
             return Token.ValidTo > dateNow;
         }
         public bool IsActive(string token)

@@ -1,6 +1,5 @@
 ﻿using AngularAuthApi.Authentication.Abstractions;
 using AngularAuthApi.Authentication.OptionsSetup;
-using AngularAuthApi.DTOS;
 using AngularAuthApi.Entities;
 using Microsoft.Extensions.Options;
 using System.Security.Claims;

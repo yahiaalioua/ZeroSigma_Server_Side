@@ -1,7 +1,7 @@
 ﻿using AngularAuthApi.Entities;
 using AngularAuthApi.Entities.Requests;
 
-namespace AngularAuthApi.Repositories
+namespace AngularAuthApi.Authentication.Repositories.Abstract
 {
     public interface ITokenRepository
     {

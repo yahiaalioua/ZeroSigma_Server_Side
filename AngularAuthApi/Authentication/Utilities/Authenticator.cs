@@ -1,12 +1,12 @@
 ﻿using AngularAuthApi.Authentication.Abstractions;
-using AngularAuthApi.Authentication;
-using AngularAuthApi.Repositories.Abstract;
-using AngularAuthApi.Repositories;
+
 using AngularAuthApi.Entities.Responses;
 using AngularAuthApi.Entities;
-using AngularAuthApi.DTOS;
+using AngularAuthApi.Authentication.Utilities.Abstract;
+using AngularAuthApi.Authentication.Repositories.Abstract;
+using AngularAuthApi.Authentication.DTOS;
 
-namespace AngularAuthApi.Utilities
+namespace AngularAuthApi.Authentication.Utilities
 {
     public class Authenticator : IAuthenticator
     {
@@ -39,28 +39,28 @@ namespace AngularAuthApi.Utilities
             await _tokenRepository.UpdateAuth(auth.Id, updatedAuth);
 
 
-            return (new AuthUserResponse()
+            return new AuthUserResponse()
             {
                 AccessToken = GetUser.Token,
                 Payload = new Payload() { Name = GetUser.Name, Email = GetUser.Email },
                 RefreshToken = RefreshToken,
 
-            });
+            };
         }
         public async Task<AuthUserResponse> AuthenticateRefreshToken(User user)
         {
             string AccessToken = _jwtProvider.GenerateToken(new LoginDto() { Email = user.Email, Password = user.Password });
             string RefreshToken = _refreshTokenProvider.GenerateRefreshToken(user);
             await _tokenRepository.UpdateAccesToken(user.Id, AccessToken);
-            await _tokenRepository.RotateRefreshToken(user,RefreshToken);
+            await _tokenRepository.RotateRefreshToken(user, RefreshToken);
             user.Token = AccessToken;
-            return (new AuthUserResponse()
+            return new AuthUserResponse()
             {
                 AccessToken = user.Token,
                 Payload = new Payload() { Name = user.Name, Email = user.Email },
                 RefreshToken = RefreshToken,
 
-            });
+            };
         }
     }
 }

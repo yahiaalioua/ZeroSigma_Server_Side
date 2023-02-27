@@ -1,17 +1,17 @@
 ﻿using AngularAuthApi.Authentication;
 using AngularAuthApi.Authentication.Abstractions;
-using AngularAuthApi.DTOS;
+using AngularAuthApi.Authentication.DTOS;
+using AngularAuthApi.Authentication.Repositories.Abstract;
+using AngularAuthApi.Authentication.Utilities;
+using AngularAuthApi.Authentication.Utilities.Abstract;
 using AngularAuthApi.Entities;
 using AngularAuthApi.Entities.Requests;
 using AngularAuthApi.Entities.Responses;
-using AngularAuthApi.Repositories;
-using AngularAuthApi.Repositories.Abstract;
-using AngularAuthApi.Utilities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Text;
 
-namespace AngularAuthApi.Controllers
+namespace AngularAuthApi.Authentication.Controllers
 {
     [Route("api/user")]
     [ApiController]
@@ -23,8 +23,8 @@ namespace AngularAuthApi.Controllers
         private readonly ITokenRepository _tokenRepository;
 
 
-        public AuthController(IUserRepository userRepository,            
-            ITokenRepository tokenRepository, IRefreshTokenValidate refreshTokenValidate, 
+        public AuthController(IUserRepository userRepository,
+            ITokenRepository tokenRepository, IRefreshTokenValidate refreshTokenValidate,
             IAuthenticator authenticator)
         {
             _userRepository = userRepository;
@@ -79,8 +79,8 @@ namespace AngularAuthApi.Controllers
             {
                 return BadRequest(new { Message = "Wrong password", code = 1 });
             }
-            AuthUserResponse response =await _authenticator.AuthenticateResponse(user, GetUser);
-           
+            AuthUserResponse response = await _authenticator.AuthenticateResponse(user, GetUser);
+
 
             return Ok(response);
         }
@@ -88,7 +88,7 @@ namespace AngularAuthApi.Controllers
         [HttpPost("refresh")]
         public async Task<IActionResult> Refresh(RefreshAuthRequest refreshAuthRequest)
         {
-            
+
             bool isValidRefreshToken = _refreshTokenValidate.Validate(refreshAuthRequest.RefreshToken);
             if (!isValidRefreshToken)
             {
@@ -104,8 +104,8 @@ namespace AngularAuthApi.Controllers
             {
                 return NotFound(new { Message = "User do not exist", code = 2 });
             }
-            AuthUserResponse resp=await _authenticator.AuthenticateRefreshToken(user);
-            
+            AuthUserResponse resp = await _authenticator.AuthenticateRefreshToken(user);
+
             return Ok(resp);
 
         }

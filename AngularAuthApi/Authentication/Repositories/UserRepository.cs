@@ -1,16 +1,16 @@
-﻿using AngularAuthApi.Data_Access;
-using AngularAuthApi.DTOS;
+﻿using AngularAuthApi.Authentication.DTOS;
+using AngularAuthApi.Authentication.Repositories.Abstract;
+using AngularAuthApi.Authentication.Utilities;
+using AngularAuthApi.Data_Access;
 using AngularAuthApi.Entities;
-using AngularAuthApi.Repositories.Abstract;
-using AngularAuthApi.Utilities;
 using Microsoft.EntityFrameworkCore;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace AngularAuthApi.Repositories
+namespace AngularAuthApi.Authentication.Repositories
 {
-    public class UserRepository :IUserRepository
+    public class UserRepository : IUserRepository
     {
         private readonly UserDbContext _context;
 
@@ -23,14 +23,14 @@ namespace AngularAuthApi.Repositories
         {
             var FindUser = await _context.Users.FirstOrDefaultAsync(u => u.Email == user.Email);
             return FindUser;
-            
+
         }
         public async Task RegisterUser(User user)
         {
             user.Password = PasswordHasher.HashPasword(user.Password, out var salt);
             user.Token = " ";
             user.Salt = Convert.ToHexString(salt);
-            user.Auth=new Auth() { Id= user.Id };
+            user.Auth = new Auth() { Id = user.Id };
             await _context.Users.AddAsync(user);
             await _context.SaveChangesAsync();
         }
@@ -40,12 +40,12 @@ namespace AngularAuthApi.Repositories
         }
         public string CheckPasswordStrength(string password)
         {
-            StringBuilder message=new StringBuilder();
+            StringBuilder message = new StringBuilder();
             if (password.Length < 8)
             {
                 message.Append("Your password should be at least 8 characters");
             }
-            if(!(Regex.IsMatch(password,"[a-z]") && Regex.IsMatch(password, "[A-Z]") && Regex.IsMatch(password,"[0-9]")))
+            if (!(Regex.IsMatch(password, "[a-z]") && Regex.IsMatch(password, "[A-Z]") && Regex.IsMatch(password, "[0-9]")))
             {
                 message.Append("Your password should contain at least one number and one upper and lowercase letter");
             }
@@ -57,7 +57,7 @@ namespace AngularAuthApi.Repositories
         }
         public async Task<User> GetUserById(int id)
         {
-            return await _context.Users.FirstOrDefaultAsync(u=> u.Id == id);
+            return await _context.Users.FirstOrDefaultAsync(u => u.Id == id);
         }
     }
 }

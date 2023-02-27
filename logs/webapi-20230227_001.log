@@ -1,0 +1,34 @@
+2023-02-27 16:35:47.036 +01:00  INF  Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='zerosigmaauthdb' AND TABLE_NAME='__EFMigrationsHistory';
+2023-02-27 16:35:47.118 +01:00  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2023-02-27 16:36:41.506 +01:00  INF  User profile is available. Using 'C:\Users\yahia alioua\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-02-27 16:36:41.711 +01:00  INF  Now listening on: https://localhost:7063
+2023-02-27 16:36:41.712 +01:00  INF  Now listening on: http://localhost:5174
+2023-02-27 16:36:41.717 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-02-27 16:36:41.717 +01:00  INF  Hosting environment: Development
+2023-02-27 16:36:41.717 +01:00  INF  Content root path: C:\GA\C# OOP\ZeroSigmaAuth\AngularAuthApi\
+2023-02-27 16:36:42.130 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/index.html - -
+2023-02-27 16:36:42.533 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/index.html - - - 200 - text/html;charset=utf-8 408.8326ms
+2023-02-27 16:36:42.608 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_vs/browserLink - -
+2023-02-27 16:36:42.608 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - -
+2023-02-27 16:36:42.610 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 1.9990ms
+2023-02-27 16:36:42.627 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 18.1856ms
+2023-02-27 16:36:42.783 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - -
+2023-02-27 16:36:42.948 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 164.9150ms
+2023-02-27 16:37:04.460 +01:00  INF  User profile is available. Using 'C:\Users\yahia alioua\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-02-27 16:37:04.658 +01:00  INF  Now listening on: https://localhost:7063
+2023-02-27 16:37:04.659 +01:00  INF  Now listening on: http://localhost:5174
+2023-02-27 16:37:04.664 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-02-27 16:37:04.664 +01:00  INF  Hosting environment: Development
+2023-02-27 16:37:04.664 +01:00  INF  Content root path: C:\GA\C# OOP\ZeroSigmaAuth\AngularAuthApi\
+2023-02-27 16:37:05.003 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/index.html - -
+2023-02-27 16:37:05.370 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/index.html - - - 200 - text/html;charset=utf-8 372.9634ms
+2023-02-27 16:37:05.442 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - -
+2023-02-27 16:37:05.442 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_vs/browserLink - -
+2023-02-27 16:37:05.445 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 2.6077ms
+2023-02-27 16:37:05.461 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 18.8863ms
+2023-02-27 16:37:05.601 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - -
+2023-02-27 16:37:05.775 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 173.7594ms

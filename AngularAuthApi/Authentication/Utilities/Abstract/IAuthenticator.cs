@@ -1,8 +1,8 @@
-﻿using AngularAuthApi.DTOS;
+﻿using AngularAuthApi.Authentication.DTOS;
 using AngularAuthApi.Entities;
 using AngularAuthApi.Entities.Responses;
 
-namespace AngularAuthApi.Utilities
+namespace AngularAuthApi.Authentication.Utilities.Abstract
 {
     public interface IAuthenticator
     {
