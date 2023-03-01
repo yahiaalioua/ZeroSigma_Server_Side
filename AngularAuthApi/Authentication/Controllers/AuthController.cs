@@ -7,6 +7,7 @@ using AngularAuthApi.Authentication.Utilities.Abstract;
 using AngularAuthApi.Entities;
 using AngularAuthApi.Entities.Requests;
 using AngularAuthApi.Entities.Responses;
+using AngularAuthApi.Repository.Abstract;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Text;
@@ -21,16 +22,18 @@ namespace AngularAuthApi.Authentication.Controllers
         private readonly IRefreshTokenValidate _refreshTokenValidate;
         private readonly IAuthenticator _authenticator;
         private readonly ITokenRepository _tokenRepository;
+        private readonly IUserInfoRepository _userInfoRepository;
 
 
         public AuthController(IUserRepository userRepository,
             ITokenRepository tokenRepository, IRefreshTokenValidate refreshTokenValidate,
-            IAuthenticator authenticator)
+            IAuthenticator authenticator, IUserInfoRepository userInfoRepository)
         {
             _userRepository = userRepository;
             _tokenRepository = tokenRepository;
             _refreshTokenValidate = refreshTokenValidate;
             _authenticator = authenticator;
+            _userInfoRepository = userInfoRepository;
         }
 
 
@@ -108,6 +111,36 @@ namespace AngularAuthApi.Authentication.Controllers
 
             return Ok(resp);
 
+        }
+        [HttpDelete]
+        public async Task<IActionResult> DeleteUser(int id)
+        {
+            var user = await _userRepository.GetUserById(id);
+            if (user == null)
+            {
+                return NotFound(new { Message = "user not found", Code = "Auth:0072" });
+            }
+            await _userRepository.DeleteUser(user);
+            return Ok(new { Message = "User succesfully delated", Code = "Auth:0073" });
+        }
+        [HttpGet]
+        public async Task<IActionResult> GetUserData(int id)
+        {
+            var user= await _userRepository.GetUserById(id);
+            if(user == null)
+            {
+                return NotFound(new {Message="user not found",Code="Auth:0074"});
+            }
+            user.Auth=await _tokenRepository.GetAuthDataById(id);
+            user.UserInfo=await _userInfoRepository.GetUserInfo(id);
+            UserResponse UserResponse = new()
+            {
+                Id=user.Id, Name=user.Name, Email=user.Email,
+                YouTube=user.UserInfo.YouTube,
+                Linkedin=user.UserInfo.Linkedin,Website=user.UserInfo.Website,
+                AboutMe=user.UserInfo.AboutMe,
+            };
+            return Ok(UserResponse);
         }
     }
 }

@@ -15,6 +15,15 @@ namespace AngularAuthApi.Data_Access
         {
             modelBuilder.Entity<User>()
                 .Property(u=>u.Salt).HasColumnType("varbinary(128)");
+            modelBuilder.Entity<User>(entity =>
+            {
+                entity.HasOne(u => u.Auth).WithOne(u=>u.User).HasForeignKey<Auth>(u=>u.Id);
+            });
+            modelBuilder.Entity<User>(entity =>
+            {
+                entity.HasOne(u => u.UserInfo).WithOne(u => u.User).HasForeignKey<UserInfo>(u=>u.Id);
+            });
+                
         }
 
 

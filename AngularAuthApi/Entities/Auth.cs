@@ -6,7 +6,7 @@ namespace AngularAuthApi.Entities
     public class Auth
     {
         [Key]
-        [ForeignKey("User")]
+       
         public int Id { get; set; }
         [MaxLength(500)]
         public string? RefreshToken { get; set; }

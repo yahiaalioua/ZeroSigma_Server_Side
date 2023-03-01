@@ -31,6 +31,7 @@ namespace AngularAuthApi.Authentication.Repositories
             user.Token = " ";
             user.Salt = Convert.ToHexString(salt);
             user.Auth = new Auth() { Id = user.Id };
+            user.UserInfo= new UserInfo() { Id = user.Id };
             await _context.Users.AddAsync(user);
             await _context.SaveChangesAsync();
         }
@@ -59,5 +60,13 @@ namespace AngularAuthApi.Authentication.Repositories
         {
             return await _context.Users.FirstOrDefaultAsync(u => u.Id == id);
         }
+        public async Task DeleteUser(User user)
+        {
+            
+            _context.Users.Remove(user);
+            await _context.SaveChangesAsync();
+        }
+        
+
     }
 }

@@ -6,6 +6,8 @@ using AngularAuthApi.Authentication.Repositories.Abstract;
 using AngularAuthApi.Authentication.Utilities;
 using AngularAuthApi.Authentication.Utilities.Abstract;
 using AngularAuthApi.Data_Access;
+using AngularAuthApi.Repository;
+using AngularAuthApi.Repository.Abstract;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -51,6 +53,8 @@ builder.Services.AddScoped<IDecodeJwt, DecodeJwt>();
 builder.Services.ConfigureOptions<JwtConfigOptionsSetup>();
 builder.Services.ConfigureOptions<RefreshJwtConfigOptionsSetup>();
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer();
+//Other services not related to auth
+builder.Services.AddScoped<IUserInfoRepository, UserInfoRepository>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
