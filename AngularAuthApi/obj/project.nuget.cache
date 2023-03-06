@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Q6EBwMHWSh/PIy0lngBBsvo6rKsh0MKeM3nn8nKjzCqS5BijWUNJuZM+DXpscAd+il6Gi1lvCMYwMukUhIXwYg==",
+  "dgSpecHash": "XJfWnv8+baJI3vIsyhQvw/ANzBhivi/NWP3BIB7HITFNqAzFkehZOX7tVk4ApGmGC587VMbyZO0n67iOIpO5Fg==",
   "success": true,
-  "projectFilePath": "C:\\GA\\C# OOP\\ZeroSigmaAuth\\AngularAuthApi\\AngularAuthApi.csproj",
+  "projectFilePath": "C:\\projects\\AngularAuthApi\\AngularAuthApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\yahia alioua\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
     "C:\\Users\\yahia alioua\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
@@ -45,6 +45,7 @@
     "C:\\Users\\yahia alioua\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\yahia alioua\\.nuget\\packages\\mysql.data\\8.0.32\\mysql.data.8.0.32.nupkg.sha512",
     "C:\\Users\\yahia alioua\\.nuget\\packages\\mysql.entityframeworkcore\\7.0.0\\mysql.entityframeworkcore.7.0.0.nupkg.sha512",
+    "C:\\Users\\yahia alioua\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
     "C:\\Users\\yahia alioua\\.nuget\\packages\\portable.bouncycastle\\1.9.0\\portable.bouncycastle.1.9.0.nupkg.sha512",
     "C:\\Users\\yahia alioua\\.nuget\\packages\\serilog\\2.10.0\\serilog.2.10.0.nupkg.sha512",
     "C:\\Users\\yahia alioua\\.nuget\\packages\\serilog.aspnetcore\\6.1.0\\serilog.aspnetcore.6.1.0.nupkg.sha512",

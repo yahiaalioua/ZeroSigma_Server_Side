@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\GA\\C# OOP\\ZeroSigmaAuth\\AngularAuthApi\\AngularAuthApi.csproj": {}
+    "C:\\projects\\AngularAuthApi\\AngularAuthApi.csproj": {}
   },
   "projects": {
-    "C:\\GA\\C# OOP\\ZeroSigmaAuth\\AngularAuthApi\\AngularAuthApi.csproj": {
+    "C:\\projects\\AngularAuthApi\\AngularAuthApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GA\\C# OOP\\ZeroSigmaAuth\\AngularAuthApi\\AngularAuthApi.csproj",
+        "projectUniqueName": "C:\\projects\\AngularAuthApi\\AngularAuthApi.csproj",
         "projectName": "AngularAuthApi",
-        "projectPath": "C:\\GA\\C# OOP\\ZeroSigmaAuth\\AngularAuthApi\\AngularAuthApi.csproj",
+        "projectPath": "C:\\projects\\AngularAuthApi\\AngularAuthApi.csproj",
         "packagesPath": "C:\\Users\\yahia alioua\\.nuget\\packages\\",
-        "outputPath": "C:\\GA\\C# OOP\\ZeroSigmaAuth\\AngularAuthApi\\obj\\",
+        "outputPath": "C:\\projects\\AngularAuthApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\yahia alioua\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -58,6 +58,10 @@
               "target": "Package",
               "version": "[7.0.0, )"
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
+            },
             "Serilog.AspNetCore": {
               "target": "Package",
               "version": "[6.1.0, )"
@@ -86,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

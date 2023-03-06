@@ -6,6 +6,9 @@ using AngularAuthApi.Authentication.Repositories.Abstract;
 using AngularAuthApi.Authentication.Utilities;
 using AngularAuthApi.Authentication.Utilities.Abstract;
 using AngularAuthApi.Data_Access;
+using AngularAuthApi.DcfCalculator.Abstract;
+using AngularAuthApi.DcfCalculator.HttpClient;
+using AngularAuthApi.DcfCalculator.Services;
 using AngularAuthApi.Repository;
 using AngularAuthApi.Repository.Abstract;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -55,6 +58,17 @@ builder.Services.ConfigureOptions<RefreshJwtConfigOptionsSetup>();
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer();
 //Other services not related to auth
 builder.Services.AddScoped<IUserInfoRepository, UserInfoRepository>();
+builder.Services.AddScoped<IFinancialPrepHttpCalls,FinancialPrepHttpCalls>();
+//HttpClient
+builder.Services.AddHttpClient(name:"FinancialApi", client =>
+{
+    client.BaseAddress = new Uri("https://financialmodelingprep.com/api/v3/");
+    
+
+});
+//Dcf Services
+builder.Services.AddScoped<ICoreDcfService,CoreDcfService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

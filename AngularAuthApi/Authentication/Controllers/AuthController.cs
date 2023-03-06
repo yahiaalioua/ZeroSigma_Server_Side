@@ -14,7 +14,7 @@ using System.Text;
 
 namespace AngularAuthApi.Authentication.Controllers
 {
-    [Route("api/user")]
+    [Route("api/users")]
     [ApiController]
     public class AuthController : ControllerBase
     {
@@ -37,7 +37,7 @@ namespace AngularAuthApi.Authentication.Controllers
         }
 
 
-        [HttpPost("Register")]
+        [HttpPost("new")]
         public async Task<IActionResult> RegisterUser(SignUpRequest user)
         {
 
@@ -65,7 +65,7 @@ namespace AngularAuthApi.Authentication.Controllers
         }
 
 
-        [HttpPost("Authenticate")]
+        [HttpPost("session")]
         public async Task<IActionResult> Authenticate(LoginDto user)
         {
             if (user == null)
@@ -88,7 +88,7 @@ namespace AngularAuthApi.Authentication.Controllers
             return Ok(response);
         }
 
-        [HttpPost("refresh")]
+        [HttpPost("session/token")]
         public async Task<IActionResult> Refresh(RefreshAuthRequest refreshAuthRequest)
         {
 
@@ -112,8 +112,8 @@ namespace AngularAuthApi.Authentication.Controllers
             return Ok(resp);
 
         }
-        [HttpDelete]
-        public async Task<IActionResult> DeleteUser(int id)
+        [HttpDelete("{Id}")]
+        public async Task<IActionResult> Delete(int id)
         {
             var user = await _userRepository.GetUserById(id);
             if (user == null)
@@ -121,9 +121,9 @@ namespace AngularAuthApi.Authentication.Controllers
                 return NotFound(new { Message = "user not found", Code = "Auth:0072" });
             }
             await _userRepository.DeleteUser(user);
-            return Ok(new { Message = "User succesfully delated", Code = "Auth:0073" });
+            return Accepted(new { Message = "User succesfully delated", Code = "Auth:0073" });
         }
-        [HttpGet]
+        [HttpGet("user-data{Id}")]
         public async Task<IActionResult> GetUserData(int id)
         {
             var user= await _userRepository.GetUserById(id);

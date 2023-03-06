@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AngularAuthApi.Controller
 {
-    [Route("api/[controller]")]
+    [Route("api/users")]
     [ApiController]
     public class UserInfoController : ControllerBase
     {
@@ -16,7 +16,7 @@ namespace AngularAuthApi.Controller
         {
             _userInfoRepository = userInfoRepository;
         }
-        [HttpPut]
+        [HttpPut("user-info")]
         public async Task<IActionResult> UpdateUserInfo(UserInfoRequest userInfo)
         {
             var user=await _userInfoRepository.GetUserInfo(userInfo.Id);

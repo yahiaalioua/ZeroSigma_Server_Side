@@ -1,0 +1,470 @@
+2023-03-05 13:30:48.798 +01:00  INF  User profile is available. Using 'C:\Users\yahia alioua\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-05 13:30:49.228 +01:00  INF  Now listening on: https://localhost:7063
+2023-03-05 13:30:49.228 +01:00  INF  Now listening on: http://localhost:5174
+2023-03-05 13:30:49.233 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-03-05 13:30:49.233 +01:00  INF  Hosting environment: Development
+2023-03-05 13:30:49.233 +01:00  INF  Content root path: C:\projects\AngularAuthApi\
+2023-03-05 13:30:50.668 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/index.html - -
+2023-03-05 13:30:51.327 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/index.html - - - 200 - text/html;charset=utf-8 669.1713ms
+2023-03-05 13:30:51.364 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - -
+2023-03-05 13:30:51.369 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 5.5372ms
+2023-03-05 13:30:51.391 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_vs/browserLink - -
+2023-03-05 13:30:51.720 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 328.4999ms
+2023-03-05 13:30:51.805 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - -
+2023-03-05 13:30:51.916 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 111.4744ms
+2023-03-05 13:32:34.003 +01:00  INF  User profile is available. Using 'C:\Users\yahia alioua\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-05 13:32:34.243 +01:00  INF  Now listening on: https://localhost:7063
+2023-03-05 13:32:34.243 +01:00  INF  Now listening on: http://localhost:5174
+2023-03-05 13:32:34.252 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-03-05 13:32:34.252 +01:00  INF  Hosting environment: Development
+2023-03-05 13:32:34.252 +01:00  INF  Content root path: C:\projects\AngularAuthApi\
+2023-03-05 13:32:34.917 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/index.html - -
+2023-03-05 13:32:35.393 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/index.html - - - 200 - text/html;charset=utf-8 482.3559ms
+2023-03-05 13:32:35.418 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - -
+2023-03-05 13:32:35.422 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 3.5927ms
+2023-03-05 13:32:35.438 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_vs/browserLink - -
+2023-03-05 13:32:35.454 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 16.8525ms
+2023-03-05 13:32:35.602 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - -
+2023-03-05 13:32:35.760 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 158.1662ms
+2023-03-05 13:32:47.807 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/api/income-statements/meta - -
+2023-03-05 13:32:47.883 +01:00  INF  Executing endpoint 'AngularAuthApi.DcfCalculator.Controller.FinancialDataController.GetIncomeStatements (AngularAuthApi)'
+2023-03-05 13:32:47.967 +01:00  INF  Route matched with {action = "GetIncomeStatements", controller = "FinancialData"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetIncomeStatements(System.String) on controller AngularAuthApi.DcfCalculator.Controller.FinancialDataController (AngularAuthApi).
+2023-03-05 13:32:48.072 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-05 13:32:48.086 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-05 13:32:49.299 +01:00  INF  Received HTTP response headers after 1188.6963ms - 200
+2023-03-05 13:32:49.304 +01:00  INF  End processing HTTP request after 1262.8597ms - 200
+2023-03-05 13:32:49.335 +01:00  INF  Executing OkObjectResult, writing value of type 'System.String'.
+2023-03-05 13:32:49.361 +01:00  INF  Executed action AngularAuthApi.DcfCalculator.Controller.FinancialDataController.GetIncomeStatements (AngularAuthApi) in 1372.1335ms
+2023-03-05 13:32:49.363 +01:00  INF  Executed endpoint 'AngularAuthApi.DcfCalculator.Controller.FinancialDataController.GetIncomeStatements (AngularAuthApi)'
+2023-03-05 13:32:49.366 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/api/income-statements/meta - - - 200 - text/plain;+charset=utf-8 1559.3027ms
+2023-03-05 15:35:02.886 +01:00  INF  User profile is available. Using 'C:\Users\yahia alioua\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-05 15:35:03.187 +01:00  INF  Now listening on: https://localhost:7063
+2023-03-05 15:35:03.187 +01:00  INF  Now listening on: http://localhost:5174
+2023-03-05 15:35:03.190 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-03-05 15:35:03.191 +01:00  INF  Hosting environment: Development
+2023-03-05 15:35:03.191 +01:00  INF  Content root path: C:\projects\AngularAuthApi\
+2023-03-05 15:35:04.309 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/index.html - -
+2023-03-05 15:35:04.773 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/index.html - - - 200 - text/html;charset=utf-8 483.6759ms
+2023-03-05 15:35:04.868 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_vs/browserLink - -
+2023-03-05 15:35:04.869 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - -
+2023-03-05 15:35:04.873 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 4.6948ms
+2023-03-05 15:35:04.898 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 29.8375ms
+2023-03-05 15:35:05.092 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - -
+2023-03-05 15:35:05.256 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 163.9327ms
+2023-03-05 15:36:59.970 +01:00  INF  User profile is available. Using 'C:\Users\yahia alioua\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-05 15:37:00.237 +01:00  INF  Now listening on: https://localhost:7063
+2023-03-05 15:37:00.238 +01:00  INF  Now listening on: http://localhost:5174
+2023-03-05 15:37:00.244 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-03-05 15:37:00.244 +01:00  INF  Hosting environment: Development
+2023-03-05 15:37:00.245 +01:00  INF  Content root path: C:\projects\AngularAuthApi\
+2023-03-05 15:37:00.710 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/index.html - -
+2023-03-05 15:37:01.176 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/index.html - - - 200 - text/html;charset=utf-8 476.8879ms
+2023-03-05 15:37:01.225 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - -
+2023-03-05 15:37:01.225 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_vs/browserLink - -
+2023-03-05 15:37:01.230 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 4.8201ms
+2023-03-05 15:37:01.245 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 19.3556ms
+2023-03-05 15:37:01.432 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - -
+2023-03-05 15:37:01.661 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 228.9992ms
+2023-03-05 15:37:10.618 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/api/tester?ticker=meta - -
+2023-03-05 15:37:10.680 +01:00  INF  Executing endpoint 'AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test (AngularAuthApi)'
+2023-03-05 15:37:10.777 +01:00  INF  Route matched with {action = "test", controller = "FinancialData"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] test(System.String) on controller AngularAuthApi.DcfCalculator.Controller.FinancialDataController (AngularAuthApi).
+2023-03-05 15:37:10.824 +01:00  INF  Executed action AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test (AngularAuthApi) in 22.5195ms
+2023-03-05 15:37:10.829 +01:00  INF  Executed endpoint 'AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test (AngularAuthApi)'
+2023-03-05 15:37:10.850 +01:00  ERR  An unhandled exception has occurred while executing the request.System.InvalidOperationException: Unable to resolve service for type 'AngularAuthApi.DcfCalculator.Abstract.ICoreDcfService' while attempting to activate 'AngularAuthApi.DcfCalculator.Controller.FinancialDataController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method10(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+
+2023-03-05 15:37:10.935 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/api/tester?ticker=meta - - - 500 - text/plain;+charset=utf-8 316.0593ms
+2023-03-05 15:38:28.670 +01:00  INF  User profile is available. Using 'C:\Users\yahia alioua\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-05 15:38:28.900 +01:00  INF  Now listening on: https://localhost:7063
+2023-03-05 15:38:28.900 +01:00  INF  Now listening on: http://localhost:5174
+2023-03-05 15:38:28.905 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-03-05 15:38:28.905 +01:00  INF  Hosting environment: Development
+2023-03-05 15:38:28.905 +01:00  INF  Content root path: C:\projects\AngularAuthApi\
+2023-03-05 15:38:29.152 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/index.html - -
+2023-03-05 15:38:29.489 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/index.html - - - 200 - text/html;charset=utf-8 339.5766ms
+2023-03-05 15:38:29.524 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_vs/browserLink - -
+2023-03-05 15:38:29.524 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - -
+2023-03-05 15:38:29.528 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 3.5049ms
+2023-03-05 15:38:29.542 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 17.8160ms
+2023-03-05 15:38:29.700 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - -
+2023-03-05 15:38:29.822 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 121.5463ms
+2023-03-05 15:39:01.857 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/api/tester?ticker=meta - -
+2023-03-05 15:39:01.916 +01:00  INF  Executing endpoint 'AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test (AngularAuthApi)'
+2023-03-05 15:39:02.007 +01:00  INF  Route matched with {action = "test", controller = "FinancialData"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] test(System.String) on controller AngularAuthApi.DcfCalculator.Controller.FinancialDataController (AngularAuthApi).
+2023-03-05 15:39:02.712 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-05 15:39:02.720 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-05 15:39:03.843 +01:00  INF  Received HTTP response headers after 1104.1686ms - 200
+2023-03-05 15:39:03.846 +01:00  INF  End processing HTTP request after 1155.6849ms - 200
+2023-03-05 15:39:05.161 +01:00  INF  Executing OkObjectResult, writing value of type 'Newtonsoft.Json.Linq.JArray'.
+2023-03-05 15:39:05.205 +01:00  INF  Executed action AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test (AngularAuthApi) in 3188.9349ms
+2023-03-05 15:39:05.206 +01:00  INF  Executed endpoint 'AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test (AngularAuthApi)'
+2023-03-05 15:39:05.208 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/api/tester?ticker=meta - - - 200 - application/json;+charset=utf-8 3350.7681ms
+2023-03-05 15:43:58.423 +01:00  INF  User profile is available. Using 'C:\Users\yahia alioua\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-05 15:43:58.666 +01:00  INF  Now listening on: https://localhost:7063
+2023-03-05 15:43:58.667 +01:00  INF  Now listening on: http://localhost:5174
+2023-03-05 15:43:58.677 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-03-05 15:43:58.677 +01:00  INF  Hosting environment: Development
+2023-03-05 15:43:58.678 +01:00  INF  Content root path: C:\projects\AngularAuthApi\
+2023-03-05 15:43:59.080 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/index.html - -
+2023-03-05 15:43:59.449 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/index.html - - - 200 - text/html;charset=utf-8 373.3914ms
+2023-03-05 15:43:59.469 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - -
+2023-03-05 15:43:59.469 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_vs/browserLink - -
+2023-03-05 15:43:59.473 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 4.0538ms
+2023-03-05 15:43:59.490 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 21.2151ms
+2023-03-05 15:43:59.806 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - -
+2023-03-05 15:43:59.991 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 184.5915ms
+2023-03-05 15:44:16.466 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/api/tester?ticker=meta - -
+2023-03-05 15:44:16.528 +01:00  INF  Executing endpoint 'AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test (AngularAuthApi)'
+2023-03-05 15:44:16.612 +01:00  INF  Route matched with {action = "test", controller = "FinancialData"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] test(System.String) on controller AngularAuthApi.DcfCalculator.Controller.FinancialDataController (AngularAuthApi).
+2023-03-05 15:44:16.674 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-05 15:44:16.680 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-05 15:44:17.786 +01:00  INF  Received HTTP response headers after 1095.5369ms - 200
+2023-03-05 15:44:17.788 +01:00  INF  End processing HTTP request after 1128.7369ms - 200
+2023-03-05 15:44:17.988 +01:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-03-05 15:44:18.045 +01:00  INF  Executed action AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test (AngularAuthApi) in 1422.8058ms
+2023-03-05 15:44:18.046 +01:00  INF  Executed endpoint 'AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test (AngularAuthApi)'
+2023-03-05 15:44:18.047 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/api/tester?ticker=meta - - - 200 - application/json;+charset=utf-8 1580.5460ms
+2023-03-05 15:45:10.376 +01:00  INF  User profile is available. Using 'C:\Users\yahia alioua\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-05 15:45:11.163 +01:00  INF  Now listening on: https://localhost:7063
+2023-03-05 15:45:11.163 +01:00  INF  Now listening on: http://localhost:5174
+2023-03-05 15:45:11.168 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-03-05 15:45:11.169 +01:00  INF  Hosting environment: Development
+2023-03-05 15:45:11.169 +01:00  INF  Content root path: C:\projects\AngularAuthApi\
+2023-03-05 15:45:12.185 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/index.html - -
+2023-03-05 15:45:12.838 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/index.html - - - 200 - text/html;charset=utf-8 659.0727ms
+2023-03-05 15:45:12.881 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_vs/browserLink - -
+2023-03-05 15:45:12.881 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - -
+2023-03-05 15:45:12.901 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 19.7455ms
+2023-03-05 15:45:12.965 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 84.7878ms
+2023-03-05 15:45:13.224 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - -
+2023-03-05 15:45:13.499 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 274.5838ms
+2023-03-05 15:45:25.862 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/api/tester?ticker=meta - -
+2023-03-05 15:45:26.066 +01:00  INF  Executing endpoint 'AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test (AngularAuthApi)'
+2023-03-05 15:45:26.181 +01:00  INF  Route matched with {action = "test", controller = "FinancialData"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] test(System.String) on controller AngularAuthApi.DcfCalculator.Controller.FinancialDataController (AngularAuthApi).
+2023-03-05 15:45:33.456 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-05 15:45:33.470 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-05 15:45:35.617 +01:00  INF  Received HTTP response headers after 2108.3228ms - 200
+2023-03-05 15:45:35.623 +01:00  INF  End processing HTTP request after 2183.2517ms - 200
+2023-03-05 15:50:46.125 +01:00  INF  User profile is available. Using 'C:\Users\yahia alioua\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-05 15:50:46.313 +01:00  INF  Now listening on: https://localhost:7063
+2023-03-05 15:50:46.313 +01:00  INF  Now listening on: http://localhost:5174
+2023-03-05 15:50:46.317 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-03-05 15:50:46.317 +01:00  INF  Hosting environment: Development
+2023-03-05 15:50:46.317 +01:00  INF  Content root path: C:\projects\AngularAuthApi\
+2023-03-05 15:50:46.998 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/index.html - -
+2023-03-05 15:50:47.456 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/index.html - - - 200 - text/html;charset=utf-8 461.0281ms
+2023-03-05 15:50:47.474 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - -
+2023-03-05 15:50:47.499 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 24.2242ms
+2023-03-05 15:50:47.522 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_vs/browserLink - -
+2023-03-05 15:50:47.542 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 20.4239ms
+2023-03-05 15:50:47.712 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - -
+2023-03-05 15:50:47.867 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 154.9786ms
+2023-03-05 15:51:00.036 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/api/income-statements/meta - -
+2023-03-05 15:51:00.105 +01:00  INF  Executing endpoint 'AngularAuthApi.DcfCalculator.Controller.FinancialDataController.GetIncomeStatements (AngularAuthApi)'
+2023-03-05 15:51:00.200 +01:00  INF  Route matched with {action = "GetIncomeStatements", controller = "FinancialData"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetIncomeStatements(System.String) on controller AngularAuthApi.DcfCalculator.Controller.FinancialDataController (AngularAuthApi).
+2023-03-05 15:51:00.264 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-05 15:51:00.273 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-05 15:51:01.466 +01:00  INF  Received HTTP response headers after 1172.772ms - 200
+2023-03-05 15:51:01.471 +01:00  INF  End processing HTTP request after 1226.2618ms - 200
+2023-03-05 15:51:01.494 +01:00  INF  Executing OkObjectResult, writing value of type 'System.String'.
+2023-03-05 15:51:01.523 +01:00  INF  Executed action AngularAuthApi.DcfCalculator.Controller.FinancialDataController.GetIncomeStatements (AngularAuthApi) in 1297.5808ms
+2023-03-05 15:51:01.525 +01:00  INF  Executed endpoint 'AngularAuthApi.DcfCalculator.Controller.FinancialDataController.GetIncomeStatements (AngularAuthApi)'
+2023-03-05 15:51:01.528 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/api/income-statements/meta - - - 200 - text/plain;+charset=utf-8 1491.2337ms
+2023-03-05 16:21:41.841 +01:00  INF  User profile is available. Using 'C:\Users\yahia alioua\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-05 16:21:42.260 +01:00  INF  Now listening on: https://localhost:7063
+2023-03-05 16:21:42.260 +01:00  INF  Now listening on: http://localhost:5174
+2023-03-05 16:21:42.266 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-03-05 16:21:42.267 +01:00  INF  Hosting environment: Development
+2023-03-05 16:21:42.267 +01:00  INF  Content root path: C:\projects\AngularAuthApi\
+2023-03-05 16:21:42.865 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/index.html - -
+2023-03-05 16:21:43.763 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/index.html - - - 200 - text/html;charset=utf-8 908.2224ms
+2023-03-05 16:21:43.818 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_vs/browserLink - -
+2023-03-05 16:21:43.818 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - -
+2023-03-05 16:21:43.836 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 17.9144ms
+2023-03-05 16:21:43.859 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 41.1116ms
+2023-03-05 16:21:44.054 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - -
+2023-03-05 16:21:44.266 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 212.1053ms
+2023-03-05 16:21:55.771 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/api/tester?ticker=meta - -
+2023-03-05 16:21:55.981 +01:00  INF  Executing endpoint 'AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test (AngularAuthApi)'
+2023-03-05 16:21:56.087 +01:00  INF  Route matched with {action = "test", controller = "FinancialData"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] test(System.String) on controller AngularAuthApi.DcfCalculator.Controller.FinancialDataController (AngularAuthApi).
+2023-03-05 16:22:07.400 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-05 16:22:07.413 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-05 16:22:08.406 +01:00  INF  Received HTTP response headers after 973.0846ms - 200
+2023-03-05 16:22:08.413 +01:00  INF  End processing HTTP request after 1034.179ms - 200
+2023-03-05 16:22:08.944 +01:00  INF  Executed action AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test (AngularAuthApi) in 12842.2832ms
+2023-03-05 16:22:08.948 +01:00  INF  Executed endpoint 'AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test (AngularAuthApi)'
+2023-03-05 16:22:08.973 +01:00  ERR  An unhandled exception has occurred while executing the request.System.Text.Json.JsonException: The JSON value could not be converted to System.Int32. Path: $[0].revenue | LineNumber: 10 | BytePositionInLine: 27.
+ ---> System.FormatException: Either the JSON value is not in a supported format, or is out of bounds for an Int32.
+   at System.Text.Json.ThrowHelper.ThrowFormatException(NumericType numericType)
+   at System.Text.Json.Serialization.Converters.Int32Converter.Read(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, Utf8JsonReader& reader, Exception ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at AngularAuthApi.DcfCalculator.HttpClient.FinancialPrepHttpCalls.GetDataCalcFcff(String Ticker) in C:\projects\AngularAuthApi\DcfCalculator\HttpClient\FinancialPrepHttpCalls.cs:line 38
+   at AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test(String ticker) in C:\projects\AngularAuthApi\DcfCalculator\Controller\FinancialDataController.cs:line 41
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+
+2023-03-05 16:22:09.182 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/api/tester?ticker=meta - - - 500 - text/plain;+charset=utf-8 13411.7478ms
+2023-03-05 16:26:01.681 +01:00  INF  User profile is available. Using 'C:\Users\yahia alioua\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-05 16:26:02.019 +01:00  INF  Now listening on: https://localhost:7063
+2023-03-05 16:26:02.019 +01:00  INF  Now listening on: http://localhost:5174
+2023-03-05 16:26:02.024 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-03-05 16:26:02.025 +01:00  INF  Hosting environment: Development
+2023-03-05 16:26:02.025 +01:00  INF  Content root path: C:\projects\AngularAuthApi\
+2023-03-05 16:26:02.711 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/index.html - -
+2023-03-05 16:26:03.508 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/index.html - - - 200 - text/html;charset=utf-8 820.7009ms
+2023-03-05 16:26:03.511 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - -
+2023-03-05 16:26:03.565 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_vs/browserLink - -
+2023-03-05 16:26:03.572 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 62.1558ms
+2023-03-05 16:26:03.611 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 46.8286ms
+2023-03-05 16:26:03.763 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - -
+2023-03-05 16:26:03.998 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 234.5790ms
+2023-03-05 16:26:13.538 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/api/tester?ticker=meta - -
+2023-03-05 16:26:13.736 +01:00  INF  Executing endpoint 'AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test (AngularAuthApi)'
+2023-03-05 16:26:13.854 +01:00  INF  Route matched with {action = "test", controller = "FinancialData"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] test(System.String) on controller AngularAuthApi.DcfCalculator.Controller.FinancialDataController (AngularAuthApi).
+2023-03-05 16:26:17.318 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-05 16:26:17.330 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-05 16:26:18.477 +01:00  INF  Received HTTP response headers after 1138.2566ms - 200
+2023-03-05 16:26:18.481 +01:00  INF  End processing HTTP request after 1189.6923ms - 200
+2023-03-05 16:26:19.269 +01:00  INF  Executed action AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test (AngularAuthApi) in 5404.2275ms
+2023-03-05 16:26:19.271 +01:00  INF  Executed endpoint 'AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test (AngularAuthApi)'
+2023-03-05 16:26:19.281 +01:00  ERR  An unhandled exception has occurred while executing the request.System.Text.Json.JsonException: The JSON value could not be converted to System.Int32. Path: $[0].revenue | LineNumber: 10 | BytePositionInLine: 27.
+ ---> System.FormatException: Either the JSON value is not in a supported format, or is out of bounds for an Int32.
+   at System.Text.Json.ThrowHelper.ThrowFormatException(NumericType numericType)
+   at System.Text.Json.Serialization.Converters.Int32Converter.Read(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, Utf8JsonReader& reader, Exception ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at AngularAuthApi.DcfCalculator.HttpClient.FinancialPrepHttpCalls.GetDataCalcFcff(String Ticker) in C:\projects\AngularAuthApi\DcfCalculator\HttpClient\FinancialPrepHttpCalls.cs:line 38
+   at AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test(String ticker) in C:\projects\AngularAuthApi\DcfCalculator\Controller\FinancialDataController.cs:line 41
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+
+2023-03-05 16:26:19.384 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/api/tester?ticker=meta - - - 500 - text/plain;+charset=utf-8 5845.7606ms
+2023-03-05 16:28:05.912 +01:00  INF  User profile is available. Using 'C:\Users\yahia alioua\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-05 16:28:06.244 +01:00  INF  Now listening on: https://localhost:7063
+2023-03-05 16:28:06.244 +01:00  INF  Now listening on: http://localhost:5174
+2023-03-05 16:28:06.250 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-03-05 16:28:06.250 +01:00  INF  Hosting environment: Development
+2023-03-05 16:28:06.251 +01:00  INF  Content root path: C:\projects\AngularAuthApi\
+2023-03-05 16:28:06.896 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/index.html - -
+2023-03-05 16:28:07.539 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/index.html - - - 200 - text/html;charset=utf-8 658.3418ms
+2023-03-05 16:28:07.557 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - -
+2023-03-05 16:28:07.567 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 10.4423ms
+2023-03-05 16:28:07.584 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_vs/browserLink - -
+2023-03-05 16:28:07.617 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 33.5018ms
+2023-03-05 16:28:07.817 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - -
+2023-03-05 16:28:08.066 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 248.9034ms
+2023-03-05 16:28:19.363 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/api/tester?ticker=meta - -
+2023-03-05 16:28:19.556 +01:00  INF  Executing endpoint 'AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test (AngularAuthApi)'
+2023-03-05 16:28:19.664 +01:00  INF  Route matched with {action = "test", controller = "FinancialData"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] test(System.String) on controller AngularAuthApi.DcfCalculator.Controller.FinancialDataController (AngularAuthApi).
+2023-03-05 16:28:23.377 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-05 16:28:23.387 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-05 16:28:24.548 +01:00  INF  Received HTTP response headers after 1148.3298ms - 200
+2023-03-05 16:28:24.556 +01:00  INF  End processing HTTP request after 1195.6859ms - 200
+2023-03-05 16:30:24.923 +01:00  INF  User profile is available. Using 'C:\Users\yahia alioua\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-05 16:30:25.163 +01:00  INF  Now listening on: https://localhost:7063
+2023-03-05 16:30:25.163 +01:00  INF  Now listening on: http://localhost:5174
+2023-03-05 16:30:25.172 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-03-05 16:30:25.173 +01:00  INF  Hosting environment: Development
+2023-03-05 16:30:25.173 +01:00  INF  Content root path: C:\projects\AngularAuthApi\
+2023-03-05 16:30:25.852 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/index.html - -
+2023-03-05 16:30:26.303 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/index.html - - - 200 - text/html;charset=utf-8 458.2436ms
+2023-03-05 16:30:26.392 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - -
+2023-03-05 16:30:26.392 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_vs/browserLink - -
+2023-03-05 16:30:26.398 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 5.7318ms
+2023-03-05 16:30:26.415 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 22.9090ms
+2023-03-05 16:30:26.606 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - -
+2023-03-05 16:30:26.745 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 139.6647ms
+2023-03-05 16:30:33.924 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/api/balance-sheet/meta - -
+2023-03-05 16:30:33.988 +01:00  INF  Executing endpoint 'AngularAuthApi.DcfCalculator.Controller.FinancialDataController.GetBalanceSheet (AngularAuthApi)'
+2023-03-05 16:30:34.075 +01:00  INF  Route matched with {action = "GetBalanceSheet", controller = "FinancialData"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBalanceSheet(System.String) on controller AngularAuthApi.DcfCalculator.Controller.FinancialDataController (AngularAuthApi).
+2023-03-05 16:30:34.136 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-05 16:30:34.143 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-05 16:30:34.980 +01:00  INF  Received HTTP response headers after 827.4135ms - 200
+2023-03-05 16:30:34.981 +01:00  INF  End processing HTTP request after 863.0741ms - 200
+2023-03-05 16:30:34.991 +01:00  INF  Executing OkObjectResult, writing value of type 'System.String'.
+2023-03-05 16:30:35.002 +01:00  INF  Executed action AngularAuthApi.DcfCalculator.Controller.FinancialDataController.GetBalanceSheet (AngularAuthApi) in 918.4284ms
+2023-03-05 16:30:35.003 +01:00  INF  Executed endpoint 'AngularAuthApi.DcfCalculator.Controller.FinancialDataController.GetBalanceSheet (AngularAuthApi)'
+2023-03-05 16:30:35.004 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/api/balance-sheet/meta - - - 200 - text/plain;+charset=utf-8 1080.0451ms
+2023-03-05 16:43:12.262 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/api/cash-flow-statements/meta - -
+2023-03-05 16:43:12.267 +01:00  INF  Executing endpoint 'AngularAuthApi.DcfCalculator.Controller.FinancialDataController.GetCashFlowStatements (AngularAuthApi)'
+2023-03-05 16:43:12.275 +01:00  INF  Route matched with {action = "GetCashFlowStatements", controller = "FinancialData"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCashFlowStatements(System.String) on controller AngularAuthApi.DcfCalculator.Controller.FinancialDataController (AngularAuthApi).
+2023-03-05 16:43:12.279 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-05 16:43:12.280 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-05 16:43:13.159 +01:00  INF  Received HTTP response headers after 878.7301ms - 200
+2023-03-05 16:43:13.159 +01:00  INF  End processing HTTP request after 879.4832ms - 200
+2023-03-05 16:43:13.160 +01:00  INF  Executing OkObjectResult, writing value of type 'System.String'.
+2023-03-05 16:43:13.160 +01:00  INF  Executed action AngularAuthApi.DcfCalculator.Controller.FinancialDataController.GetCashFlowStatements (AngularAuthApi) in 885.0846ms
+2023-03-05 16:43:13.161 +01:00  INF  Executed endpoint 'AngularAuthApi.DcfCalculator.Controller.FinancialDataController.GetCashFlowStatements (AngularAuthApi)'
+2023-03-05 16:43:13.161 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/api/cash-flow-statements/meta - - - 200 - text/plain;+charset=utf-8 898.5463ms
+2023-03-05 17:10:13.970 +01:00  INF  User profile is available. Using 'C:\Users\yahia alioua\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-05 17:10:14.376 +01:00  INF  Now listening on: https://localhost:7063
+2023-03-05 17:10:14.377 +01:00  INF  Now listening on: http://localhost:5174
+2023-03-05 17:10:14.384 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-03-05 17:10:14.384 +01:00  INF  Hosting environment: Development
+2023-03-05 17:10:14.385 +01:00  INF  Content root path: C:\projects\AngularAuthApi\
+2023-03-05 17:10:15.761 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/index.html - -
+2023-03-05 17:10:16.392 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - -
+2023-03-05 17:10:16.392 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/index.html - - - 200 - text/html;charset=utf-8 638.4308ms
+2023-03-05 17:10:16.409 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 16.9117ms
+2023-03-05 17:10:16.428 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_vs/browserLink - -
+2023-03-05 17:10:16.472 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 43.8134ms
+2023-03-05 17:10:16.634 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - -
+2023-03-05 17:10:16.861 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 226.1190ms
+2023-03-05 17:10:26.339 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/api/tester?ticker=meta - -
+2023-03-05 17:10:26.482 +01:00  INF  Executing endpoint 'AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test (AngularAuthApi)'
+2023-03-05 17:10:26.579 +01:00  INF  Route matched with {action = "test", controller = "FinancialData"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] test(System.String) on controller AngularAuthApi.DcfCalculator.Controller.FinancialDataController (AngularAuthApi).
+2023-03-05 17:10:26.702 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-05 17:10:26.713 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-05 17:10:27.498 +01:00  INF  Received HTTP response headers after 774.195ms - 200
+2023-03-05 17:10:27.501 +01:00  INF  End processing HTTP request after 819.5163ms - 200
+2023-03-05 17:10:28.428 +01:00  INF  Executed action AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test (AngularAuthApi) in 1832.8867ms
+2023-03-05 17:10:28.431 +01:00  INF  Executed endpoint 'AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test (AngularAuthApi)'
+2023-03-05 17:10:28.449 +01:00  ERR  An unhandled exception has occurred while executing the request.Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON array (e.g. [1,2,3]) into type 'AngularAuthApi.DcfCalculator.Models.IncomeStatements' because the type requires a JSON object (e.g. {"name":"value"}) to deserialize correctly.
+To fix this error either change the JSON to a JSON object (e.g. {"name":"value"}) or change the deserialized type to an array or a type that implements a collection interface (e.g. ICollection, IList) like List<T> that can be deserialized from a JSON array. JsonArrayAttribute can also be added to the type to force it to deserialize from a JSON array.
+Path '', line 1, position 1.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureArrayContract(JsonReader reader, Type objectType, JsonContract contract)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at AngularAuthApi.DcfCalculator.HttpClient.FinancialPrepHttpCalls.GetDataCalcFcff(String Ticker) in C:\projects\AngularAuthApi\DcfCalculator\HttpClient\FinancialPrepHttpCalls.cs:line 39
+   at AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test(String ticker) in C:\projects\AngularAuthApi\DcfCalculator\Controller\FinancialDataController.cs:line 41
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+
+2023-03-05 17:10:28.632 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/api/tester?ticker=meta - - - 500 - text/plain;+charset=utf-8 2293.4659ms
+2023-03-05 17:42:14.159 +01:00  INF  User profile is available. Using 'C:\Users\yahia alioua\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-05 17:42:14.526 +01:00  INF  Now listening on: https://localhost:7063
+2023-03-05 17:42:14.527 +01:00  INF  Now listening on: http://localhost:5174
+2023-03-05 17:42:14.533 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-03-05 17:42:14.534 +01:00  INF  Hosting environment: Development
+2023-03-05 17:42:14.534 +01:00  INF  Content root path: C:\projects\AngularAuthApi\
+2023-03-05 17:42:15.321 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/index.html - -
+2023-03-05 17:42:15.997 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - -
+2023-03-05 17:42:16.006 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/index.html - - - 200 - text/html;charset=utf-8 690.9362ms
+2023-03-05 17:42:16.006 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 9.2520ms
+2023-03-05 17:42:16.029 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_vs/browserLink - -
+2023-03-05 17:42:16.079 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 49.1114ms
+2023-03-05 17:42:16.311 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - -
+2023-03-05 17:42:16.535 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 224.1308ms
+2023-03-05 17:42:28.325 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/api/tester?ticker=meta - -
+2023-03-05 17:42:28.514 +01:00  INF  Executing endpoint 'AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test (AngularAuthApi)'
+2023-03-05 17:42:28.617 +01:00  INF  Route matched with {action = "test", controller = "FinancialData"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] test(System.String) on controller AngularAuthApi.DcfCalculator.Controller.FinancialDataController (AngularAuthApi).
+2023-03-05 17:42:32.560 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-05 17:42:32.569 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-05 17:42:33.668 +01:00  INF  Received HTTP response headers after 1084.9838ms - 200
+2023-03-05 17:42:33.674 +01:00  INF  End processing HTTP request after 1131.1394ms - 200
+2023-03-05 17:42:34.198 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-05 17:42:34.198 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-05 17:42:34.365 +01:00  INF  Received HTTP response headers after 167.3609ms - 200
+2023-03-05 17:42:34.365 +01:00  INF  End processing HTTP request after 167.79ms - 200
+2023-03-05 17:42:34.407 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-05 17:42:34.407 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-05 17:42:34.615 +01:00  INF  Received HTTP response headers after 207.5324ms - 200
+2023-03-05 17:42:34.615 +01:00  INF  End processing HTTP request after 208.097ms - 200
+2023-03-05 18:04:50.422 +01:00  INF  User profile is available. Using 'C:\Users\yahia alioua\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-05 18:04:50.751 +01:00  INF  Now listening on: https://localhost:7063
+2023-03-05 18:04:50.751 +01:00  INF  Now listening on: http://localhost:5174
+2023-03-05 18:04:50.757 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-03-05 18:04:50.757 +01:00  INF  Hosting environment: Development
+2023-03-05 18:04:50.758 +01:00  INF  Content root path: C:\projects\AngularAuthApi\
+2023-03-05 18:04:51.726 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/index.html - -
+2023-03-05 18:04:52.631 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - -
+2023-03-05 18:04:52.638 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/index.html - - - 200 - text/html;charset=utf-8 931.6183ms
+2023-03-05 18:04:52.651 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 20.3202ms
+2023-03-05 18:04:52.665 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_vs/browserLink - -
+2023-03-05 18:04:52.709 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 43.6131ms
+2023-03-05 18:04:52.931 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - -
+2023-03-05 18:04:53.158 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 226.4771ms
+2023-03-05 18:05:02.730 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/api/tester?ticker=meta - -
+2023-03-05 18:05:02.975 +01:00  INF  Executing endpoint 'AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test (AngularAuthApi)'
+2023-03-05 18:05:03.089 +01:00  INF  Route matched with {action = "test", controller = "FinancialData"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] test(System.String) on controller AngularAuthApi.DcfCalculator.Controller.FinancialDataController (AngularAuthApi).
+2023-03-05 18:05:06.381 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-05 18:05:06.385 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-05 18:05:08.042 +01:00  INF  Received HTTP response headers after 1630.49ms - 200
+2023-03-05 18:05:08.047 +01:00  INF  End processing HTTP request after 1675.1352ms - 200
+2023-03-05 18:05:08.591 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-05 18:05:08.591 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-05 18:05:08.791 +01:00  INF  Received HTTP response headers after 199.5312ms - 200
+2023-03-05 18:05:08.791 +01:00  INF  End processing HTTP request after 200.1528ms - 200
+2023-03-05 18:05:08.898 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-05 18:05:08.898 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-05 18:05:09.096 +01:00  INF  Received HTTP response headers after 197.7468ms - 200
+2023-03-05 18:05:09.096 +01:00  INF  End processing HTTP request after 198.375ms - 200

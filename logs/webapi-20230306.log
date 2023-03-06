@@ -1,0 +1,1294 @@
+2023-03-06 14:13:54.095 +01:00  INF  User profile is available. Using 'C:\Users\yahia alioua\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-06 14:13:54.783 +01:00  INF  Now listening on: https://localhost:7063
+2023-03-06 14:13:54.784 +01:00  INF  Now listening on: http://localhost:5174
+2023-03-06 14:13:54.788 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-03-06 14:13:54.789 +01:00  INF  Hosting environment: Development
+2023-03-06 14:13:54.789 +01:00  INF  Content root path: C:\projects\AngularAuthApi\
+2023-03-06 14:13:55.899 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/index.html - -
+2023-03-06 14:13:56.713 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - -
+2023-03-06 14:13:56.728 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 12.6641ms
+2023-03-06 14:13:56.731 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/index.html - - - 200 - text/html;charset=utf-8 844.6851ms
+2023-03-06 14:13:56.759 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_vs/browserLink - -
+2023-03-06 14:13:56.796 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 36.5850ms
+2023-03-06 14:13:56.980 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - -
+2023-03-06 14:13:57.185 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 205.0222ms
+2023-03-06 14:14:06.632 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/api/tester?ticker=meta - -
+2023-03-06 14:14:06.828 +01:00  INF  Executing endpoint 'AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test (AngularAuthApi)'
+2023-03-06 14:14:06.938 +01:00  INF  Route matched with {action = "test", controller = "FinancialData"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] test(System.String) on controller AngularAuthApi.DcfCalculator.Controller.FinancialDataController (AngularAuthApi).
+2023-03-06 14:14:07.083 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 14:14:07.091 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 14:14:08.372 +01:00  INF  Received HTTP response headers after 1251.1749ms - 200
+2023-03-06 14:14:08.380 +01:00  INF  End processing HTTP request after 1314.8548ms - 200
+2023-03-06 14:14:08.998 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 14:14:08.999 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 14:14:09.173 +01:00  INF  Received HTTP response headers after 174.58ms - 200
+2023-03-06 14:14:09.174 +01:00  INF  End processing HTTP request after 175.3978ms - 200
+2023-03-06 14:14:09.252 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 14:14:09.252 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 14:14:09.428 +01:00  INF  Received HTTP response headers after 175.9327ms - 200
+2023-03-06 14:14:09.428 +01:00  INF  End processing HTTP request after 176.748ms - 200
+2023-03-06 14:14:09.501 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 14:14:09.501 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 14:14:09.735 +01:00  INF  Received HTTP response headers after 234.0172ms - 200
+2023-03-06 14:14:09.736 +01:00  INF  End processing HTTP request after 235.1247ms - 200
+2023-03-06 14:14:09.737 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 14:14:09.737 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 14:14:09.940 +01:00  INF  Received HTTP response headers after 202.8197ms - 200
+2023-03-06 14:14:09.941 +01:00  INF  End processing HTTP request after 203.5446ms - 200
+2023-03-06 14:14:09.944 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 14:14:09.944 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 14:14:10.153 +01:00  INF  Received HTTP response headers after 208.6225ms - 200
+2023-03-06 14:14:10.154 +01:00  INF  End processing HTTP request after 209.4104ms - 200
+2023-03-06 14:14:10.155 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 14:14:10.155 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 14:14:10.349 +01:00  INF  Received HTTP response headers after 194.3428ms - 200
+2023-03-06 14:14:10.350 +01:00  INF  End processing HTTP request after 194.9464ms - 200
+2023-03-06 14:14:10.351 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 14:14:10.351 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 14:14:10.665 +01:00  INF  Received HTTP response headers after 314.2925ms - 200
+2023-03-06 14:14:10.666 +01:00  INF  End processing HTTP request after 315.3729ms - 200
+2023-03-06 14:14:10.668 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 14:14:10.668 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 14:14:10.865 +01:00  INF  Received HTTP response headers after 196.8584ms - 200
+2023-03-06 14:14:10.866 +01:00  INF  End processing HTTP request after 197.744ms - 200
+2023-03-06 14:14:10.868 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 14:14:10.868 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 14:14:11.067 +01:00  INF  Received HTTP response headers after 198.5251ms - 200
+2023-03-06 14:14:11.067 +01:00  INF  End processing HTTP request after 199.4175ms - 200
+2023-03-06 14:14:11.068 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 14:14:11.069 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 14:14:11.271 +01:00  INF  Received HTTP response headers after 202.5358ms - 200
+2023-03-06 14:14:11.272 +01:00  INF  End processing HTTP request after 203.33ms - 200
+2023-03-06 14:14:11.273 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 14:14:11.273 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 14:14:11.476 +01:00  INF  Received HTTP response headers after 202.8202ms - 200
+2023-03-06 14:14:11.477 +01:00  INF  End processing HTTP request after 203.5368ms - 200
+2023-03-06 14:14:11.478 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 14:14:11.478 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 14:14:11.993 +01:00  INF  Received HTTP response headers after 514.8214ms - 200
+2023-03-06 14:14:11.994 +01:00  INF  End processing HTTP request after 515.756ms - 200
+2023-03-06 14:14:11.999 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 14:14:12.000 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 14:14:12.193 +01:00  INF  Received HTTP response headers after 193.2962ms - 200
+2023-03-06 14:14:12.194 +01:00  INF  End processing HTTP request after 194.1539ms - 200
+2023-03-06 14:14:12.196 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 14:14:12.196 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 14:14:12.398 +01:00  INF  Received HTTP response headers after 202.234ms - 200
+2023-03-06 14:14:12.399 +01:00  INF  End processing HTTP request after 203.1891ms - 200
+2023-03-06 14:14:12.402 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 14:14:12.402 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 14:14:12.714 +01:00  INF  Received HTTP response headers after 312.2289ms - 200
+2023-03-06 14:14:12.715 +01:00  INF  End processing HTTP request after 313.2646ms - 200
+2023-03-06 14:14:12.773 +01:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-03-06 14:14:12.890 +01:00  INF  Executed action AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test (AngularAuthApi) in 5915.0989ms
+2023-03-06 14:14:12.894 +01:00  INF  Executed endpoint 'AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test (AngularAuthApi)'
+2023-03-06 14:14:12.908 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/api/tester?ticker=meta - - - 200 - application/json;+charset=utf-8 6275.7692ms
+2023-03-06 16:05:49.869 +01:00  INF  User profile is available. Using 'C:\Users\yahia alioua\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-06 16:05:50.198 +01:00  INF  Now listening on: https://localhost:7063
+2023-03-06 16:05:50.198 +01:00  INF  Now listening on: http://localhost:5174
+2023-03-06 16:05:50.202 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-03-06 16:05:50.204 +01:00  INF  Hosting environment: Development
+2023-03-06 16:05:50.204 +01:00  INF  Content root path: C:\projects\AngularAuthApi\
+2023-03-06 16:05:50.861 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/index.html - -
+2023-03-06 16:05:51.424 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/index.html - - - 200 - text/html;charset=utf-8 578.2661ms
+2023-03-06 16:05:51.442 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - -
+2023-03-06 16:05:51.451 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 8.7717ms
+2023-03-06 16:05:51.460 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_vs/browserLink - -
+2023-03-06 16:05:51.492 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 32.1184ms
+2023-03-06 16:05:51.644 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - -
+2023-03-06 16:05:51.813 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 168.5910ms
+2023-03-06 16:06:11.367 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/api/tester?ticker=meta&sharePrice=187 - -
+2023-03-06 16:06:11.564 +01:00  INF  Executing endpoint 'AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test (AngularAuthApi)'
+2023-03-06 16:06:11.667 +01:00  INF  Route matched with {action = "test", controller = "FinancialData"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] test(System.String, Double) on controller AngularAuthApi.DcfCalculator.Controller.FinancialDataController (AngularAuthApi).
+2023-03-06 16:06:15.563 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:15.568 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:16.681 +01:00  INF  Received HTTP response headers after 1101.3847ms - 200
+2023-03-06 16:06:16.684 +01:00  INF  End processing HTTP request after 1141.344ms - 200
+2023-03-06 16:06:17.280 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:17.280 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:17.653 +01:00  INF  Received HTTP response headers after 372.5929ms - 200
+2023-03-06 16:06:17.653 +01:00  INF  End processing HTTP request after 373.4379ms - 200
+2023-03-06 16:06:17.660 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:17.660 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:17.867 +01:00  INF  Received HTTP response headers after 206.142ms - 200
+2023-03-06 16:06:17.867 +01:00  INF  End processing HTTP request after 207.1618ms - 200
+2023-03-06 16:06:17.875 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:17.875 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:18.063 +01:00  INF  Received HTTP response headers after 187.9763ms - 200
+2023-03-06 16:06:18.063 +01:00  INF  End processing HTTP request after 188.8208ms - 200
+2023-03-06 16:06:18.124 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:18.125 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:18.304 +01:00  INF  Received HTTP response headers after 179.2027ms - 200
+2023-03-06 16:06:18.304 +01:00  INF  End processing HTTP request after 179.82ms - 200
+2023-03-06 16:06:18.307 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:18.307 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:18.474 +01:00  INF  Received HTTP response headers after 166.4521ms - 200
+2023-03-06 16:06:18.474 +01:00  INF  End processing HTTP request after 166.9308ms - 200
+2023-03-06 16:06:18.523 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:18.523 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:18.696 +01:00  INF  Received HTTP response headers after 172.913ms - 200
+2023-03-06 16:06:18.697 +01:00  INF  End processing HTTP request after 173.5531ms - 200
+2023-03-06 16:06:18.699 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:18.699 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:18.936 +01:00  INF  Received HTTP response headers after 236.7713ms - 200
+2023-03-06 16:06:18.936 +01:00  INF  End processing HTTP request after 237.7032ms - 200
+2023-03-06 16:06:18.939 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:18.939 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:19.100 +01:00  INF  Received HTTP response headers after 160.3717ms - 200
+2023-03-06 16:06:19.100 +01:00  INF  End processing HTTP request after 161.2263ms - 200
+2023-03-06 16:06:19.102 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:19.102 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:19.296 +01:00  INF  Received HTTP response headers after 194.2619ms - 200
+2023-03-06 16:06:19.297 +01:00  INF  End processing HTTP request after 195.0708ms - 200
+2023-03-06 16:06:19.299 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:19.299 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:19.701 +01:00  INF  Received HTTP response headers after 402.2831ms - 200
+2023-03-06 16:06:19.702 +01:00  INF  End processing HTTP request after 403.1467ms - 200
+2023-03-06 16:06:19.703 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:19.704 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:19.908 +01:00  INF  Received HTTP response headers after 203.8111ms - 200
+2023-03-06 16:06:19.908 +01:00  INF  End processing HTTP request after 204.7292ms - 200
+2023-03-06 16:06:19.910 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:19.910 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:20.162 +01:00  INF  Received HTTP response headers after 252.0519ms - 200
+2023-03-06 16:06:20.163 +01:00  INF  End processing HTTP request after 252.8198ms - 200
+2023-03-06 16:06:20.164 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:20.164 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:20.374 +01:00  INF  Received HTTP response headers after 210.1643ms - 200
+2023-03-06 16:06:20.375 +01:00  INF  End processing HTTP request after 210.9538ms - 200
+2023-03-06 16:06:20.377 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:20.377 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:20.531 +01:00  INF  Received HTTP response headers after 154.3812ms - 200
+2023-03-06 16:06:20.532 +01:00  INF  End processing HTTP request after 155.1547ms - 200
+2023-03-06 16:06:20.533 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:20.533 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:20.725 +01:00  INF  Received HTTP response headers after 191.9149ms - 200
+2023-03-06 16:06:20.726 +01:00  INF  End processing HTTP request after 192.5662ms - 200
+2023-03-06 16:06:20.727 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:20.727 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:20.930 +01:00  INF  Received HTTP response headers after 202.7793ms - 200
+2023-03-06 16:06:20.930 +01:00  INF  End processing HTTP request after 203.5529ms - 200
+2023-03-06 16:06:20.936 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:20.937 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:21.182 +01:00  INF  Received HTTP response headers after 244.9597ms - 200
+2023-03-06 16:06:21.182 +01:00  INF  End processing HTTP request after 245.965ms - 200
+2023-03-06 16:06:21.184 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:21.184 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:21.340 +01:00  INF  Received HTTP response headers after 155.202ms - 200
+2023-03-06 16:06:21.341 +01:00  INF  End processing HTTP request after 156.2973ms - 200
+2023-03-06 16:06:21.343 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:21.343 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:21.544 +01:00  INF  Received HTTP response headers after 200.8196ms - 200
+2023-03-06 16:06:21.545 +01:00  INF  End processing HTTP request after 201.6301ms - 200
+2023-03-06 16:06:21.554 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:21.554 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:21.749 +01:00  INF  Received HTTP response headers after 195.1662ms - 200
+2023-03-06 16:06:21.750 +01:00  INF  End processing HTTP request after 195.8626ms - 200
+2023-03-06 16:06:21.751 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:21.751 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:21.954 +01:00  INF  Received HTTP response headers after 202.7082ms - 200
+2023-03-06 16:06:21.954 +01:00  INF  End processing HTTP request after 203.4907ms - 200
+2023-03-06 16:06:21.957 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:21.957 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:22.162 +01:00  INF  Received HTTP response headers after 205.2711ms - 200
+2023-03-06 16:06:22.163 +01:00  INF  End processing HTTP request after 206.1269ms - 200
+2023-03-06 16:06:22.163 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:22.163 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:22.364 +01:00  INF  Received HTTP response headers after 200.4228ms - 200
+2023-03-06 16:06:22.364 +01:00  INF  End processing HTTP request after 201.0658ms - 200
+2023-03-06 16:06:22.366 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:22.366 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:22.568 +01:00  INF  Received HTTP response headers after 202.3404ms - 200
+2023-03-06 16:06:22.569 +01:00  INF  End processing HTTP request after 203.0734ms - 200
+2023-03-06 16:06:22.571 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:22.571 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:22.898 +01:00  INF  Received HTTP response headers after 326.2145ms - 200
+2023-03-06 16:06:22.898 +01:00  INF  End processing HTTP request after 327.1029ms - 200
+2023-03-06 16:06:22.899 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:22.899 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:23.081 +01:00  INF  Received HTTP response headers after 181.0159ms - 200
+2023-03-06 16:06:23.081 +01:00  INF  End processing HTTP request after 181.8684ms - 200
+2023-03-06 16:06:23.082 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:23.082 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:23.285 +01:00  INF  Received HTTP response headers after 202.5773ms - 200
+2023-03-06 16:06:23.286 +01:00  INF  End processing HTTP request after 203.6047ms - 200
+2023-03-06 16:06:23.287 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:23.287 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:23.487 +01:00  INF  Received HTTP response headers after 200.1975ms - 200
+2023-03-06 16:06:23.488 +01:00  INF  End processing HTTP request after 200.9293ms - 200
+2023-03-06 16:06:23.489 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:23.489 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:23.680 +01:00  INF  Received HTTP response headers after 190.4824ms - 200
+2023-03-06 16:06:23.681 +01:00  INF  End processing HTTP request after 191.4668ms - 200
+2023-03-06 16:06:23.682 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:23.682 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:23.867 +01:00  INF  Received HTTP response headers after 184.4288ms - 200
+2023-03-06 16:06:23.867 +01:00  INF  End processing HTTP request after 184.964ms - 200
+2023-03-06 16:06:23.868 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:23.868 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:24.104 +01:00  INF  Received HTTP response headers after 235.9042ms - 200
+2023-03-06 16:06:24.104 +01:00  INF  End processing HTTP request after 236.3299ms - 200
+2023-03-06 16:06:24.105 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:24.105 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:24.308 +01:00  INF  Received HTTP response headers after 203.0349ms - 200
+2023-03-06 16:06:24.309 +01:00  INF  End processing HTTP request after 203.7938ms - 200
+2023-03-06 16:06:24.309 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:24.309 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:24.513 +01:00  INF  Received HTTP response headers after 203.8452ms - 200
+2023-03-06 16:06:24.513 +01:00  INF  End processing HTTP request after 204.1309ms - 200
+2023-03-06 16:06:24.514 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:24.514 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:24.718 +01:00  INF  Received HTTP response headers after 204.0423ms - 200
+2023-03-06 16:06:24.718 +01:00  INF  End processing HTTP request after 204.3462ms - 200
+2023-03-06 16:06:24.719 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:24.719 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:25.129 +01:00  INF  Received HTTP response headers after 410.5478ms - 200
+2023-03-06 16:06:25.130 +01:00  INF  End processing HTTP request after 410.8133ms - 200
+2023-03-06 16:06:25.130 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:25.130 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:25.379 +01:00  INF  Received HTTP response headers after 248.3788ms - 200
+2023-03-06 16:06:25.379 +01:00  INF  End processing HTTP request after 248.8999ms - 200
+2023-03-06 16:06:25.380 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:25.381 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:06:25.541 +01:00  INF  Received HTTP response headers after 159.9495ms - 200
+2023-03-06 16:06:25.541 +01:00  INF  End processing HTTP request after 160.5517ms - 200
+2023-03-06 16:06:26.854 +01:00  INF  Executed action AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test (AngularAuthApi) in 15172.6526ms
+2023-03-06 16:06:26.859 +01:00  INF  Executed endpoint 'AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test (AngularAuthApi)'
+2023-03-06 16:06:26.875 +01:00  ERR  An unhandled exception has occurred while executing the request.System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at AngularAuthApi.DcfCalculator.Services.CoreDcfService.TerminalValue(String ticker, Double sharePrice) in C:\projects\AngularAuthApi\DcfCalculator\Services\CoreDcfService.cs:line 142
+   at AngularAuthApi.DcfCalculator.Services.CoreDcfService.ValueOperatingAsset(String ticker, Double sharePrice) in C:\projects\AngularAuthApi\DcfCalculator\Services\CoreDcfService.cs:line 163
+   at AngularAuthApi.DcfCalculator.Services.CoreDcfService.ValueOfFirm(String ticker, Double sharePrice) in C:\projects\AngularAuthApi\DcfCalculator\Services\CoreDcfService.cs:line 170
+   at AngularAuthApi.DcfCalculator.Services.CoreDcfService.ValueOfEquity(String ticker, Double sharePrice) in C:\projects\AngularAuthApi\DcfCalculator\Services\CoreDcfService.cs:line 177
+   at AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test(String ticker, Double sharePrice) in C:\projects\AngularAuthApi\DcfCalculator\Controller\FinancialDataController.cs:line 41
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+
+2023-03-06 16:06:27.269 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/api/tester?ticker=meta&sharePrice=187 - - - 500 - text/plain;+charset=utf-8 15901.7740ms
+2023-03-06 16:09:58.568 +01:00  INF  User profile is available. Using 'C:\Users\yahia alioua\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-06 16:09:58.919 +01:00  INF  Now listening on: https://localhost:7063
+2023-03-06 16:09:58.920 +01:00  INF  Now listening on: http://localhost:5174
+2023-03-06 16:09:58.926 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-03-06 16:09:58.927 +01:00  INF  Hosting environment: Development
+2023-03-06 16:09:58.927 +01:00  INF  Content root path: C:\projects\AngularAuthApi\
+2023-03-06 16:09:59.834 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/index.html - -
+2023-03-06 16:10:00.861 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - -
+2023-03-06 16:10:00.878 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 15.4500ms
+2023-03-06 16:10:00.878 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/index.html - - - 200 - text/html;charset=utf-8 1048.6220ms
+2023-03-06 16:10:00.895 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_vs/browserLink - -
+2023-03-06 16:10:00.954 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 58.3898ms
+2023-03-06 16:10:01.190 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - -
+2023-03-06 16:10:01.442 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 252.2301ms
+2023-03-06 16:10:33.449 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/api/tester?ticker=meta&sharePrice=187 - -
+2023-03-06 16:10:33.623 +01:00  INF  Executing endpoint 'AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test (AngularAuthApi)'
+2023-03-06 16:10:33.720 +01:00  INF  Route matched with {action = "test", controller = "FinancialData"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] test(System.String, Double) on controller AngularAuthApi.DcfCalculator.Controller.FinancialDataController (AngularAuthApi).
+2023-03-06 16:10:37.766 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:37.775 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:38.795 +01:00  INF  Received HTTP response headers after 1004.8627ms - 200
+2023-03-06 16:10:38.801 +01:00  INF  End processing HTTP request after 1046.6018ms - 200
+2023-03-06 16:10:39.229 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:39.229 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:39.386 +01:00  INF  Received HTTP response headers after 156.7427ms - 200
+2023-03-06 16:10:39.386 +01:00  INF  End processing HTTP request after 157.3736ms - 200
+2023-03-06 16:10:39.397 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:39.398 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:39.596 +01:00  INF  Received HTTP response headers after 198.4756ms - 200
+2023-03-06 16:10:39.597 +01:00  INF  End processing HTTP request after 199.4639ms - 200
+2023-03-06 16:10:39.604 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:39.604 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:39.760 +01:00  INF  Received HTTP response headers after 155.4394ms - 200
+2023-03-06 16:10:39.760 +01:00  INF  End processing HTTP request after 156.4016ms - 200
+2023-03-06 16:10:39.845 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:39.845 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:40.108 +01:00  INF  Received HTTP response headers after 262.1983ms - 200
+2023-03-06 16:10:40.108 +01:00  INF  End processing HTTP request after 263.095ms - 200
+2023-03-06 16:10:40.115 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:40.115 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:40.310 +01:00  INF  Received HTTP response headers after 195.3319ms - 200
+2023-03-06 16:10:40.311 +01:00  INF  End processing HTTP request after 196.2738ms - 200
+2023-03-06 16:10:40.392 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:40.393 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:40.571 +01:00  INF  Received HTTP response headers after 178.0563ms - 200
+2023-03-06 16:10:40.571 +01:00  INF  End processing HTTP request after 179.1992ms - 200
+2023-03-06 16:10:40.574 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:40.574 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:40.736 +01:00  INF  Received HTTP response headers after 161.7704ms - 200
+2023-03-06 16:10:40.737 +01:00  INF  End processing HTTP request after 162.6426ms - 200
+2023-03-06 16:10:40.739 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:40.739 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:40.926 +01:00  INF  Received HTTP response headers after 186.7115ms - 200
+2023-03-06 16:10:40.926 +01:00  INF  End processing HTTP request after 187.7271ms - 200
+2023-03-06 16:10:40.929 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:40.929 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:41.131 +01:00  INF  Received HTTP response headers after 202.4028ms - 200
+2023-03-06 16:10:41.132 +01:00  INF  End processing HTTP request after 203.1358ms - 200
+2023-03-06 16:10:41.134 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:41.134 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:41.340 +01:00  INF  Received HTTP response headers after 206.0674ms - 200
+2023-03-06 16:10:41.341 +01:00  INF  End processing HTTP request after 206.9196ms - 200
+2023-03-06 16:10:41.343 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:41.343 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:41.490 +01:00  INF  Received HTTP response headers after 146.1834ms - 200
+2023-03-06 16:10:41.490 +01:00  INF  End processing HTTP request after 147.3923ms - 200
+2023-03-06 16:10:41.492 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:41.492 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:41.746 +01:00  INF  Received HTTP response headers after 253.518ms - 200
+2023-03-06 16:10:41.747 +01:00  INF  End processing HTTP request after 254.2718ms - 200
+2023-03-06 16:10:41.748 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:41.748 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:41.950 +01:00  INF  Received HTTP response headers after 202.1697ms - 200
+2023-03-06 16:10:41.951 +01:00  INF  End processing HTTP request after 202.878ms - 200
+2023-03-06 16:10:41.952 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:41.952 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:42.154 +01:00  INF  Received HTTP response headers after 201.6788ms - 200
+2023-03-06 16:10:42.154 +01:00  INF  End processing HTTP request after 202.5149ms - 200
+2023-03-06 16:10:42.157 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:42.158 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:42.360 +01:00  INF  Received HTTP response headers after 202.2371ms - 200
+2023-03-06 16:10:42.361 +01:00  INF  End processing HTTP request after 203.2412ms - 200
+2023-03-06 16:10:42.362 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:42.362 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:42.563 +01:00  INF  Received HTTP response headers after 200.4094ms - 200
+2023-03-06 16:10:42.563 +01:00  INF  End processing HTTP request after 201.2384ms - 200
+2023-03-06 16:10:42.568 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:42.569 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:42.727 +01:00  INF  Received HTTP response headers after 158.4912ms - 200
+2023-03-06 16:10:42.728 +01:00  INF  End processing HTTP request after 159.2302ms - 200
+2023-03-06 16:10:42.729 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:42.729 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:42.974 +01:00  INF  Received HTTP response headers after 244.8453ms - 200
+2023-03-06 16:10:42.975 +01:00  INF  End processing HTTP request after 245.5227ms - 200
+2023-03-06 16:10:42.976 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:42.976 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:43.184 +01:00  INF  Received HTTP response headers after 207.6768ms - 200
+2023-03-06 16:10:43.184 +01:00  INF  End processing HTTP request after 208.3711ms - 200
+2023-03-06 16:10:43.197 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:43.197 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:43.383 +01:00  INF  Received HTTP response headers after 185.2049ms - 200
+2023-03-06 16:10:43.383 +01:00  INF  End processing HTTP request after 186.2371ms - 200
+2023-03-06 16:10:43.384 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:43.385 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:43.587 +01:00  INF  Received HTTP response headers after 202.3887ms - 200
+2023-03-06 16:10:43.588 +01:00  INF  End processing HTTP request after 203.333ms - 200
+2023-03-06 16:10:43.590 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:43.590 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:43.771 +01:00  INF  Received HTTP response headers after 179.9716ms - 200
+2023-03-06 16:10:43.771 +01:00  INF  End processing HTTP request after 180.9675ms - 200
+2023-03-06 16:10:43.773 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:43.773 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:43.999 +01:00  INF  Received HTTP response headers after 225.2941ms - 200
+2023-03-06 16:10:43.999 +01:00  INF  End processing HTTP request after 226.0173ms - 200
+2023-03-06 16:10:44.000 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:44.000 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:44.187 +01:00  INF  Received HTTP response headers after 186.3648ms - 200
+2023-03-06 16:10:44.188 +01:00  INF  End processing HTTP request after 187.268ms - 200
+2023-03-06 16:10:44.190 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:44.190 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:44.352 +01:00  INF  Received HTTP response headers after 161.623ms - 200
+2023-03-06 16:10:44.352 +01:00  INF  End processing HTTP request after 162.338ms - 200
+2023-03-06 16:10:44.353 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:44.353 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:44.611 +01:00  INF  Received HTTP response headers after 257.7582ms - 200
+2023-03-06 16:10:44.611 +01:00  INF  End processing HTTP request after 258.5591ms - 200
+2023-03-06 16:10:44.613 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:44.614 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:44.781 +01:00  INF  Received HTTP response headers after 167.1781ms - 200
+2023-03-06 16:10:44.781 +01:00  INF  End processing HTTP request after 167.9191ms - 200
+2023-03-06 16:10:44.783 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:44.783 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:44.939 +01:00  INF  Received HTTP response headers after 155.1599ms - 200
+2023-03-06 16:10:44.939 +01:00  INF  End processing HTTP request after 156.2307ms - 200
+2023-03-06 16:10:44.941 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:44.942 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:45.136 +01:00  INF  Received HTTP response headers after 193.7939ms - 200
+2023-03-06 16:10:45.136 +01:00  INF  End processing HTTP request after 195.0241ms - 200
+2023-03-06 16:10:45.139 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:45.139 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:45.313 +01:00  INF  Received HTTP response headers after 174.1493ms - 200
+2023-03-06 16:10:45.314 +01:00  INF  End processing HTTP request after 175.0424ms - 200
+2023-03-06 16:10:45.315 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:45.315 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:45.501 +01:00  INF  Received HTTP response headers after 186.0364ms - 200
+2023-03-06 16:10:45.501 +01:00  INF  End processing HTTP request after 186.718ms - 200
+2023-03-06 16:10:45.503 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:45.504 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:45.664 +01:00  INF  Received HTTP response headers after 160.5022ms - 200
+2023-03-06 16:10:45.665 +01:00  INF  End processing HTTP request after 161.2343ms - 200
+2023-03-06 16:10:45.666 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:45.666 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:45.838 +01:00  INF  Received HTTP response headers after 171.8233ms - 200
+2023-03-06 16:10:45.838 +01:00  INF  End processing HTTP request after 172.4327ms - 200
+2023-03-06 16:10:45.840 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:45.840 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:45.985 +01:00  INF  Received HTTP response headers after 145.0131ms - 200
+2023-03-06 16:10:45.986 +01:00  INF  End processing HTTP request after 146.0046ms - 200
+2023-03-06 16:10:45.987 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:45.988 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:46.145 +01:00  INF  Received HTTP response headers after 156.7266ms - 200
+2023-03-06 16:10:46.145 +01:00  INF  End processing HTTP request after 157.6008ms - 200
+2023-03-06 16:10:46.146 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:46.146 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:46.354 +01:00  INF  Received HTTP response headers after 207.5404ms - 200
+2023-03-06 16:10:46.355 +01:00  INF  End processing HTTP request after 208.4933ms - 200
+2023-03-06 16:10:46.357 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:46.357 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:10:46.557 +01:00  INF  Received HTTP response headers after 199.6379ms - 200
+2023-03-06 16:10:46.557 +01:00  INF  End processing HTTP request after 200.402ms - 200
+2023-03-06 16:11:27.100 +01:00  INF  Executing OkObjectResult, writing value of type 'System.Double'.
+2023-03-06 16:11:27.171 +01:00  INF  Executed action AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test (AngularAuthApi) in 53409.8928ms
+2023-03-06 16:11:27.176 +01:00  INF  Executed endpoint 'AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test (AngularAuthApi)'
+2023-03-06 16:11:27.182 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/api/tester?ticker=meta&sharePrice=187 - - - 200 - application/json;+charset=utf-8 53732.7541ms
+2023-03-06 16:12:49.838 +01:00  INF  User profile is available. Using 'C:\Users\yahia alioua\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-06 16:12:50.817 +01:00  INF  Now listening on: https://localhost:7063
+2023-03-06 16:12:50.817 +01:00  INF  Now listening on: http://localhost:5174
+2023-03-06 16:12:50.826 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-03-06 16:12:50.827 +01:00  INF  Hosting environment: Development
+2023-03-06 16:12:50.827 +01:00  INF  Content root path: C:\projects\AngularAuthApi\
+2023-03-06 16:12:51.859 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/index.html - -
+2023-03-06 16:12:52.532 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/index.html - - - 200 - text/html;charset=utf-8 678.5890ms
+2023-03-06 16:12:52.710 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_vs/browserLink - -
+2023-03-06 16:12:52.711 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - -
+2023-03-06 16:12:52.733 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 21.8188ms
+2023-03-06 16:12:52.757 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 46.5109ms
+2023-03-06 16:12:53.008 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - -
+2023-03-06 16:12:53.213 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 204.9168ms
+2023-03-06 16:13:18.688 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/api/tester?ticker=meta&sharePrice=187 - -
+2023-03-06 16:13:18.867 +01:00  INF  Executing endpoint 'AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test (AngularAuthApi)'
+2023-03-06 16:13:18.964 +01:00  INF  Route matched with {action = "test", controller = "FinancialData"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] test(System.String, Double) on controller AngularAuthApi.DcfCalculator.Controller.FinancialDataController (AngularAuthApi).
+2023-03-06 16:13:40.850 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:13:40.860 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:13:41.903 +01:00  INF  Received HTTP response headers after 1032.0687ms - 200
+2023-03-06 16:13:41.907 +01:00  INF  End processing HTTP request after 1081.0119ms - 200
+2023-03-06 16:13:42.317 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:13:42.317 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:13:42.485 +01:00  INF  Received HTTP response headers after 167.0886ms - 200
+2023-03-06 16:13:42.485 +01:00  INF  End processing HTTP request after 167.5547ms - 200
+2023-03-06 16:13:42.491 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:13:42.491 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:13:42.673 +01:00  INF  Received HTTP response headers after 182.0005ms - 200
+2023-03-06 16:13:42.673 +01:00  INF  End processing HTTP request after 182.5159ms - 200
+2023-03-06 16:13:42.678 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:13:42.678 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:13:42.851 +01:00  INF  Received HTTP response headers after 173.0517ms - 200
+2023-03-06 16:13:42.851 +01:00  INF  End processing HTTP request after 173.5251ms - 200
+2023-03-06 16:13:42.888 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:13:42.888 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:13:43.045 +01:00  INF  Received HTTP response headers after 156.3772ms - 200
+2023-03-06 16:13:43.045 +01:00  INF  End processing HTTP request after 157.2788ms - 200
+2023-03-06 16:13:43.052 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:13:43.053 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:13:43.211 +01:00  INF  Received HTTP response headers after 158.5009ms - 200
+2023-03-06 16:13:43.211 +01:00  INF  End processing HTTP request after 159.3337ms - 200
+2023-03-06 16:13:43.259 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:13:43.259 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:13:43.421 +01:00  INF  Received HTTP response headers after 161.9151ms - 200
+2023-03-06 16:13:43.421 +01:00  INF  End processing HTTP request after 162.7364ms - 200
+2023-03-06 16:13:43.424 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:13:43.424 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:13:43.577 +01:00  INF  Received HTTP response headers after 152.1369ms - 200
+2023-03-06 16:13:43.577 +01:00  INF  End processing HTTP request after 153.3795ms - 200
+2023-03-06 16:13:43.579 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:13:43.579 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:13:43.888 +01:00  INF  Received HTTP response headers after 308.4753ms - 200
+2023-03-06 16:13:43.889 +01:00  INF  End processing HTTP request after 309.7961ms - 200
+2023-03-06 16:13:43.891 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:13:43.891 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:13:44.046 +01:00  INF  Received HTTP response headers after 154.8655ms - 200
+2023-03-06 16:13:44.047 +01:00  INF  End processing HTTP request after 155.7216ms - 200
+2023-03-06 16:13:44.049 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:13:44.050 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:13:44.206 +01:00  INF  Received HTTP response headers after 155.7566ms - 200
+2023-03-06 16:13:44.206 +01:00  INF  End processing HTTP request after 156.5478ms - 200
+2023-03-06 16:13:44.207 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:13:44.207 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:13:44.370 +01:00  INF  Received HTTP response headers after 162.5441ms - 200
+2023-03-06 16:13:44.370 +01:00  INF  End processing HTTP request after 163.1761ms - 200
+2023-03-06 16:13:44.372 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:13:44.373 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:13:44.534 +01:00  INF  Received HTTP response headers after 161.6323ms - 200
+2023-03-06 16:13:44.535 +01:00  INF  End processing HTTP request after 162.4281ms - 200
+2023-03-06 16:13:44.536 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:13:44.536 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:13:44.733 +01:00  INF  Received HTTP response headers after 196.7902ms - 200
+2023-03-06 16:13:44.733 +01:00  INF  End processing HTTP request after 197.496ms - 200
+2023-03-06 16:13:44.735 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:13:44.735 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:13:44.893 +01:00  INF  Received HTTP response headers after 158.3725ms - 200
+2023-03-06 16:13:44.894 +01:00  INF  End processing HTTP request after 159.0888ms - 200
+2023-03-06 16:13:44.895 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:13:44.895 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:13:45.048 +01:00  INF  Received HTTP response headers after 152.1895ms - 200
+2023-03-06 16:13:45.048 +01:00  INF  End processing HTTP request after 153.2015ms - 200
+2023-03-06 16:13:45.051 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:13:45.051 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:13:45.246 +01:00  INF  Received HTTP response headers after 194.2916ms - 200
+2023-03-06 16:13:45.246 +01:00  INF  End processing HTTP request after 195.4864ms - 200
+2023-03-06 16:13:57.758 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:13:57.759 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 16:13:59.069 +01:00  INF  Received HTTP response headers after 1310.0278ms - 200
+2023-03-06 16:13:59.069 +01:00  INF  End processing HTTP request after 1311.8821ms - 200
+2023-03-06 18:57:12.295 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 18:57:12.295 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 18:58:14.292 +01:00  INF  User profile is available. Using 'C:\Users\yahia alioua\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-06 18:58:14.654 +01:00  INF  Now listening on: https://localhost:7063
+2023-03-06 18:58:14.654 +01:00  INF  Now listening on: http://localhost:5174
+2023-03-06 18:58:14.659 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-03-06 18:58:14.659 +01:00  INF  Hosting environment: Development
+2023-03-06 18:58:14.659 +01:00  INF  Content root path: C:\projects\AngularAuthApi\
+2023-03-06 18:58:15.251 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/index.html - -
+2023-03-06 18:58:15.917 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/index.html - - - 200 - text/html;charset=utf-8 672.1395ms
+2023-03-06 18:58:15.930 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - -
+2023-03-06 18:58:15.939 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 8.3109ms
+2023-03-06 18:58:15.998 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_vs/browserLink - -
+2023-03-06 18:58:16.022 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 23.6976ms
+2023-03-06 18:58:16.141 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - -
+2023-03-06 18:58:16.330 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 188.7178ms
+2023-03-06 18:58:35.707 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/api/tester?ticker=meta&sharePrice=187 - -
+2023-03-06 18:58:35.922 +01:00  INF  Executing endpoint 'AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test (AngularAuthApi)'
+2023-03-06 18:58:36.033 +01:00  INF  Route matched with {action = "test", controller = "FinancialData"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] test(System.String, Double) on controller AngularAuthApi.DcfCalculator.Controller.FinancialDataController (AngularAuthApi).
+2023-03-06 18:58:41.672 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 18:58:41.681 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 18:58:42.810 +01:00  INF  Received HTTP response headers after 1113.3621ms - 200
+2023-03-06 18:58:42.815 +01:00  INF  End processing HTTP request after 1160.241ms - 200
+2023-03-06 18:58:43.316 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 18:58:43.316 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 18:58:43.486 +01:00  INF  Received HTTP response headers after 170.0917ms - 200
+2023-03-06 18:58:43.487 +01:00  INF  End processing HTTP request after 170.8048ms - 200
+2023-03-06 18:58:43.501 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 18:58:43.501 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 18:58:43.671 +01:00  INF  Received HTTP response headers after 169.7185ms - 200
+2023-03-06 18:58:43.671 +01:00  INF  End processing HTTP request after 170.5425ms - 200
+2023-03-06 18:58:43.674 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 18:58:43.674 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 18:58:43.887 +01:00  INF  Received HTTP response headers after 212.6484ms - 200
+2023-03-06 18:58:43.887 +01:00  INF  End processing HTTP request after 213.3167ms - 200
+2023-03-06 18:58:43.958 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 18:58:43.958 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 18:58:44.194 +01:00  INF  Received HTTP response headers after 235.538ms - 200
+2023-03-06 18:58:44.194 +01:00  INF  End processing HTTP request after 236.393ms - 200
+2023-03-06 18:58:44.202 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 18:58:44.202 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 18:58:44.603 +01:00  INF  Received HTTP response headers after 401.2066ms - 200
+2023-03-06 18:58:44.604 +01:00  INF  End processing HTTP request after 402.3178ms - 200
+2023-03-06 18:58:44.697 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 18:58:44.697 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 18:58:45.013 +01:00  INF  Received HTTP response headers after 314.9259ms - 200
+2023-03-06 18:58:45.013 +01:00  INF  End processing HTTP request after 316.5761ms - 200
+2023-03-06 18:58:45.014 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 18:58:45.014 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 18:58:45.232 +01:00  INF  Received HTTP response headers after 217.8502ms - 200
+2023-03-06 18:58:45.232 +01:00  INF  End processing HTTP request after 218.6221ms - 200
+2023-03-06 18:58:45.234 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 18:58:45.234 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 18:58:45.423 +01:00  INF  Received HTTP response headers after 188.7177ms - 200
+2023-03-06 18:58:45.423 +01:00  INF  End processing HTTP request after 189.2435ms - 200
+2023-03-06 18:58:45.424 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 18:58:45.424 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 18:58:48.088 +01:00  INF  Received HTTP response headers after 2663.0056ms - 200
+2023-03-06 18:58:48.088 +01:00  INF  End processing HTTP request after 2663.6678ms - 200
+2023-03-06 18:58:48.089 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 18:58:48.089 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 18:58:48.290 +01:00  INF  Received HTTP response headers after 200.8154ms - 200
+2023-03-06 18:58:48.291 +01:00  INF  End processing HTTP request after 201.4624ms - 200
+2023-03-06 18:58:48.292 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 18:58:48.292 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 18:58:48.495 +01:00  INF  Received HTTP response headers after 202.8771ms - 200
+2023-03-06 18:58:48.495 +01:00  INF  End processing HTTP request after 203.5622ms - 200
+2023-03-06 18:58:48.497 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 18:58:48.497 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 18:58:48.700 +01:00  INF  Received HTTP response headers after 202.7036ms - 200
+2023-03-06 18:58:48.700 +01:00  INF  End processing HTTP request after 203.3978ms - 200
+2023-03-06 18:58:48.702 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 18:58:48.702 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 18:58:49.007 +01:00  INF  Received HTTP response headers after 304.4423ms - 200
+2023-03-06 18:58:49.007 +01:00  INF  End processing HTTP request after 305.2831ms - 200
+2023-03-06 18:58:49.008 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 18:58:49.008 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 18:58:49.212 +01:00  INF  Received HTTP response headers after 202.9205ms - 200
+2023-03-06 18:58:49.212 +01:00  INF  End processing HTTP request after 203.5965ms - 200
+2023-03-06 18:58:49.213 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 18:58:49.213 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 18:58:49.416 +01:00  INF  Received HTTP response headers after 202.8157ms - 200
+2023-03-06 18:58:49.417 +01:00  INF  End processing HTTP request after 203.4916ms - 200
+2023-03-06 18:58:49.418 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 18:58:49.418 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 18:58:49.622 +01:00  INF  Received HTTP response headers after 203.8695ms - 200
+2023-03-06 18:58:49.622 +01:00  INF  End processing HTTP request after 204.6152ms - 200
+2023-03-06 18:58:49.627 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 18:58:49.627 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 18:58:49.826 +01:00  INF  Received HTTP response headers after 199.0904ms - 200
+2023-03-06 18:58:49.827 +01:00  INF  End processing HTTP request after 199.8374ms - 200
+2023-03-06 18:58:49.828 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 18:58:49.828 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 18:58:50.031 +01:00  INF  Received HTTP response headers after 202.6005ms - 200
+2023-03-06 18:58:50.031 +01:00  INF  End processing HTTP request after 203.3104ms - 200
+2023-03-06 18:58:50.033 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 18:58:50.033 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 18:58:50.240 +01:00  INF  Received HTTP response headers after 206.7495ms - 200
+2023-03-06 18:58:50.240 +01:00  INF  End processing HTTP request after 207.3677ms - 200
+2023-03-06 19:00:18.778 +01:00  INF  User profile is available. Using 'C:\Users\yahia alioua\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-06 19:00:19.286 +01:00  INF  Now listening on: https://localhost:7063
+2023-03-06 19:00:19.286 +01:00  INF  Now listening on: http://localhost:5174
+2023-03-06 19:00:19.292 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-03-06 19:00:19.292 +01:00  INF  Hosting environment: Development
+2023-03-06 19:00:19.293 +01:00  INF  Content root path: C:\projects\AngularAuthApi\
+2023-03-06 19:00:20.208 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/index.html - -
+2023-03-06 19:00:20.807 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/index.html - - - 200 - text/html;charset=utf-8 611.6495ms
+2023-03-06 19:00:20.831 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - -
+2023-03-06 19:00:20.841 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 9.7115ms
+2023-03-06 19:00:20.891 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_vs/browserLink - -
+2023-03-06 19:00:20.972 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 80.6141ms
+2023-03-06 19:00:21.136 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - -
+2023-03-06 19:00:21.366 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 230.6961ms
+2023-03-06 19:00:37.149 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/api/tester?ticker=meta&sharePrice=187 - -
+2023-03-06 19:00:37.329 +01:00  INF  Executing endpoint 'AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test (AngularAuthApi)'
+2023-03-06 19:00:37.428 +01:00  INF  Route matched with {action = "test", controller = "FinancialData"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] test(System.String, Double) on controller AngularAuthApi.DcfCalculator.Controller.FinancialDataController (AngularAuthApi).
+2023-03-06 19:00:37.538 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:37.545 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:38.618 +01:00  INF  Received HTTP response headers after 1061.6088ms - 200
+2023-03-06 19:00:38.622 +01:00  INF  End processing HTTP request after 1098.8628ms - 200
+2023-03-06 19:00:39.112 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:39.112 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:39.293 +01:00  INF  Received HTTP response headers after 181.1435ms - 200
+2023-03-06 19:00:39.293 +01:00  INF  End processing HTTP request after 181.7301ms - 200
+2023-03-06 19:00:39.299 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:39.299 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:39.501 +01:00  INF  Received HTTP response headers after 201.6636ms - 200
+2023-03-06 19:00:39.502 +01:00  INF  End processing HTTP request after 202.5471ms - 200
+2023-03-06 19:00:39.509 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:39.509 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:39.703 +01:00  INF  Received HTTP response headers after 193.5362ms - 200
+2023-03-06 19:00:39.704 +01:00  INF  End processing HTTP request after 194.6424ms - 200
+2023-03-06 19:00:39.783 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:39.783 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:40.009 +01:00  INF  Received HTTP response headers after 225.6009ms - 200
+2023-03-06 19:00:40.009 +01:00  INF  End processing HTTP request after 226.3015ms - 200
+2023-03-06 19:00:40.012 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:40.012 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:40.322 +01:00  INF  Received HTTP response headers after 309.3377ms - 200
+2023-03-06 19:00:40.322 +01:00  INF  End processing HTTP request after 310.0398ms - 200
+2023-03-06 19:00:40.424 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:40.424 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:40.625 +01:00  INF  Received HTTP response headers after 200.3325ms - 200
+2023-03-06 19:00:40.625 +01:00  INF  End processing HTTP request after 201.1574ms - 200
+2023-03-06 19:00:40.626 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:40.627 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:40.829 +01:00  INF  Received HTTP response headers after 201.7037ms - 200
+2023-03-06 19:00:40.829 +01:00  INF  End processing HTTP request after 202.4419ms - 200
+2023-03-06 19:00:40.831 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:40.832 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:41.034 +01:00  INF  Received HTTP response headers after 201.7498ms - 200
+2023-03-06 19:00:41.034 +01:00  INF  End processing HTTP request after 203.3458ms - 200
+2023-03-06 19:00:41.037 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:41.037 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:41.238 +01:00  INF  Received HTTP response headers after 200.5008ms - 200
+2023-03-06 19:00:41.238 +01:00  INF  End processing HTTP request after 201.3733ms - 200
+2023-03-06 19:00:41.240 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:41.240 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:41.408 +01:00  INF  Received HTTP response headers after 167.4259ms - 200
+2023-03-06 19:00:41.408 +01:00  INF  End processing HTTP request after 168.0438ms - 200
+2023-03-06 19:00:41.409 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:41.410 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:41.559 +01:00  INF  Received HTTP response headers after 149.1378ms - 200
+2023-03-06 19:00:41.559 +01:00  INF  End processing HTTP request after 149.7868ms - 200
+2023-03-06 19:00:41.561 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:41.561 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:41.749 +01:00  INF  Received HTTP response headers after 188.6798ms - 200
+2023-03-06 19:00:41.750 +01:00  INF  End processing HTTP request after 189.225ms - 200
+2023-03-06 19:00:41.750 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:41.751 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:41.955 +01:00  INF  Received HTTP response headers after 204.7282ms - 200
+2023-03-06 19:00:41.965 +01:00  INF  End processing HTTP request after 214.8776ms - 200
+2023-03-06 19:00:41.968 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:41.968 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:42.262 +01:00  INF  Received HTTP response headers after 293.7093ms - 200
+2023-03-06 19:00:42.263 +01:00  INF  End processing HTTP request after 295.0924ms - 200
+2023-03-06 19:00:42.265 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:42.265 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:42.466 +01:00  INF  Received HTTP response headers after 201.1369ms - 200
+2023-03-06 19:00:42.467 +01:00  INF  End processing HTTP request after 202.0143ms - 200
+2023-03-06 19:00:42.469 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:42.469 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:42.672 +01:00  INF  Received HTTP response headers after 202.6122ms - 200
+2023-03-06 19:00:42.672 +01:00  INF  End processing HTTP request after 203.3776ms - 200
+2023-03-06 19:00:42.677 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:42.677 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:42.956 +01:00  INF  Received HTTP response headers after 278.3998ms - 200
+2023-03-06 19:00:42.956 +01:00  INF  End processing HTTP request after 279.2871ms - 200
+2023-03-06 19:00:42.959 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:42.959 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:43.184 +01:00  INF  Received HTTP response headers after 224.8272ms - 200
+2023-03-06 19:00:43.185 +01:00  INF  End processing HTTP request after 226.0157ms - 200
+2023-03-06 19:00:43.186 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:43.187 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:43.390 +01:00  INF  Received HTTP response headers after 203.4232ms - 200
+2023-03-06 19:00:43.391 +01:00  INF  End processing HTTP request after 204.3734ms - 200
+2023-03-06 19:00:43.401 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:43.401 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:43.593 +01:00  INF  Received HTTP response headers after 191.9486ms - 200
+2023-03-06 19:00:43.593 +01:00  INF  End processing HTTP request after 192.8909ms - 200
+2023-03-06 19:00:43.597 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:43.597 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:43.798 +01:00  INF  Received HTTP response headers after 200.735ms - 200
+2023-03-06 19:00:43.799 +01:00  INF  End processing HTTP request after 202.1579ms - 200
+2023-03-06 19:00:43.802 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:43.802 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:44.003 +01:00  INF  Received HTTP response headers after 200.7493ms - 200
+2023-03-06 19:00:44.003 +01:00  INF  End processing HTTP request after 201.8213ms - 200
+2023-03-06 19:00:44.005 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:44.006 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:44.208 +01:00  INF  Received HTTP response headers after 201.8037ms - 200
+2023-03-06 19:00:44.208 +01:00  INF  End processing HTTP request after 202.7131ms - 200
+2023-03-06 19:00:44.209 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:44.210 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:44.413 +01:00  INF  Received HTTP response headers after 203.2488ms - 200
+2023-03-06 19:00:44.413 +01:00  INF  End processing HTTP request after 204.0247ms - 200
+2023-03-06 19:00:44.416 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:44.417 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:44.619 +01:00  INF  Received HTTP response headers after 202.6354ms - 200
+2023-03-06 19:00:44.620 +01:00  INF  End processing HTTP request after 203.4174ms - 200
+2023-03-06 19:00:44.621 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:44.621 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:44.822 +01:00  INF  Received HTTP response headers after 200.5971ms - 200
+2023-03-06 19:00:44.822 +01:00  INF  End processing HTTP request after 201.3579ms - 200
+2023-03-06 19:00:44.824 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:44.824 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:45.130 +01:00  INF  Received HTTP response headers after 305.8253ms - 200
+2023-03-06 19:00:45.131 +01:00  INF  End processing HTTP request after 307.0111ms - 200
+2023-03-06 19:00:45.133 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:45.134 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:45.290 +01:00  INF  Received HTTP response headers after 155.9431ms - 200
+2023-03-06 19:00:45.291 +01:00  INF  End processing HTTP request after 157.3902ms - 200
+2023-03-06 19:00:45.292 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:45.292 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:45.543 +01:00  INF  Received HTTP response headers after 250.3692ms - 200
+2023-03-06 19:00:45.544 +01:00  INF  End processing HTTP request after 251.618ms - 200
+2023-03-06 19:00:45.547 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:45.547 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:45.847 +01:00  INF  Received HTTP response headers after 299.266ms - 200
+2023-03-06 19:00:45.847 +01:00  INF  End processing HTTP request after 300.6391ms - 200
+2023-03-06 19:00:45.849 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:45.849 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:46.051 +01:00  INF  Received HTTP response headers after 201.3999ms - 200
+2023-03-06 19:00:46.051 +01:00  INF  End processing HTTP request after 202.2627ms - 200
+2023-03-06 19:00:46.053 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:46.053 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:46.256 +01:00  INF  Received HTTP response headers after 202.6496ms - 200
+2023-03-06 19:00:46.256 +01:00  INF  End processing HTTP request after 203.3805ms - 200
+2023-03-06 19:00:46.258 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:46.258 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:46.463 +01:00  INF  Received HTTP response headers after 204.6168ms - 200
+2023-03-06 19:00:46.463 +01:00  INF  End processing HTTP request after 205.63ms - 200
+2023-03-06 19:00:46.466 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:46.466 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:46.767 +01:00  INF  Received HTTP response headers after 301.2032ms - 200
+2023-03-06 19:00:46.768 +01:00  INF  End processing HTTP request after 302.0442ms - 200
+2023-03-06 19:00:46.769 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:46.769 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:46.972 +01:00  INF  Received HTTP response headers after 202.7086ms - 200
+2023-03-06 19:00:46.973 +01:00  INF  End processing HTTP request after 203.4387ms - 200
+2023-03-06 19:00:46.975 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:46.976 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:47.178 +01:00  INF  Received HTTP response headers after 202.2491ms - 200
+2023-03-06 19:00:47.179 +01:00  INF  End processing HTTP request after 203.3979ms - 200
+2023-03-06 19:00:47.180 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:47.181 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:00:47.382 +01:00  INF  Received HTTP response headers after 201.3359ms - 200
+2023-03-06 19:00:47.382 +01:00  INF  End processing HTTP request after 202.0951ms - 200
+2023-03-06 19:01:25.450 +01:00  INF  Executing OkObjectResult, writing value of type 'System.Double'.
+2023-03-06 19:01:25.484 +01:00  INF  Executed action AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test (AngularAuthApi) in 48042.7629ms
+2023-03-06 19:01:25.486 +01:00  INF  Executed endpoint 'AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test (AngularAuthApi)'
+2023-03-06 19:01:25.488 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/api/tester?ticker=meta&sharePrice=187 - - - 200 - application/json;+charset=utf-8 48339.6136ms
+2023-03-06 19:01:53.333 +01:00  INF  User profile is available. Using 'C:\Users\yahia alioua\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-06 19:01:54.106 +01:00  INF  Now listening on: https://localhost:7063
+2023-03-06 19:01:54.106 +01:00  INF  Now listening on: http://localhost:5174
+2023-03-06 19:01:54.125 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-03-06 19:01:54.125 +01:00  INF  Hosting environment: Development
+2023-03-06 19:01:54.126 +01:00  INF  Content root path: C:\projects\AngularAuthApi\
+2023-03-06 19:01:55.002 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/index.html - -
+2023-03-06 19:01:55.691 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/index.html - - - 200 - text/html;charset=utf-8 693.0594ms
+2023-03-06 19:01:55.801 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_vs/browserLink - -
+2023-03-06 19:01:55.801 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - -
+2023-03-06 19:01:55.815 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 13.2688ms
+2023-03-06 19:01:55.837 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 35.6447ms
+2023-03-06 19:01:56.046 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - -
+2023-03-06 19:01:56.276 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 230.5013ms
+2023-03-06 19:02:10.081 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/api/tester?ticker=meta&sharePrice=187 - -
+2023-03-06 19:02:10.274 +01:00  INF  Executing endpoint 'AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test (AngularAuthApi)'
+2023-03-06 19:02:10.375 +01:00  INF  Route matched with {action = "test", controller = "FinancialData"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] test(System.String, Double) on controller AngularAuthApi.DcfCalculator.Controller.FinancialDataController (AngularAuthApi).
+2023-03-06 19:02:10.503 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:10.513 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:11.706 +01:00  INF  Received HTTP response headers after 1179.9667ms - 200
+2023-03-06 19:02:11.709 +01:00  INF  End processing HTTP request after 1231.2995ms - 200
+2023-03-06 19:02:12.407 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:12.407 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:12.567 +01:00  INF  Received HTTP response headers after 159.8913ms - 200
+2023-03-06 19:02:12.568 +01:00  INF  End processing HTTP request after 160.9147ms - 200
+2023-03-06 19:02:12.582 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:12.583 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:12.784 +01:00  INF  Received HTTP response headers after 201.0594ms - 200
+2023-03-06 19:02:12.784 +01:00  INF  End processing HTTP request after 202.3671ms - 200
+2023-03-06 19:02:12.792 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:12.792 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:12.988 +01:00  INF  Received HTTP response headers after 196.4892ms - 200
+2023-03-06 19:02:12.989 +01:00  INF  End processing HTTP request after 197.4355ms - 200
+2023-03-06 19:02:13.065 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:13.065 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:13.237 +01:00  INF  Received HTTP response headers after 171.9007ms - 200
+2023-03-06 19:02:13.238 +01:00  INF  End processing HTTP request after 172.5946ms - 200
+2023-03-06 19:02:13.243 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:13.244 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:13.506 +01:00  INF  Received HTTP response headers after 262.4686ms - 200
+2023-03-06 19:02:13.506 +01:00  INF  End processing HTTP request after 263.1724ms - 200
+2023-03-06 19:02:13.579 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:13.580 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:13.808 +01:00  INF  Received HTTP response headers after 228.4304ms - 200
+2023-03-06 19:02:13.809 +01:00  INF  End processing HTTP request after 229.2574ms - 200
+2023-03-06 19:02:13.810 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:13.811 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:14.013 +01:00  INF  Received HTTP response headers after 201.6043ms - 200
+2023-03-06 19:02:14.013 +01:00  INF  End processing HTTP request after 202.66ms - 200
+2023-03-06 19:02:14.016 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:14.016 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:14.218 +01:00  INF  Received HTTP response headers after 201.6487ms - 200
+2023-03-06 19:02:14.219 +01:00  INF  End processing HTTP request after 203.5538ms - 200
+2023-03-06 19:02:14.223 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:14.224 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:14.457 +01:00  INF  Received HTTP response headers after 233.1594ms - 200
+2023-03-06 19:02:14.458 +01:00  INF  End processing HTTP request after 234.1661ms - 200
+2023-03-06 19:02:14.459 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:14.460 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:14.642 +01:00  INF  Received HTTP response headers after 182.2862ms - 200
+2023-03-06 19:02:14.642 +01:00  INF  End processing HTTP request after 182.9041ms - 200
+2023-03-06 19:02:14.643 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:14.643 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:14.805 +01:00  INF  Received HTTP response headers after 162.0219ms - 200
+2023-03-06 19:02:14.805 +01:00  INF  End processing HTTP request after 162.3598ms - 200
+2023-03-06 19:02:14.806 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:14.807 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:14.954 +01:00  INF  Received HTTP response headers after 147.2046ms - 200
+2023-03-06 19:02:14.954 +01:00  INF  End processing HTTP request after 147.6564ms - 200
+2023-03-06 19:02:14.955 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:14.955 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:15.104 +01:00  INF  Received HTTP response headers after 149.5923ms - 200
+2023-03-06 19:02:15.105 +01:00  INF  End processing HTTP request after 150.0398ms - 200
+2023-03-06 19:02:15.106 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:15.106 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:15.272 +01:00  INF  Received HTTP response headers after 165.8713ms - 200
+2023-03-06 19:02:15.272 +01:00  INF  End processing HTTP request after 166.5782ms - 200
+2023-03-06 19:02:15.274 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:15.274 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:15.446 +01:00  INF  Received HTTP response headers after 172.0611ms - 200
+2023-03-06 19:02:15.447 +01:00  INF  End processing HTTP request after 173.033ms - 200
+2023-03-06 19:02:15.449 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:15.449 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:15.659 +01:00  INF  Received HTTP response headers after 209.368ms - 200
+2023-03-06 19:02:15.659 +01:00  INF  End processing HTTP request after 210.0587ms - 200
+2023-03-06 19:02:15.661 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:15.661 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:15.958 +01:00  INF  Received HTTP response headers after 297.0367ms - 200
+2023-03-06 19:02:15.958 +01:00  INF  End processing HTTP request after 297.3665ms - 200
+2023-03-06 19:02:15.959 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:15.959 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:16.163 +01:00  INF  Received HTTP response headers after 204.5346ms - 200
+2023-03-06 19:02:16.164 +01:00  INF  End processing HTTP request after 204.9497ms - 200
+2023-03-06 19:02:16.165 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:16.165 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:16.367 +01:00  INF  Received HTTP response headers after 201.8882ms - 200
+2023-03-06 19:02:16.367 +01:00  INF  End processing HTTP request after 202.3693ms - 200
+2023-03-06 19:02:16.372 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:16.372 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:16.573 +01:00  INF  Received HTTP response headers after 200.7096ms - 200
+2023-03-06 19:02:16.573 +01:00  INF  End processing HTTP request after 201.6845ms - 200
+2023-03-06 19:02:16.575 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:16.575 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:16.751 +01:00  INF  Received HTTP response headers after 175.5971ms - 200
+2023-03-06 19:02:16.751 +01:00  INF  End processing HTTP request after 176.3208ms - 200
+2023-03-06 19:02:16.753 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:16.753 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:16.878 +01:00  INF  Received HTTP response headers after 124.6397ms - 200
+2023-03-06 19:02:16.878 +01:00  INF  End processing HTTP request after 125.5244ms - 200
+2023-03-06 19:02:16.880 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:16.880 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:17.032 +01:00  INF  Received HTTP response headers after 152.0816ms - 200
+2023-03-06 19:02:17.033 +01:00  INF  End processing HTTP request after 152.9615ms - 200
+2023-03-06 19:02:17.035 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:17.036 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:17.191 +01:00  INF  Received HTTP response headers after 154.5934ms - 200
+2023-03-06 19:02:17.191 +01:00  INF  End processing HTTP request after 156.1682ms - 200
+2023-03-06 19:02:17.193 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:17.193 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:17.321 +01:00  INF  Received HTTP response headers after 127.5695ms - 200
+2023-03-06 19:02:17.321 +01:00  INF  End processing HTTP request after 128.4331ms - 200
+2023-03-06 19:02:17.323 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:17.323 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:17.471 +01:00  INF  Received HTTP response headers after 147.6678ms - 200
+2023-03-06 19:02:17.471 +01:00  INF  End processing HTTP request after 148.4919ms - 200
+2023-03-06 19:02:17.473 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:17.473 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:17.642 +01:00  INF  Received HTTP response headers after 168.3043ms - 200
+2023-03-06 19:02:17.642 +01:00  INF  End processing HTTP request after 169.0731ms - 200
+2023-03-06 19:02:17.643 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:17.644 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:17.799 +01:00  INF  Received HTTP response headers after 154.9596ms - 200
+2023-03-06 19:02:17.799 +01:00  INF  End processing HTTP request after 155.7493ms - 200
+2023-03-06 19:02:17.801 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:17.801 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:17.953 +01:00  INF  Received HTTP response headers after 151.5373ms - 200
+2023-03-06 19:02:17.954 +01:00  INF  End processing HTTP request after 152.9641ms - 200
+2023-03-06 19:02:17.956 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:17.956 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:18.122 +01:00  INF  Received HTTP response headers after 165.7146ms - 200
+2023-03-06 19:02:18.122 +01:00  INF  End processing HTTP request after 166.6283ms - 200
+2023-03-06 19:02:18.125 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:18.125 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:18.314 +01:00  INF  Received HTTP response headers after 188.7332ms - 200
+2023-03-06 19:02:18.315 +01:00  INF  End processing HTTP request after 189.957ms - 200
+2023-03-06 19:02:18.316 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:18.316 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:18.623 +01:00  INF  Received HTTP response headers after 306.3404ms - 200
+2023-03-06 19:02:18.623 +01:00  INF  End processing HTTP request after 307.0472ms - 200
+2023-03-06 19:02:18.625 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:18.625 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:18.839 +01:00  INF  Received HTTP response headers after 213.4569ms - 200
+2023-03-06 19:02:18.839 +01:00  INF  End processing HTTP request after 214.2418ms - 200
+2023-03-06 19:02:18.841 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:18.841 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:19.031 +01:00  INF  Received HTTP response headers after 189.1173ms - 200
+2023-03-06 19:02:19.031 +01:00  INF  End processing HTTP request after 190.0314ms - 200
+2023-03-06 19:02:19.033 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:19.033 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:19.204 +01:00  INF  Received HTTP response headers after 170.2143ms - 200
+2023-03-06 19:02:19.204 +01:00  INF  End processing HTTP request after 171.1244ms - 200
+2023-03-06 19:02:19.205 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:19.205 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:19.358 +01:00  INF  Received HTTP response headers after 152.5784ms - 200
+2023-03-06 19:02:19.359 +01:00  INF  End processing HTTP request after 153.2584ms - 200
+2023-03-06 19:02:19.360 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:19.360 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:02:19.539 +01:00  INF  Received HTTP response headers after 179.1753ms - 200
+2023-03-06 19:02:19.540 +01:00  INF  End processing HTTP request after 179.8669ms - 200
+2023-03-06 19:02:19.590 +01:00  INF  Executing OkObjectResult, writing value of type 'System.Double'.
+2023-03-06 19:02:19.674 +01:00  INF  Executed action AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test (AngularAuthApi) in 9269.7202ms
+2023-03-06 19:02:19.678 +01:00  INF  Executed endpoint 'AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test (AngularAuthApi)'
+2023-03-06 19:02:19.688 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/api/tester?ticker=meta&sharePrice=187 - - - 200 - application/json;+charset=utf-8 9606.2073ms
+2023-03-06 19:03:39.654 +01:00  INF  User profile is available. Using 'C:\Users\yahia alioua\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-06 19:03:40.085 +01:00  INF  Now listening on: https://localhost:7063
+2023-03-06 19:03:40.085 +01:00  INF  Now listening on: http://localhost:5174
+2023-03-06 19:03:40.090 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-03-06 19:03:40.090 +01:00  INF  Hosting environment: Development
+2023-03-06 19:03:40.091 +01:00  INF  Content root path: C:\projects\AngularAuthApi\
+2023-03-06 19:03:40.962 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/index.html - -
+2023-03-06 19:03:41.608 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/index.html - - - 200 - text/html;charset=utf-8 656.2190ms
+2023-03-06 19:03:41.655 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - -
+2023-03-06 19:03:41.659 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_vs/browserLink - -
+2023-03-06 19:03:41.681 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 25.4435ms
+2023-03-06 19:03:41.742 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 82.7525ms
+2023-03-06 19:03:41.931 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - -
+2023-03-06 19:03:42.140 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 209.2997ms
+2023-03-06 19:03:54.962 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/api/tester?ticker=meta&sharePrice=187 - -
+2023-03-06 19:03:55.149 +01:00  INF  Executing endpoint 'AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test (AngularAuthApi)'
+2023-03-06 19:03:55.239 +01:00  INF  Route matched with {action = "test", controller = "FinancialData"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] test(System.String, Double) on controller AngularAuthApi.DcfCalculator.Controller.FinancialDataController (AngularAuthApi).
+2023-03-06 19:03:55.357 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:03:55.367 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:03:56.584 +01:00  INF  Received HTTP response headers after 1191.5933ms - 200
+2023-03-06 19:03:56.590 +01:00  INF  End processing HTTP request after 1249.893ms - 200
+2023-03-06 19:03:57.153 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:03:57.153 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:03:57.390 +01:00  INF  Received HTTP response headers after 237.1193ms - 200
+2023-03-06 19:03:57.390 +01:00  INF  End processing HTTP request after 237.8082ms - 200
+2023-03-06 19:03:57.405 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:03:57.405 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:03:57.563 +01:00  INF  Received HTTP response headers after 158.1481ms - 200
+2023-03-06 19:03:57.564 +01:00  INF  End processing HTTP request after 159.4304ms - 200
+2023-03-06 19:03:57.575 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:03:57.575 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:03:57.766 +01:00  INF  Received HTTP response headers after 190.2295ms - 200
+2023-03-06 19:03:57.766 +01:00  INF  End processing HTTP request after 191.3984ms - 200
+2023-03-06 19:04:09.174 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:04:09.174 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:04:09.733 +01:00  INF  Received HTTP response headers after 558.532ms - 200
+2023-03-06 19:04:09.733 +01:00  INF  End processing HTTP request after 559.1046ms - 200
+2023-03-06 19:04:09.741 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:04:09.741 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:04:09.930 +01:00  INF  Received HTTP response headers after 188.9538ms - 200
+2023-03-06 19:04:09.930 +01:00  INF  End processing HTTP request after 189.8823ms - 200
+2023-03-06 19:04:09.989 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:04:09.989 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:04:10.242 +01:00  INF  Received HTTP response headers after 252.8306ms - 200
+2023-03-06 19:04:10.242 +01:00  INF  End processing HTTP request after 253.4002ms - 200
+2023-03-06 19:04:10.244 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:04:10.244 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:04:10.544 +01:00  INF  Received HTTP response headers after 300.4705ms - 200
+2023-03-06 19:04:10.545 +01:00  INF  End processing HTTP request after 301.1977ms - 200
+2023-03-06 19:04:10.546 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:04:10.546 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:04:10.749 +01:00  INF  Received HTTP response headers after 202.5862ms - 200
+2023-03-06 19:04:10.749 +01:00  INF  End processing HTTP request after 203.2425ms - 200
+2023-03-06 19:04:10.750 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:04:10.750 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:04:10.909 +01:00  INF  Received HTTP response headers after 159.185ms - 200
+2023-03-06 19:04:10.909 +01:00  INF  End processing HTTP request after 159.7536ms - 200
+2023-03-06 19:04:10.912 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:04:10.912 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:04:11.066 +01:00  INF  Received HTTP response headers after 153.4945ms - 200
+2023-03-06 19:04:11.067 +01:00  INF  End processing HTTP request after 154.7441ms - 200
+2023-03-06 19:04:11.068 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:04:11.068 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:04:11.262 +01:00  INF  Received HTTP response headers after 193.7454ms - 200
+2023-03-06 19:04:11.262 +01:00  INF  End processing HTTP request after 194.6955ms - 200
+2023-03-06 19:06:05.526 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:06:05.531 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:06:06.997 +01:00  INF  Received HTTP response headers after 1465.8248ms - 200
+2023-03-06 19:06:06.997 +01:00  INF  End processing HTTP request after 1471.065ms - 200
+2023-03-06 19:06:06.998 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:06:06.998 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:06:07.418 +01:00  INF  Received HTTP response headers after 419.7794ms - 200
+2023-03-06 19:06:07.418 +01:00  INF  End processing HTTP request after 420.3101ms - 200
+2023-03-06 19:06:07.421 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:06:07.421 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:06:07.589 +01:00  INF  Received HTTP response headers after 168.3297ms - 200
+2023-03-06 19:06:07.590 +01:00  INF  End processing HTTP request after 169.1632ms - 200
+2023-03-06 19:06:07.592 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:06:07.592 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:06:07.772 +01:00  INF  Received HTTP response headers after 179.6704ms - 200
+2023-03-06 19:06:07.773 +01:00  INF  End processing HTTP request after 180.6696ms - 200
+2023-03-06 19:06:07.774 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:06:07.775 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:06:07.998 +01:00  INF  Received HTTP response headers after 223.3105ms - 200
+2023-03-06 19:06:07.998 +01:00  INF  End processing HTTP request after 224.2378ms - 200
+2023-03-06 19:07:22.239 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:07:22.276 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:07:22.804 +01:00  INF  Received HTTP response headers after 526.5788ms - 200
+2023-03-06 19:07:22.805 +01:00  INF  End processing HTTP request after 566.0982ms - 200
+2023-03-06 19:07:22.806 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:07:22.806 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:07:23.061 +01:00  INF  Received HTTP response headers after 255.0252ms - 200
+2023-03-06 19:07:23.061 +01:00  INF  End processing HTTP request after 255.4548ms - 200
+2023-03-06 19:07:23.062 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:07:23.062 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:07:23.262 +01:00  INF  Received HTTP response headers after 200.0519ms - 200
+2023-03-06 19:07:23.263 +01:00  INF  End processing HTTP request after 200.7364ms - 200
+2023-03-06 19:12:02.868 +01:00  INF  User profile is available. Using 'C:\Users\yahia alioua\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-06 19:12:03.107 +01:00  INF  Now listening on: https://localhost:7063
+2023-03-06 19:12:03.108 +01:00  INF  Now listening on: http://localhost:5174
+2023-03-06 19:12:03.119 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-03-06 19:12:03.119 +01:00  INF  Hosting environment: Development
+2023-03-06 19:12:03.120 +01:00  INF  Content root path: C:\projects\AngularAuthApi\
+2023-03-06 19:12:04.114 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/index.html - -
+2023-03-06 19:12:04.585 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/index.html - - - 200 - text/html;charset=utf-8 476.7936ms
+2023-03-06 19:12:04.609 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - -
+2023-03-06 19:12:04.613 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 3.8926ms
+2023-03-06 19:12:04.621 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_vs/browserLink - -
+2023-03-06 19:12:04.639 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 18.1792ms
+2023-03-06 19:12:04.855 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - -
+2023-03-06 19:12:04.989 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 133.9715ms
+2023-03-06 19:12:28.607 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/api/tester?ticker=meta - -
+2023-03-06 19:12:28.677 +01:00  INF  Executing endpoint 'AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test (AngularAuthApi)'
+2023-03-06 19:12:28.746 +01:00  INF  Route matched with {action = "test", controller = "FinancialData"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] test(System.String, Double) on controller AngularAuthApi.DcfCalculator.Controller.FinancialDataController (AngularAuthApi).
+2023-03-06 19:12:28.824 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:12:28.837 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:12:30.198 +01:00  INF  Received HTTP response headers after 1344.8282ms - 200
+2023-03-06 19:12:30.200 +01:00  INF  End processing HTTP request after 1401.4783ms - 200
+2023-03-06 19:12:30.614 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:12:30.614 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:12:30.771 +01:00  INF  Received HTTP response headers after 156.9216ms - 200
+2023-03-06 19:12:30.772 +01:00  INF  End processing HTTP request after 157.932ms - 200
+2023-03-06 19:12:30.846 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:12:30.846 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:12:31.078 +01:00  INF  Received HTTP response headers after 231.8296ms - 200
+2023-03-06 19:12:31.078 +01:00  INF  End processing HTTP request after 232.7876ms - 200
+2023-03-06 19:12:31.147 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:12:31.147 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:12:31.385 +01:00  INF  Received HTTP response headers after 238.0107ms - 200
+2023-03-06 19:12:31.385 +01:00  INF  End processing HTTP request after 238.6973ms - 200
+2023-03-06 19:12:31.386 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:12:31.386 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:12:31.693 +01:00  INF  Received HTTP response headers after 306.3446ms - 200
+2023-03-06 19:12:31.693 +01:00  INF  End processing HTTP request after 307.043ms - 200
+2023-03-06 19:12:31.695 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:12:31.695 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:12:31.923 +01:00  INF  Received HTTP response headers after 228.3821ms - 200
+2023-03-06 19:12:31.924 +01:00  INF  End processing HTTP request after 228.8695ms - 200
+2023-03-06 19:12:31.925 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:12:31.925 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:12:32.127 +01:00  INF  Received HTTP response headers after 201.9463ms - 200
+2023-03-06 19:12:32.127 +01:00  INF  End processing HTTP request after 202.4542ms - 200
+2023-03-06 19:12:32.128 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:12:32.129 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:12:32.307 +01:00  INF  Received HTTP response headers after 178.3059ms - 200
+2023-03-06 19:12:32.307 +01:00  INF  End processing HTTP request after 178.9419ms - 200
+2023-03-06 19:12:32.310 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:12:32.323 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:12:32.512 +01:00  INF  Received HTTP response headers after 188.1514ms - 200
+2023-03-06 19:12:32.512 +01:00  INF  End processing HTTP request after 201.7641ms - 200
+2023-03-06 19:12:32.513 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:12:32.513 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:12:32.716 +01:00  INF  Received HTTP response headers after 203.1443ms - 200
+2023-03-06 19:12:32.717 +01:00  INF  End processing HTTP request after 203.6903ms - 200
+2023-03-06 19:12:32.718 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:12:32.718 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:12:32.922 +01:00  INF  Received HTTP response headers after 203.6117ms - 200
+2023-03-06 19:12:32.922 +01:00  INF  End processing HTTP request after 204.338ms - 200
+2023-03-06 19:12:32.924 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:12:32.924 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:12:33.127 +01:00  INF  Received HTTP response headers after 203.3661ms - 200
+2023-03-06 19:12:33.128 +01:00  INF  End processing HTTP request after 204.2629ms - 200
+2023-03-06 19:12:33.130 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:12:33.130 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:12:33.337 +01:00  INF  Received HTTP response headers after 207.0952ms - 200
+2023-03-06 19:12:33.338 +01:00  INF  End processing HTTP request after 207.9033ms - 200
+2023-03-06 19:12:33.345 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:12:33.345 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:12:33.536 +01:00  INF  Received HTTP response headers after 191.0434ms - 200
+2023-03-06 19:12:33.537 +01:00  INF  End processing HTTP request after 192.0832ms - 200
+2023-03-06 19:12:33.539 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:12:33.539 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:12:33.741 +01:00  INF  Received HTTP response headers after 201.4159ms - 200
+2023-03-06 19:12:33.742 +01:00  INF  End processing HTTP request after 202.5612ms - 200
+2023-03-06 19:12:33.745 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:12:33.745 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:12:34.357 +01:00  INF  Received HTTP response headers after 611.9189ms - 200
+2023-03-06 19:12:34.357 +01:00  INF  End processing HTTP request after 612.8393ms - 200
+2023-03-06 19:12:34.382 +01:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-03-06 19:12:34.423 +01:00  INF  Executed action AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test (AngularAuthApi) in 5666.4021ms
+2023-03-06 19:12:34.424 +01:00  INF  Executed endpoint 'AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test (AngularAuthApi)'
+2023-03-06 19:12:34.426 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/api/tester?ticker=meta - - - 200 - application/json;+charset=utf-8 5818.9199ms
+2023-03-06 19:13:50.033 +01:00  INF  User profile is available. Using 'C:\Users\yahia alioua\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-06 19:13:50.342 +01:00  INF  Now listening on: https://localhost:7063
+2023-03-06 19:13:50.342 +01:00  INF  Now listening on: http://localhost:5174
+2023-03-06 19:13:50.351 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-03-06 19:13:50.352 +01:00  INF  Hosting environment: Development
+2023-03-06 19:13:50.352 +01:00  INF  Content root path: C:\projects\AngularAuthApi\
+2023-03-06 19:13:50.572 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/index.html - -
+2023-03-06 19:13:51.071 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/index.html - - - 200 - text/html;charset=utf-8 503.6577ms
+2023-03-06 19:13:51.156 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - -
+2023-03-06 19:13:51.156 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_vs/browserLink - -
+2023-03-06 19:13:51.161 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 4.9117ms
+2023-03-06 19:13:51.179 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 22.6313ms
+2023-03-06 19:13:51.342 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - -
+2023-03-06 19:13:51.505 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 163.3902ms
+2023-03-06 19:14:08.646 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/api/tester?ticker=meta - -
+2023-03-06 19:14:08.700 +01:00  INF  Executing endpoint 'AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test (AngularAuthApi)'
+2023-03-06 19:14:08.766 +01:00  INF  Route matched with {action = "test", controller = "FinancialData"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] test(System.String, Double) on controller AngularAuthApi.DcfCalculator.Controller.FinancialDataController (AngularAuthApi).
+2023-03-06 19:14:08.837 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:14:08.853 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:14:10.031 +01:00  INF  Received HTTP response headers after 1163.6408ms - 200
+2023-03-06 19:14:10.033 +01:00  INF  End processing HTTP request after 1216.7154ms - 200
+2023-03-06 19:14:10.363 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:14:10.363 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:14:10.611 +01:00  INF  Received HTTP response headers after 248.4963ms - 200
+2023-03-06 19:14:10.612 +01:00  INF  End processing HTTP request after 249.2435ms - 200
+2023-03-06 19:14:10.668 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:14:10.669 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:14:10.849 +01:00  INF  Received HTTP response headers after 180.0895ms - 200
+2023-03-06 19:14:10.849 +01:00  INF  End processing HTTP request after 181.0222ms - 200
+2023-03-06 19:14:10.915 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:14:10.916 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:14:11.123 +01:00  INF  Received HTTP response headers after 207.1282ms - 200
+2023-03-06 19:14:11.123 +01:00  INF  End processing HTTP request after 208.2197ms - 200
+2023-03-06 19:14:11.125 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:14:11.125 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:14:11.294 +01:00  INF  Received HTTP response headers after 169.4777ms - 200
+2023-03-06 19:14:11.295 +01:00  INF  End processing HTTP request after 169.9922ms - 200
+2023-03-06 19:14:11.296 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:14:11.296 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/balance-sheet-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:14:11.533 +01:00  INF  Received HTTP response headers after 236.3884ms - 200
+2023-03-06 19:14:11.533 +01:00  INF  End processing HTTP request after 236.796ms - 200
+2023-03-06 19:14:11.533 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:14:11.533 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:14:11.743 +01:00  INF  Received HTTP response headers after 209.4135ms - 200
+2023-03-06 19:14:11.744 +01:00  INF  End processing HTTP request after 210.2945ms - 200
+2023-03-06 19:14:11.746 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:14:11.746 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/cash-flow-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:14:12.044 +01:00  INF  Received HTTP response headers after 298.1349ms - 200
+2023-03-06 19:14:12.045 +01:00  INF  End processing HTTP request after 299.1228ms - 200
+2023-03-06 19:14:12.046 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:14:12.046 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:14:12.252 +01:00  INF  Received HTTP response headers after 205.8467ms - 429
+2023-03-06 19:14:12.252 +01:00  INF  End processing HTTP request after 206.3769ms - 429
+2023-03-06 19:14:12.310 +01:00  INF  Executed action AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test (AngularAuthApi) in 3519.2544ms
+2023-03-06 19:14:12.313 +01:00  INF  Executed endpoint 'AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test (AngularAuthApi)'
+2023-03-06 19:14:12.333 +01:00  ERR  An unhandled exception has occurred while executing the request.System.Net.Http.HttpRequestException: Response status code does not indicate success: 429 (Too Many Requests).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at System.Net.Http.HttpClient.GetStringAsyncCore(HttpRequestMessage request, CancellationToken cancellationToken)
+   at AngularAuthApi.DcfCalculator.HttpClient.FinancialPrepHttpCalls.GetIncomeStatements(String Ticker) in C:\projects\AngularAuthApi\DcfCalculator\HttpClient\FinancialPrepHttpCalls.cs:line 22
+   at AngularAuthApi.DcfCalculator.Services.CoreDcfService.IncomeStatement(String ticker) in C:\projects\AngularAuthApi\DcfCalculator\Services\CoreDcfService.cs:line 21
+   at AngularAuthApi.DcfCalculator.Services.CoreDcfService.ReinvestementRate(String ticker) in C:\projects\AngularAuthApi\DcfCalculator\Services\CoreDcfService.cs:line 70
+   at AngularAuthApi.DcfCalculator.Services.CoreDcfService.ExpectedGrowthrate(String ticker) in C:\projects\AngularAuthApi\DcfCalculator\Services\CoreDcfService.cs:line 91
+   at AngularAuthApi.DcfCalculator.Services.CoreDcfService.ExpectedFcff(String ticker) in C:\projects\AngularAuthApi\DcfCalculator\Services\CoreDcfService.cs:line 112
+   at AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test(String ticker, Double sharePrice) in C:\projects\AngularAuthApi\DcfCalculator\Controller\FinancialDataController.cs:line 41
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+
+2023-03-06 19:14:12.456 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/api/tester?ticker=meta - - - 500 - text/plain;+charset=utf-8 3810.2802ms
+2023-03-06 19:14:53.238 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/index.html - -
+2023-03-06 19:14:53.257 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/index.html - - - 200 - text/html;charset=utf-8 19.3900ms
+2023-03-06 19:14:53.357 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - -
+2023-03-06 19:14:53.357 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_vs/browserLink - -
+2023-03-06 19:14:53.357 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 0.4933ms
+2023-03-06 19:14:53.368 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 11.3651ms
+2023-03-06 19:14:53.672 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - -
+2023-03-06 19:14:53.677 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 5.1774ms
+2023-03-06 19:15:04.467 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/api/tester?ticker=meta - -
+2023-03-06 19:15:04.469 +01:00  INF  Executing endpoint 'AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test (AngularAuthApi)'
+2023-03-06 19:15:04.470 +01:00  INF  Route matched with {action = "test", controller = "FinancialData"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] test(System.String, Double) on controller AngularAuthApi.DcfCalculator.Controller.FinancialDataController (AngularAuthApi).
+2023-03-06 19:15:04.472 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:15:04.472 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:15:05.091 +01:00  INF  Received HTTP response headers after 619.3075ms - 429
+2023-03-06 19:15:05.092 +01:00  INF  End processing HTTP request after 619.8135ms - 429
+2023-03-06 19:15:05.097 +01:00  INF  Executed action AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test (AngularAuthApi) in 626.7899ms
+2023-03-06 19:15:05.098 +01:00  INF  Executed endpoint 'AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test (AngularAuthApi)'
+2023-03-06 19:15:05.099 +01:00  ERR  An unhandled exception has occurred while executing the request.System.Net.Http.HttpRequestException: Response status code does not indicate success: 429 (Too Many Requests).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at System.Net.Http.HttpClient.GetStringAsyncCore(HttpRequestMessage request, CancellationToken cancellationToken)
+   at AngularAuthApi.DcfCalculator.HttpClient.FinancialPrepHttpCalls.GetIncomeStatements(String Ticker) in C:\projects\AngularAuthApi\DcfCalculator\HttpClient\FinancialPrepHttpCalls.cs:line 22
+   at AngularAuthApi.DcfCalculator.Services.CoreDcfService.IncomeStatement(String ticker) in C:\projects\AngularAuthApi\DcfCalculator\Services\CoreDcfService.cs:line 21
+   at AngularAuthApi.DcfCalculator.Services.CoreDcfService.ReinvestementRate(String ticker) in C:\projects\AngularAuthApi\DcfCalculator\Services\CoreDcfService.cs:line 70
+   at AngularAuthApi.DcfCalculator.Services.CoreDcfService.ExpectedGrowthrate(String ticker) in C:\projects\AngularAuthApi\DcfCalculator\Services\CoreDcfService.cs:line 91
+   at AngularAuthApi.DcfCalculator.Services.CoreDcfService.FiveYearsExpectedReinvestementRate(String ticker) in C:\projects\AngularAuthApi\DcfCalculator\Services\CoreDcfService.cs:line 97
+   at AngularAuthApi.DcfCalculator.Services.CoreDcfService.ExpectedFcff(String ticker) in C:\projects\AngularAuthApi\DcfCalculator\Services\CoreDcfService.cs:line 111
+   at AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test(String ticker, Double sharePrice) in C:\projects\AngularAuthApi\DcfCalculator\Controller\FinancialDataController.cs:line 41
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+
+2023-03-06 19:15:05.109 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/api/tester?ticker=meta - - - 500 - text/plain;+charset=utf-8 642.1904ms
