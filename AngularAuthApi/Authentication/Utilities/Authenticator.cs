@@ -10,7 +10,7 @@ namespace AngularAuthApi.Authentication.Utilities
 {
     public class Authenticator : IAuthenticator
     {
-        private readonly IUserRepository _userRepository;
+        private readonly IUserAuthRepository _userRepository;
         private readonly IJwtProvider _jwtProvider;
         private readonly IRefreshTokenProvider _refreshTokenProvider;
         private readonly IRefreshTokenValidate _refreshTokenValidate;
@@ -18,7 +18,7 @@ namespace AngularAuthApi.Authentication.Utilities
         private readonly ITokenRepository _tokenRepository;
 
 
-        public Authenticator(IUserRepository userRepository,
+        public Authenticator(IUserAuthRepository userRepository,
             IJwtProvider jwtProvider, IRefreshTokenProvider refreshTokenProvider,
             ITokenRepository tokenRepository, IRefreshTokenValidate refreshTokenValidate)
         {
@@ -41,8 +41,9 @@ namespace AngularAuthApi.Authentication.Utilities
 
             return new AuthUserResponse()
             {
+                
                 AccessToken = GetUser.Token,
-                Payload = new Payload() { Name = GetUser.Name, Email = GetUser.Email },
+                Payload = new Payload() { Id = GetUser.Id, Name = GetUser.Name, Email = GetUser.Email },
                 RefreshToken = RefreshToken,
 
             };

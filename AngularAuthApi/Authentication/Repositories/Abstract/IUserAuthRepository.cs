@@ -3,7 +3,7 @@ using AngularAuthApi.Entities;
 
 namespace AngularAuthApi.Authentication.Repositories.Abstract
 {
-    public interface IUserRepository
+    public interface IUserAuthRepository
     {
         Task<User> AuthenticateUser(LoginDto user);
         Task RegisterUser(User user);

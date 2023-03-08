@@ -1,8 +1,8 @@
-﻿using AngularAuthApi.DcfCalculator.Abstract;
+﻿using AngularAuthApi.Core.DcfCalculator.Abstract;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace AngularAuthApi.DcfCalculator.Controller
+namespace AngularAuthApi.Core.DcfCalculator.Controller
 {
     [Route("api/")]
     [ApiController]
@@ -36,10 +36,17 @@ namespace AngularAuthApi.DcfCalculator.Controller
             return Ok(response);
         }
         [HttpGet("tester")]
+        [ResponseCache(Duration = 80000, Location = ResponseCacheLocation.Any)]
         public async Task<IActionResult> test(string ticker, double sharePrice)
         {
-            var response = await _coreDcfService.ExpectedFcff(ticker);
+            var response1 = await _coreDcfService.Fcff(ticker);
+            var response2 = await _coreDcfService.Wacc(ticker,sharePrice);
+            var response3 = await _coreDcfService.ExpectedFcff(ticker);
+            var response4 = await _coreDcfService.TerminalValue(ticker,sharePrice);
+            var response5 = await _coreDcfService.PvFcff(ticker, sharePrice);
+            var response = await _coreDcfService.result(ticker,sharePrice);
             return Ok(response);
         }
+        
     }
 }

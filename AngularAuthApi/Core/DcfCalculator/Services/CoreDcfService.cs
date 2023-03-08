@@ -1,15 +1,17 @@
-﻿using AngularAuthApi.DcfCalculator.Abstract;
-using AngularAuthApi.DcfCalculator.Models;
+﻿using AngularAuthApi.Core.DcfCalculator.Abstract;
+using AngularAuthApi.Core.DcfCalculator.Models;
 using Google.Protobuf.WellKnownTypes;
 using Newtonsoft.Json;
+using System.Collections.Generic;
 using System.Security.Policy;
 using System.Text.Json;
 
-namespace AngularAuthApi.DcfCalculator.Services
+namespace AngularAuthApi.Core.DcfCalculator.Services
 {
     public class CoreDcfService : ICoreDcfService
     {
         private readonly IFinancialPrepHttpCalls _httpCalls;
+        public List<IncomeStatements> incomeStatement;
 
 
         public CoreDcfService(IFinancialPrepHttpCalls httpCalls)
@@ -50,28 +52,23 @@ namespace AngularAuthApi.DcfCalculator.Services
         public async Task<double> Fcff(string ticker)
         {
             FCFF data = await GetDataCalcFcff(ticker);
-            double fcff = ((data.NetIncome + data.InterestExpanse + data.IncomeTaxExpense)
+            double fcff = (data.NetIncome + data.InterestExpanse + data.IncomeTaxExpense)
                 * (1 - 0.21) - (data.CapitalExpenditure - data.DepreciationAndAmortization)
-                - data.ChangeInWorkingCapital);
+                - data.ChangeInWorkingCapital;
             return fcff;
         }
         public async Task<double> Wacc(string ticker, double sharePrice)
         {
-            List<BalanceSheet> balanceSheet = await BalanceSheet(ticker);
-            List<IncomeStatements> incomeStatement = await IncomeStatement(ticker);
-            double marketCapital = sharePrice * incomeStatement[0].weightedAverageShsOut;
-            double equityWeight = marketCapital + balanceSheet[0].totalDebt;
-            double debtWeight = balanceSheet[0].totalDebt / marketCapital + balanceSheet[0].totalDebt;
-            double wacc = equityWeight * debtWeight;
+            double wacc = 0.10;
             return wacc;
         }
         public async Task<double> ReinvestementRate(string ticker)
         {
             List<IncomeStatements> incomeStatement = await IncomeStatement(ticker);
             List<CashFlowStatements> cashFlowStatement = await CashFlowStatement(ticker);
-            double reinvestementRate = (cashFlowStatement[0].capitalExpenditure - incomeStatement[0].depreciationAndAmortization
-               + cashFlowStatement[0].changeInWorkingCapital) /
-               (incomeStatement[0].netIncome + incomeStatement[0].interestExpense + incomeStatement[0].incomeTaxExpense);
+            double reinvestementRate = ((cashFlowStatement[0].capitalExpenditure - incomeStatement[0].depreciationAndAmortization
+               + cashFlowStatement[0].changeInWorkingCapital)) /
+               ((incomeStatement[0].netIncome + incomeStatement[0].interestExpense)*(1-0.21));
 
             return reinvestementRate;
         }
@@ -121,7 +118,7 @@ namespace AngularAuthApi.DcfCalculator.Services
             fcff.Add(0);
             for (int i = 1; i < years; i++)
             {
-                double expectedAfterTaxOpIncome = Math.Pow((afterTaxOperatingIncome * (1 + expectedGrowthRate)), i);
+                double expectedAfterTaxOpIncome = Math.Pow(afterTaxOperatingIncome * (1 + expectedGrowthRate), i);
                 double expectedReinvestment = fiveYearsexpectedReinvestementRate * expectedAfterTaxOpIncome;
                 double expectedFcff = expectedAfterTaxOpIncome - expectedReinvestment;
                 afterTaxOperatingIncomeGrowth.Add(expectedAfterTaxOpIncome);
@@ -142,7 +139,7 @@ namespace AngularAuthApi.DcfCalculator.Services
             double terminalReinvestmentRate = terminalAfterTaxOpIncome * termianlGrowthRate;
             double TerminalFcff = terminalAfterTaxOpIncome - terminalReinvestmentRate;
             double TerminalValue = TerminalFcff / (wacc - terminalReinvestmentRate);
-            double presentTerminalValue = Math.Pow((TerminalValue / (1 + wacc)), (expectedFinancials[2].Count)) + 1;
+            double presentTerminalValue = Math.Pow(TerminalValue / (1 + wacc), expectedFinancials[2].Count) + 1;
             return presentTerminalValue;
         }
         public async Task<double> PvFcff(string ticker, double sharePrice)
@@ -152,7 +149,7 @@ namespace AngularAuthApi.DcfCalculator.Services
             double pvFcff = 0;
             for (int i = 0; i < expectedFinancials[1].Count; i++)
             {
-                pvFcff += expectedFinancials[2][i] / Math.Pow((1 + wacc), i);
+                pvFcff += expectedFinancials[2][i] / Math.Pow(1 + wacc, i);
             }
             return pvFcff;
         }
@@ -176,6 +173,14 @@ namespace AngularAuthApi.DcfCalculator.Services
             double valueOfFirm = await ValueOfFirm(ticker, sharePrice);
             double valueOfEquity = valueOfFirm + balanceSheet[0].totalDebt;
             return valueOfEquity;
+        }
+        public async Task<double> result(string ticker, double sharePrice)
+        {
+            List<IncomeStatements> incomeStatement = await IncomeStatement(ticker);
+            double totalSharesOustanding = incomeStatement[0].weightedAverageShsOut;
+            double valueOfFirm=await ValueOfFirm(ticker,sharePrice);
+            var targetPrice = valueOfFirm / totalSharesOustanding;
+            return targetPrice;
         }
     }
 }

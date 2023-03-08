@@ -1,4 +1,4 @@
-﻿namespace AngularAuthApi.DcfCalculator.Models
+﻿namespace AngularAuthApi.Core.DcfCalculator.Models
 {
     public record IncomeStatements
     {
@@ -41,7 +41,7 @@
         public string link { get; set; }
         public string finalLink { get; set; }
     }
-      
-    
-    
+
+
+
 }

@@ -18,16 +18,16 @@ namespace AngularAuthApi.Authentication.Controllers
     [ApiController]
     public class AuthController : ControllerBase
     {
-        private readonly IUserRepository _userRepository;
+        private readonly IUserAuthRepository _userRepository;
         private readonly IRefreshTokenValidate _refreshTokenValidate;
         private readonly IAuthenticator _authenticator;
         private readonly ITokenRepository _tokenRepository;
-        private readonly IUserInfoRepository _userInfoRepository;
+        private readonly IUserRepository _userInfoRepository;
 
 
-        public AuthController(IUserRepository userRepository,
+        public AuthController(IUserAuthRepository userRepository,
             ITokenRepository tokenRepository, IRefreshTokenValidate refreshTokenValidate,
-            IAuthenticator authenticator, IUserInfoRepository userInfoRepository)
+            IAuthenticator authenticator, IUserRepository userInfoRepository)
         {
             _userRepository = userRepository;
             _tokenRepository = tokenRepository;
@@ -112,7 +112,7 @@ namespace AngularAuthApi.Authentication.Controllers
             return Ok(resp);
 
         }
-        [HttpDelete("{Id}")]
+        [HttpDelete("{id:int}")]
         public async Task<IActionResult> Delete(int id)
         {
             var user = await _userRepository.GetUserById(id);
@@ -123,7 +123,7 @@ namespace AngularAuthApi.Authentication.Controllers
             await _userRepository.DeleteUser(user);
             return Accepted(new { Message = "User succesfully delated", Code = "Auth:0073" });
         }
-        [HttpGet("user-data{Id}")]
+        [HttpGet("{id:int}")]
         public async Task<IActionResult> GetUserData(int id)
         {
             var user= await _userRepository.GetUserById(id);

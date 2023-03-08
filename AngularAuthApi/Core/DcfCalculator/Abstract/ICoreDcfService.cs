@@ -1,6 +1,6 @@
-﻿using AngularAuthApi.DcfCalculator.Models;
+﻿using AngularAuthApi.Core.DcfCalculator.Models;
 
-namespace AngularAuthApi.DcfCalculator.Abstract
+namespace AngularAuthApi.Core.DcfCalculator.Abstract
 {
     public interface ICoreDcfService
     {
@@ -21,7 +21,6 @@ namespace AngularAuthApi.DcfCalculator.Abstract
         Task<double> ValueOperatingAsset(string ticker, double sharePrice);
         Task<double> ValueOfFirm(string ticker, double sharePrice);
         Task<double> ValueOfEquity(string ticker, double sharePrice);
-
-
+        Task<double> result(string ticker, double sharePrice);
     }
 }

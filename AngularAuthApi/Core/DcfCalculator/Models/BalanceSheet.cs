@@ -1,4 +1,4 @@
-﻿namespace AngularAuthApi.DcfCalculator.Models
+﻿namespace AngularAuthApi.Core.DcfCalculator.Models
 {
     public class BalanceSheet
     {
@@ -57,5 +57,5 @@
         public string link { get; set; }
         public string finalLink { get; set; }
     }
-        
+
 }

@@ -1292,3 +1292,119 @@
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
 
 2023-03-06 19:15:05.109 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/api/tester?ticker=meta - - - 500 - text/plain;+charset=utf-8 642.1904ms
+2023-03-06 19:15:47.592 +01:00  INF  User profile is available. Using 'C:\Users\yahia alioua\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-06 19:15:47.772 +01:00  INF  Now listening on: https://localhost:7063
+2023-03-06 19:15:47.772 +01:00  INF  Now listening on: http://localhost:5174
+2023-03-06 19:15:47.776 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-03-06 19:15:47.777 +01:00  INF  Hosting environment: Development
+2023-03-06 19:15:47.777 +01:00  INF  Content root path: C:\projects\AngularAuthApi\
+2023-03-06 19:15:48.184 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/index.html - -
+2023-03-06 19:15:48.837 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/index.html - - - 200 - text/html;charset=utf-8 670.2063ms
+2023-03-06 19:15:48.845 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - -
+2023-03-06 19:15:48.845 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_vs/browserLink - -
+2023-03-06 19:15:48.849 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 4.1164ms
+2023-03-06 19:15:48.865 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 19.8008ms
+2023-03-06 19:15:49.117 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - -
+2023-03-06 19:15:49.275 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 157.7691ms
+2023-03-06 19:15:59.017 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/api/tester?ticker=meta - -
+2023-03-06 19:15:59.074 +01:00  INF  Executing endpoint 'AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test (AngularAuthApi)'
+2023-03-06 19:15:59.264 +01:00  INF  Route matched with {action = "test", controller = "FinancialData"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] test(System.String, Double) on controller AngularAuthApi.DcfCalculator.Controller.FinancialDataController (AngularAuthApi).
+2023-03-06 19:15:59.367 +01:00  INF  Start processing HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:15:59.381 +01:00  INF  Sending HTTP request GET "https://financialmodelingprep.com/api/v3/income-statement/meta?limit=5&apikey=9e79e541240a16005f1940b4b6984242"
+2023-03-06 19:16:00.320 +01:00  INF  Received HTTP response headers after 919.0414ms - 429
+2023-03-06 19:16:00.323 +01:00  INF  End processing HTTP request after 989.8857ms - 429
+2023-03-06 19:16:00.354 +01:00  INF  Executed action AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test (AngularAuthApi) in 1076.7663ms
+2023-03-06 19:16:00.355 +01:00  INF  Executed endpoint 'AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test (AngularAuthApi)'
+2023-03-06 19:16:00.364 +01:00  ERR  An unhandled exception has occurred while executing the request.System.Net.Http.HttpRequestException: Response status code does not indicate success: 429 (Too Many Requests).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at System.Net.Http.HttpClient.GetStringAsyncCore(HttpRequestMessage request, CancellationToken cancellationToken)
+   at AngularAuthApi.DcfCalculator.HttpClient.FinancialPrepHttpCalls.GetIncomeStatements(String Ticker) in C:\projects\AngularAuthApi\DcfCalculator\HttpClient\FinancialPrepHttpCalls.cs:line 22
+   at AngularAuthApi.DcfCalculator.Services.CoreDcfService.IncomeStatement(String ticker) in C:\projects\AngularAuthApi\DcfCalculator\Services\CoreDcfService.cs:line 21
+   at AngularAuthApi.DcfCalculator.Services.CoreDcfService.ReinvestementRate(String ticker) in C:\projects\AngularAuthApi\DcfCalculator\Services\CoreDcfService.cs:line 70
+   at AngularAuthApi.DcfCalculator.Services.CoreDcfService.ExpectedGrowthrate(String ticker) in C:\projects\AngularAuthApi\DcfCalculator\Services\CoreDcfService.cs:line 91
+   at AngularAuthApi.DcfCalculator.Services.CoreDcfService.FiveYearsExpectedReinvestementRate(String ticker) in C:\projects\AngularAuthApi\DcfCalculator\Services\CoreDcfService.cs:line 97
+   at AngularAuthApi.DcfCalculator.Services.CoreDcfService.ExpectedFcff(String ticker) in C:\projects\AngularAuthApi\DcfCalculator\Services\CoreDcfService.cs:line 111
+   at AngularAuthApi.DcfCalculator.Controller.FinancialDataController.test(String ticker, Double sharePrice) in C:\projects\AngularAuthApi\DcfCalculator\Controller\FinancialDataController.cs:line 41
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+
+2023-03-06 19:16:00.427 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/api/tester?ticker=meta - - - 500 - text/plain;+charset=utf-8 1409.4417ms
+2023-03-06 20:00:30.103 +01:00  INF  User profile is available. Using 'C:\Users\yahia alioua\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-06 20:00:30.248 +01:00  INF  Now listening on: https://localhost:7063
+2023-03-06 20:00:30.248 +01:00  INF  Now listening on: http://localhost:5174
+2023-03-06 20:00:30.252 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-03-06 20:00:30.252 +01:00  INF  Hosting environment: Development
+2023-03-06 20:00:30.252 +01:00  INF  Content root path: C:\projects\AngularAuthApi\
+2023-03-06 20:00:31.187 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/index.html - -
+2023-03-06 20:00:31.644 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/index.html - - - 200 - text/html;charset=utf-8 466.9266ms
+2023-03-06 20:00:31.660 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - -
+2023-03-06 20:00:31.666 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 5.2751ms
+2023-03-06 20:00:31.689 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/_vs/browserLink - -
+2023-03-06 20:00:31.712 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 22.9794ms
+2023-03-06 20:00:31.933 +01:00  INF  Request starting HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - -
+2023-03-06 20:00:32.075 +01:00  INF  Request finished HTTP/2 GET https://localhost:7063/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 142.4843ms
+2023-03-06 20:01:31.954 +01:00  INF  Request starting HTTP/2 POST https://localhost:7063/api/users/new application/json 82
+2023-03-06 20:01:31.967 +01:00  INF  CORS policy execution successful.
+2023-03-06 20:01:32.019 +01:00  INF  Executing endpoint 'AngularAuthApi.Authentication.Controllers.AuthController.RegisterUser (AngularAuthApi)'
+2023-03-06 20:01:32.125 +01:00  INF  Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(AngularAuthApi.Entities.Requests.SignUpRequest) on controller AngularAuthApi.Authentication.Controllers.AuthController (AngularAuthApi).
+2023-03-06 20:01:39.147 +01:00  INF  Executed DbCommand (32ms) [Parameters=[@__userEmail_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Users` AS `u`
+    WHERE `u`.`Email` = @__userEmail_0)
+2023-03-06 20:01:40.577 +01:00  INF  Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 100), @p1='?' (Size = 50), @p2='?' (Size = 128), @p3='?' (Size = 128) (DbType = Binary), @p4='?' (Size = 500)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Users` (`Email`, `Name`, `Password`, `Salt`, `Token`)
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT `Id`
+FROM `Users`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2023-03-06 20:01:40.625 +01:00  INF  Executed DbCommand (4ms) [Parameters=[@p5='?' (DbType = Int32), @p6='?' (DbType = DateTime), @p7='?' (DbType = SByte), @p8='?' (DbType = SByte), @p9='?' (DbType = DateTime), @p10='?' (Size = 500), @p11='?' (DbType = Int32), @p12='?' (Size = 200), @p13='?' (Size = 100), @p14='?' (Size = 50), @p15='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Auth` (`Id`, `ExpiredDate`, `IsActive`, `IsExpired`, `IssuedDate`, `RefreshToken`)
+VALUES (@p5, @p6, @p7, @p8, @p9, @p10);
+INSERT INTO `UserInfo` (`Id`, `AboutMe`, `Linkedin`, `Website`, `YouTube`)
+VALUES (@p11, @p12, @p13, @p14, @p15);
+2023-03-06 20:01:40.664 +01:00  INF  Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-03-06 20:01:40.696 +01:00  INF  Executed action AngularAuthApi.Authentication.Controllers.AuthController.RegisterUser (AngularAuthApi) in 8562.225ms
+2023-03-06 20:01:40.697 +01:00  INF  Executed endpoint 'AngularAuthApi.Authentication.Controllers.AuthController.RegisterUser (AngularAuthApi)'
+2023-03-06 20:01:40.704 +01:00  INF  Request finished HTTP/2 POST https://localhost:7063/api/users/new application/json 82 - 200 - application/json;+charset=utf-8 8749.7650ms
+2023-03-06 20:01:55.802 +01:00  INF  Request starting HTTP/2 POST https://localhost:7063/api/users/session application/json 65
+2023-03-06 20:01:55.809 +01:00  INF  CORS policy execution successful.
+2023-03-06 20:01:55.810 +01:00  INF  Executing endpoint 'AngularAuthApi.Authentication.Controllers.AuthController.Authenticate (AngularAuthApi)'
+2023-03-06 20:01:55.818 +01:00  INF  Route matched with {action = "Authenticate", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(AngularAuthApi.Authentication.DTOS.LoginDto) on controller AngularAuthApi.Authentication.Controllers.AuthController (AngularAuthApi).
+2023-03-06 20:01:55.928 +01:00  INF  Executed DbCommand (1ms) [Parameters=[@__user_Email_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`Email`, `u`.`Name`, `u`.`Password`, `u`.`Salt`, `u`.`Token`
+FROM `Users` AS `u`
+WHERE `u`.`Email` = @__user_Email_0
+LIMIT 1
+2023-03-06 20:01:57.310 +01:00  INF  Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`ExpiredDate`, `a`.`IsActive`, `a`.`IsExpired`, `a`.`IssuedDate`, `a`.`RefreshToken`
+FROM `Auth` AS `a`
+WHERE `a`.`Id` = @__id_0
+LIMIT 1
+2023-03-06 20:01:57.388 +01:00  INF  Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`ExpiredDate`, `a`.`IsActive`, `a`.`IsExpired`, `a`.`IssuedDate`, `a`.`RefreshToken`
+FROM `Auth` AS `a`
+WHERE `a`.`Id` = @__id_0
+LIMIT 1
+2023-03-06 20:01:57.418 +01:00  INF  Executed DbCommand (6ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (DbType = DateTime), @p1='?' (DbType = SByte), @p2='?' (DbType = SByte), @p3='?' (DbType = DateTime), @p4='?' (Size = 500), @p7='?' (DbType = Int32), @p6='?' (Size = 500)], CommandType='"Text"', CommandTimeout='30']
+UPDATE `Auth` SET `ExpiredDate` = @p0, `IsActive` = @p1, `IsExpired` = @p2, `IssuedDate` = @p3, `RefreshToken` = @p4
+WHERE `Id` = @p5;
+UPDATE `Users` SET `Token` = @p6
+WHERE `Id` = @p7;
+2023-03-06 20:01:57.440 +01:00  INF  Executing OkObjectResult, writing value of type 'AngularAuthApi.Entities.Responses.AuthUserResponse'.
+2023-03-06 20:01:57.447 +01:00  INF  Executed action AngularAuthApi.Authentication.Controllers.AuthController.Authenticate (AngularAuthApi) in 1628.4225ms
+2023-03-06 20:01:57.447 +01:00  INF  Executed endpoint 'AngularAuthApi.Authentication.Controllers.AuthController.Authenticate (AngularAuthApi)'
+2023-03-06 20:01:57.449 +01:00  INF  Request finished HTTP/2 POST https://localhost:7063/api/users/session application/json 65 - 200 - application/json;+charset=utf-8 1647.1501ms

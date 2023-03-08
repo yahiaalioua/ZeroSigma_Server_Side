@@ -1,7 +1,7 @@
-﻿using AngularAuthApi.DcfCalculator.Models;
+﻿
 using Microsoft.AspNetCore.Mvc;
 
-namespace AngularAuthApi.DcfCalculator.Abstract
+namespace AngularAuthApi.Core.DcfCalculator.Abstract
 {
     public interface IFinancialPrepHttpCalls
     {

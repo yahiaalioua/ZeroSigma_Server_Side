@@ -10,11 +10,11 @@ using System.Text.RegularExpressions;
 
 namespace AngularAuthApi.Authentication.Repositories
 {
-    public class UserRepository : IUserRepository
+    public class UserAuthRepository : IUserAuthRepository
     {
         private readonly UserDbContext _context;
 
-        public UserRepository(UserDbContext context)
+        public UserAuthRepository(UserDbContext context)
         {
             _context = context;
         }
