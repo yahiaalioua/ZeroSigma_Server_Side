@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\projects\\AngularAuthApi\\AngularAuthApi.csproj": {}
+    "C:\\Users\\yahia alioua\\Desktop\\ZeroSigma\\AngularAuthApi\\AngularAuthApi.csproj": {}
   },
   "projects": {
-    "C:\\projects\\AngularAuthApi\\AngularAuthApi.csproj": {
+    "C:\\Users\\yahia alioua\\Desktop\\ZeroSigma\\AngularAuthApi\\AngularAuthApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\projects\\AngularAuthApi\\AngularAuthApi.csproj",
+        "projectUniqueName": "C:\\Users\\yahia alioua\\Desktop\\ZeroSigma\\AngularAuthApi\\AngularAuthApi.csproj",
         "projectName": "AngularAuthApi",
-        "projectPath": "C:\\projects\\AngularAuthApi\\AngularAuthApi.csproj",
+        "projectPath": "C:\\Users\\yahia alioua\\Desktop\\ZeroSigma\\AngularAuthApi\\AngularAuthApi.csproj",
         "packagesPath": "C:\\Users\\yahia alioua\\.nuget\\packages\\",
-        "outputPath": "C:\\projects\\AngularAuthApi\\obj\\",
+        "outputPath": "C:\\Users\\yahia alioua\\Desktop\\ZeroSigma\\AngularAuthApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\yahia alioua\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -17,31 +17,12 @@ namespace AngularAuthApi.Core.DcfCalculator.Controller
             _coreDcfService = coreDcfService;
         }
 
-        [HttpGet("income-statements/{Ticker}")]
-        public async Task<IActionResult> GetIncomeStatements(string Ticker)
+        [HttpGet("intristic-value")]
+        public async Task<IActionResult>GetIntristicValue(string ticker)
         {
-            var response = await _calls.GetIncomeStatements(Ticker);
-            return Ok(response);
+            double intristicValue=await _coreDcfService.IntristicShareValue(ticker);
+            return Ok(intristicValue);
         }
-        [HttpGet("balance-sheet/{Ticker}")]
-        public async Task<IActionResult> GetBalanceSheet(string Ticker)
-        {
-            var response = await _calls.GetBalanceSheet(Ticker);
-            return Ok(response);
-        }
-        [HttpGet("cash-flow-statements/{Ticker}")]
-        public async Task<IActionResult> GetCashFlowStatements(string Ticker)
-        {
-            var response = await _calls.GetCashFlowStatements(Ticker);
-            return Ok(response);
-        }
-        [HttpGet("tester")]
-        [ResponseCache(Duration = 80000, Location = ResponseCacheLocation.Any)]
-        public async Task<IActionResult> test(string ticker, double sharePrice)
-        {
-            var response = await _coreDcfService.result(ticker,sharePrice);
-            return Ok(response);
-        }
-        
+
     }
 }

@@ -1,10 +1,7 @@
 ﻿using AngularAuthApi.Core.DcfCalculator.Abstract;
 using AngularAuthApi.Core.DcfCalculator.Models;
-using Google.Protobuf.WellKnownTypes;
 using Newtonsoft.Json;
-using System.Collections.Generic;
-using System.Security.Policy;
-using System.Text.Json;
+
 
 namespace AngularAuthApi.Core.DcfCalculator.Services
 {
@@ -12,6 +9,11 @@ namespace AngularAuthApi.Core.DcfCalculator.Services
     {
         private readonly IFinancialPrepHttpCalls _httpCalls;
         public List<IncomeStatements> incomeStatement;
+
+        private static double perpetualRate = 0.03;
+        private static double requiredRate = 0.10;
+
+
 
 
         public CoreDcfService(IFinancialPrepHttpCalls httpCalls)
@@ -34,41 +36,15 @@ namespace AngularAuthApi.Core.DcfCalculator.Services
             return cashFlowStatement;
         }
 
-        public async Task<FCFF> GetDataCalcFcff(string Ticker)
-        {
-            List<IncomeStatements> incomeStatement = await IncomeStatement(Ticker);
-            List<CashFlowStatements> cashFlowStatement = await CashFlowStatement(Ticker);
-            FCFF freeCashFlowObject = new FCFF()
-            {
-                NetIncome = cashFlowStatement[0].netIncome,
-                InterestExpanse = incomeStatement[0].interestExpense,
-                IncomeTaxExpense = incomeStatement[0].incomeTaxExpense,
-                DepreciationAndAmortization = incomeStatement[0].depreciationAndAmortization,
-                CapitalExpenditure = cashFlowStatement[0].capitalExpenditure,
-                ChangeInWorkingCapital = cashFlowStatement[0].changeInWorkingCapital,
-            };
-            return freeCashFlowObject;
-        }
-        public async Task<double> Fcff(string ticker)
-        {
-            FCFF data = await GetDataCalcFcff(ticker);
-            double fcff = (data.NetIncome + data.InterestExpanse + data.IncomeTaxExpense)
-                * (1 - 0.21) - (data.CapitalExpenditure - data.DepreciationAndAmortization)
-                - data.ChangeInWorkingCapital;
-            return fcff;
-        }
-        public async Task<double> Wacc(string ticker, double sharePrice)
-        {
-            double wacc = 0.10;
-            return wacc;
-        }
+        
+        
         public async Task<double> ReinvestementRate(string ticker)
         {
             List<IncomeStatements> incomeStatement = await IncomeStatement(ticker);
             List<CashFlowStatements> cashFlowStatement = await CashFlowStatement(ticker);
-            double reinvestementRate = ((cashFlowStatement[0].capitalExpenditure - incomeStatement[0].depreciationAndAmortization
+            double reinvestementRate = ((Math.Abs(cashFlowStatement[0].capitalExpenditure) - incomeStatement[0].depreciationAndAmortization
                + cashFlowStatement[0].changeInWorkingCapital)) /
-               ((incomeStatement[0].netIncome + incomeStatement[0].interestExpense)*(1-0.21));
+               ((incomeStatement[0].netIncome + incomeStatement[0].interestExpense) * (1 - 0.21));
 
             return reinvestementRate;
         }
@@ -78,8 +54,7 @@ namespace AngularAuthApi.Core.DcfCalculator.Services
             List<IncomeStatements> incomeStatement = await IncomeStatement(ticker);
             List<CashFlowStatements> cashFlowStatement = await CashFlowStatement(ticker);
             double retrunOnCapital = (incomeStatement[0].netIncome + incomeStatement[0].interestExpense +
-               incomeStatement[0].incomeTaxExpense) / (balanceSheet[1].totalStockholdersEquity + balanceSheet[1].totalDebt
-               - balanceSheet[1].cashAndCashEquivalents);
+               incomeStatement[0].incomeTaxExpense) / ((balanceSheet[0].totalAssets - balanceSheet[0].totalCurrentAssets) + (balanceSheet[0].totalCurrentAssets - balanceSheet[0].totalCurrentLiabilities));
 
             return retrunOnCapital;
         }
@@ -100,87 +75,74 @@ namespace AngularAuthApi.Core.DcfCalculator.Services
             List<BalanceSheet> balanceSheet = await BalanceSheet(ticker);
             List<IncomeStatements> incomeStatement = await IncomeStatement(ticker);
             List<CashFlowStatements> cashFlowStatement = await CashFlowStatement(ticker);
-            double afterTaxOperatingIncome = incomeStatement[0].netIncome + incomeStatement[0].incomeTaxExpense + incomeStatement[0].incomeTaxExpense * (1 - 0.21);
+            double afterTaxOperatingIncome = incomeStatement[0].netIncome + incomeStatement[0].interestExpense + incomeStatement[0].incomeTaxExpense * (1 - 0.21);
             return afterTaxOperatingIncome;
         }
-        public async Task<List<List<double>>> ExpectedFcff(string ticker)
+        public async Task<List<double>> FreeCashFlow(string ticker)
         {
-            double fiveYearsexpectedReinvestementRate = await FiveYearsExpectedReinvestementRate(ticker);
-            double expectedGrowthRate = await ExpectedGrowthrate(ticker);
-            double afterTaxOperatingIncome = await AfterTaxOperatingIncome(ticker);
-            int years = 6;
-            List<double> afterTaxOperatingIncomeGrowth = new List<double>();
-            List<double> reinvestementIncome = new List<double>();
-            List<double> fcff = new List<double>();
-            List<List<double>> expectedFinancials = new List<List<double>>();
+            List<CashFlowStatements> cashFlowStatement = await CashFlowStatement(ticker);
+            List<double> freeCashFlow = new List<double>();
+            foreach (var item in cashFlowStatement)
+            {
+                freeCashFlow.Add(item.freeCashFlow);
+            }
 
-            afterTaxOperatingIncomeGrowth.Add(afterTaxOperatingIncome);
-            fcff.Add(0);
-            for (int i = 1; i < years; i++)
+            return freeCashFlow;
+        }
+
+        public async Task<List<double>> FutureFreeCashFlow(string ticker)
+        {
+            List<double>freeCashFlow=await FreeCashFlow(ticker);
+            List<double> futureFreeCashFlow = new List<double>();
+            List<double> discountFactor = new List<double>();
+
+            double expectedGrowthRate=await ExpectedGrowthrate(ticker);
+            for (int i = 1; i < freeCashFlow.Count; i++)
             {
-                double expectedAfterTaxOpIncome = Math.Pow(afterTaxOperatingIncome * (1 + expectedGrowthRate), i);
-                double expectedReinvestment = fiveYearsexpectedReinvestementRate * expectedAfterTaxOpIncome;
-                double expectedFcff = expectedAfterTaxOpIncome - expectedReinvestment;
-                afterTaxOperatingIncomeGrowth.Add(expectedAfterTaxOpIncome);
-                reinvestementIncome.Add(expectedReinvestment);
-                fcff.Add(expectedFcff);
+                
+                double cashFlow= (freeCashFlow[0] * Math.Pow((1 + expectedGrowthRate), i));
+                futureFreeCashFlow.Add(cashFlow);
+
             }
-            expectedFinancials.Add(afterTaxOperatingIncomeGrowth);
-            expectedFinancials.Add(reinvestementIncome);
-            expectedFinancials.Add(fcff);
-            return expectedFinancials;
+            return futureFreeCashFlow;
         }
-        public async Task<double> TerminalValue(string ticker, double sharePrice)
+        public async Task<List<double>> DiscountFutureFreeCashFlow(string ticker)
         {
-            double wacc = await Wacc(ticker, sharePrice);
-            double termianlGrowthRate = 0.3 / wacc;
-            List<List<double>> expectedFinancials = await ExpectedFcff(ticker);
-            double terminalAfterTaxOpIncome = expectedFinancials[0][^1] * (1 + 0.03);
-            double terminalReinvestmentRate = terminalAfterTaxOpIncome * termianlGrowthRate;
-            double TerminalFcff = terminalAfterTaxOpIncome - terminalReinvestmentRate;
-            double TerminalValue = TerminalFcff / (wacc - terminalReinvestmentRate);
-            double presentTerminalValue = Math.Pow(TerminalValue / (1 + wacc), expectedFinancials[2].Count) + 1;
-            return presentTerminalValue;
-        }
-        public async Task<double> PvFcff(string ticker, double sharePrice)
-        {
-            double wacc = await Wacc(ticker, sharePrice);
-            List<List<double>> expectedFinancials = await ExpectedFcff(ticker);
-            double pvFcff = 0;
-            for (int i = 0; i < expectedFinancials[1].Count; i++)
+            List<double> futureFreeCashFlow = await FutureFreeCashFlow(ticker);
+            List<double> discountedFreeCashFlow = new List<double>();
+            List<double> discountFactor = new List<double>();
+            for (int i = 0; i < futureFreeCashFlow.Count; i++)
             {
-                pvFcff += expectedFinancials[2][i] / Math.Pow(1 + wacc, i);
+                discountFactor.Add(Math.Pow((1 + requiredRate), i));
+                discountedFreeCashFlow.Add(futureFreeCashFlow[i] / discountFactor[i]);
+
             }
-            return pvFcff;
+            return discountedFreeCashFlow;
         }
-        public async Task<double> ValueOperatingAsset(string ticker, double sharePrice)
+        public async Task<double> TerminalValue(string ticker)
         {
-            double pvFcff = await PvFcff(ticker, sharePrice);
-            double terminalValue = await TerminalValue(ticker, sharePrice);
-            double valueOperatingAsset = pvFcff + terminalValue;
-            return valueOperatingAsset;
+
+            
+            List<double> fcff = await FreeCashFlow(ticker);
+            double terminalValue = fcff[0] * (1 + perpetualRate) / (requiredRate - perpetualRate);
+            return terminalValue;
         }
-        public async Task<double> ValueOfFirm(string ticker, double sharePrice)
+        public async Task<double> SumDiscountedFreeCashFlow(string ticker)
         {
-            List<BalanceSheet> balanceSheet = await BalanceSheet(ticker);
-            double valueOperatingAsset = await ValueOperatingAsset(ticker, sharePrice);
-            double valueOfFirm = valueOperatingAsset + balanceSheet[0].cashAndCashEquivalents;
-            return valueOfFirm;
+            List<double> discountedFreeCashFlow = await DiscountFutureFreeCashFlow(ticker);
+            double terminalValue = await TerminalValue(ticker);
+            double discountedTerminalValue = terminalValue/ Math.Pow((1 + requiredRate), 5);
+            discountedFreeCashFlow.Add(discountedTerminalValue);
+            double sumAllCashFlow=discountedFreeCashFlow.Sum();
+            return sumAllCashFlow;
         }
-        public async Task<double> ValueOfEquity(string ticker, double sharePrice)
+        public async Task<double> IntristicShareValue(string ticker)
         {
-            List<BalanceSheet> balanceSheet = await BalanceSheet(ticker);
-            double valueOfFirm = await ValueOfFirm(ticker, sharePrice);
-            double valueOfEquity = valueOfFirm + balanceSheet[0].totalDebt;
-            return valueOfEquity;
-        }
-        public async Task<double> result(string ticker, double sharePrice)
-        {
+            double sumAllCashFlow = await SumDiscountedFreeCashFlow(ticker);
             List<IncomeStatements> incomeStatement = await IncomeStatement(ticker);
             double totalSharesOustanding = incomeStatement[0].weightedAverageShsOut;
-            double valueOfFirm=await ValueOfFirm(ticker,sharePrice);
-            var targetPrice = valueOfFirm / totalSharesOustanding;
-            return targetPrice;
+            return sumAllCashFlow/totalSharesOustanding;
         }
+
     }
 }
