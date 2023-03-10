@@ -23,25 +23,25 @@ namespace AngularAuthApi.Controller
         [HttpPut("user-info")]
         public async Task<IActionResult> UpdateUserInfo(UserInfoRequest userInfo)
         {
-            var user=await _userInfoRepository.GetUserInfo(userInfo.Id);
-            if(user == null)
+            var user = await _userInfoRepository.GetUserInfo(userInfo.Id);
+            if (user == null)
             {
-                return NotFound(new { Message="user not found",Code="UUIE1"});
+                return NotFound(new { Message = "user not found", Code = "UUIE1" });
             }
             {
-                user.Id= userInfo.Id;                
-                user.Linkedin= userInfo.Linkedin;
+                user.Id = userInfo.Id;
+                user.Linkedin = userInfo.Linkedin;
                 user.YouTube = userInfo.YouTube;
                 user.AboutMe = userInfo.AboutMe;
                 user.Website = userInfo.Website;
 
             }
             await _userInfoRepository.UpdateUserInfo(user);
-            return Ok(new {Message="User succesfully updated",Code="UUIS1"});
+            return Ok(new { Message = "User succesfully updated", Code = "UUIS1" });
         }
 
         [HttpPut("email/{id:int}")]
-        public async Task<IActionResult> PutUserEmail(int id, string email)
+        public async Task<IActionResult> PutUserEmail(int id, [FromBody]string email)
         {
             var user= await _userInfoRepository.GetUser(id);
             if(user == null)
@@ -58,7 +58,7 @@ namespace AngularAuthApi.Controller
 
         }
         [HttpPut("name/{id:int}")]
-        public async Task<IActionResult> PutUserName(int id, string name)
+        public async Task<IActionResult> PutUserName(int id, [FromBody]string name)
         {
             var user = await _userInfoRepository.GetUser(id);
             if (user == null)
