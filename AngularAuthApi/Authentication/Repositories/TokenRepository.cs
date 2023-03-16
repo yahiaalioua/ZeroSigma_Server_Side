@@ -79,5 +79,23 @@ namespace AngularAuthApi.Authentication.Repositories
             _context.Auth.Update(CurrentAuth);
             _context.SaveChanges();
         }
+
+
+        public async Task RevokeAccessToken(User user)
+        {
+            user.Token = null;
+            _context.Users.Update(user);
+            await _context.SaveChangesAsync();
+        }
+        public async Task RevokeRefreshToken(Auth auth)
+        {
+            auth.RefreshToken = null;
+            auth.IssuedDate = null;
+            auth.ExpiredDate = null;
+            auth.IsExpired = true;
+            auth.IsActive = false;
+            _context.Auth.Update(auth);
+            await _context.SaveChangesAsync();
+        }
     }
 }

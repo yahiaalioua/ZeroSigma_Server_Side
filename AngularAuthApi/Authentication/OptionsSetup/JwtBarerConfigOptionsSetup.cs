@@ -15,7 +15,7 @@ namespace AngularAuthApi.Authentication.OptionsSetup
 
         public void Configure(JwtBearerOptions options)
         {
-            options.TokenValidationParameters =new TokenValidationParameters
+            options.TokenValidationParameters =new TokenValidationParameters()
             {
                 ValidateIssuer = true,
                 ValidateAudience = true,
@@ -23,8 +23,7 @@ namespace AngularAuthApi.Authentication.OptionsSetup
                 ValidateIssuerSigningKey = true,
                 ValidIssuer = _jwtConfigOptions.Issuer,
                 ValidAudience = _jwtConfigOptions.Audience,
-                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("jdsfjhdsfhoi3ho3t84398oisehføksha")),
-                ClockSkew=TimeSpan.Zero
+                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtConfigOptions.AccessTokenSecretKey)),
             };
         }
     }

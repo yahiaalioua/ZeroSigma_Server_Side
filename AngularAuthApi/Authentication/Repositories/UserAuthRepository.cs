@@ -13,10 +13,12 @@ namespace AngularAuthApi.Authentication.Repositories
     public class UserAuthRepository : IUserAuthRepository
     {
         private readonly UserDbContext _context;
+        private readonly ITokenRepository _tokenRepository;
 
-        public UserAuthRepository(UserDbContext context)
+        public UserAuthRepository(UserDbContext context, ITokenRepository tokenRepository)
         {
             _context = context;
+            _tokenRepository = tokenRepository;
         }
 
         public async Task<User> AuthenticateUser(LoginDto user)
@@ -59,6 +61,13 @@ namespace AngularAuthApi.Authentication.Repositories
         public async Task<User> GetUserById(int id)
         {
             return await _context.Users.FirstOrDefaultAsync(u => u.Id == id);
+        }
+        public async Task Logout(User user,Auth auth)
+        {
+            
+            await _tokenRepository.RevokeAccessToken(user);
+            await _tokenRepository.RevokeRefreshToken(auth);
+
         }
         public async Task DeleteUser(User user)
         {

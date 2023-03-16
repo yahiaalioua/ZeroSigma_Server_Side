@@ -13,5 +13,7 @@ namespace AngularAuthApi.Authentication.Repositories.Abstract
         Task<Auth> GetByRefreshToken(string refreshToken);
         Task UpdateAccesToken(int id, string accessToken);
         Task RotateRefreshToken(User user, string refreshToken);
+        Task RevokeAccessToken(User user);
+        Task RevokeRefreshToken(Auth auth);
     };
 }

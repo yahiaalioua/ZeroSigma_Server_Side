@@ -11,6 +11,8 @@ namespace AngularAuthApi.Authentication.Repositories.Abstract
         string CheckPasswordStrength(string password);
         Task<User> GetUserById(int id);
         Task DeleteUser(User user);
-        
+        Task Logout(User user,Auth auth);
+
+
     }
 }

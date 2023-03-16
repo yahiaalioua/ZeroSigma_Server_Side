@@ -8,7 +8,7 @@ namespace AngularAuthApi.Authentication
 {
     public class TokenGenerator : ITokenGenerator
     {
-        public string GenerateToken(string secretKey, string issuer, string audience, int expires, List<Claim> claims = null)
+        public string GenerateToken(string secretKey, string issuer, string audience, double expires, List<Claim> claims = null)
         {
             var SecretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey));
             var signinCredentials = new SigningCredentials(SecretKey, SecurityAlgorithms.HmacSha256);
@@ -18,7 +18,7 @@ namespace AngularAuthApi.Authentication
                 issuer: issuer,
                 audience: audience,
                 claims: claims,
-                expires: DateTime.Now.AddHours(expires),
+                expires: DateTime.UtcNow.AddMinutes(expires),
                 signingCredentials: signinCredentials
                 );
             string tokenValue = new JwtSecurityTokenHandler().WriteToken(token);

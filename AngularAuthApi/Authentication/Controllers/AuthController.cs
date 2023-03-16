@@ -8,6 +8,7 @@ using AngularAuthApi.Entities;
 using AngularAuthApi.Entities.Requests;
 using AngularAuthApi.Entities.Responses;
 using AngularAuthApi.Repository.Abstract;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Text;
@@ -105,13 +106,28 @@ namespace AngularAuthApi.Authentication.Controllers
             User user = await _userRepository.GetUserById(refreshAuthDto.Id);
             if (user == null)
             {
-                return NotFound(new { Message = "User do not exist", code = 2 });
+                return NotFound(new { Message = "User not found", Code = "Auth:0072" });
             }
             AuthUserResponse resp = await _authenticator.AuthenticateRefreshToken(user);
 
             return Ok(resp);
 
         }
+        [HttpPost("logout")]
+
+        public async Task<IActionResult> Logout(int id)
+        {
+            var user = await _userRepository.GetUserById(id);
+            var auth = await _tokenRepository.GetAuthDataById(id);
+            if(user == null)
+            {
+                return NotFound(new { Message = "User not found", Code = "Auth:0072" });
+            }
+            await _userRepository.Logout(user,auth);
+            return Ok(new { Message = "User succesfully logged out", Code = "Auth:0074"});
+        }
+
+        [Authorize]
         [HttpDelete("{id:int}")]
         public async Task<IActionResult> Delete(int id)
         {
@@ -123,13 +139,14 @@ namespace AngularAuthApi.Authentication.Controllers
             await _userRepository.DeleteUser(user);
             return Accepted(new { Message = "User succesfully delated", Code = "Auth:0073" });
         }
+        [Authorize]
         [HttpGet("{id:int}")]
         public async Task<IActionResult> GetUserData(int id)
         {
             var user= await _userRepository.GetUserById(id);
             if(user == null)
             {
-                return NotFound(new {Message="user not found",Code="Auth:0074"});
+                return NotFound(new {Message="User not found", Code = "Auth:0072" });
             }
             user.Auth=await _tokenRepository.GetAuthDataById(id);
             user.UserInfo=await _userInfoRepository.GetUserInfo(id);

@@ -10,6 +10,8 @@ using AngularAuthApi.Repository;
 using AngularAuthApi.Core.DcfCalculator.Abstract;
 using AngularAuthApi.Core.DcfCalculator.HttpClient;
 using AngularAuthApi.Core.DcfCalculator.Services;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 namespace AngularAuthApi.Authentication.DependencyInjection
 {
@@ -27,7 +29,23 @@ namespace AngularAuthApi.Authentication.DependencyInjection
             services.AddScoped<IDecodeJwt, DecodeJwt>();
             services.ConfigureOptions<JwtConfigOptionsSetup>();
             services.ConfigureOptions<RefreshJwtConfigOptionsSetup>();
-            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer();
+            //services.ConfigureOptions<JwtBarerConfigOptionsSetup>(); not working, will figure out another time
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>{
+
+                options.TokenValidationParameters = new TokenValidationParameters()
+                {
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidateLifetime = true,
+                    ValidateIssuerSigningKey = true,
+                    ValidAudience = "https://localhost:5001",
+                    ValidIssuer = "https://localhost:5001",
+                    IssuerSigningKey = new SymmetricSecurityKey(
+                        Encoding.UTF8.GetBytes("superSecretKey@345")
+                    ),
+                    ClockSkew=TimeSpan.Zero                    
+                };
+            });
             return services;
         }
         public static IServiceCollection AddRepositories(this IServiceCollection services)

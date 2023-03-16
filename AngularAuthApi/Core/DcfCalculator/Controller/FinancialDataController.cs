@@ -1,4 +1,5 @@
 ﻿using AngularAuthApi.Core.DcfCalculator.Abstract;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -17,6 +18,7 @@ namespace AngularAuthApi.Core.DcfCalculator.Controller
             _coreDcfService = coreDcfService;
         }
 
+        [Authorize]
         [HttpGet("intristic-value")]
         public async Task<IActionResult>GetIntristicValue(string ticker)
         {

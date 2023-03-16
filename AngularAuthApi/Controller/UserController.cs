@@ -3,6 +3,7 @@ using AngularAuthApi.Entities;
 using AngularAuthApi.Entities.Requests;
 using AngularAuthApi.Repository;
 using AngularAuthApi.Repository.Abstract;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -20,6 +21,7 @@ namespace AngularAuthApi.Controller
             _userInfoRepository = userInfoRepository;
             _context = context;
         }
+        [Authorize]
         [HttpPut("user-info")]
         public async Task<IActionResult> UpdateUserInfo(UserInfoRequest userInfo)
         {
@@ -40,6 +42,7 @@ namespace AngularAuthApi.Controller
             return Ok(new { Message = "User succesfully updated", Code = "UUIS1" });
         }
 
+        [Authorize]
         [HttpPut("email/{id:int}")]
         public async Task<IActionResult> PutUserEmail(int id, [FromBody]string email)
         {
@@ -57,6 +60,7 @@ namespace AngularAuthApi.Controller
             return Ok(new { Message = "user email succesfully updated" });
 
         }
+        [Authorize]
         [HttpPut("name/{id:int}")]
         public async Task<IActionResult> PutUserName(int id, [FromBody]string name)
         {
