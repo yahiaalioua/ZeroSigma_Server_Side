@@ -7,9 +7,9 @@ namespace AngularAuthApi.Authentication.OptionsSetup
 {
     public class ConfRefreshTokenValidationParameters : IConfRefreshTokenValidationParameters
     {
-        private readonly RefreshJwtConfigOptions _refreshJwtConfigoptions;
+        private readonly RefreshJwtOptions _refreshJwtConfigoptions;
 
-        public ConfRefreshTokenValidationParameters(IOptions<RefreshJwtConfigOptions> refreshJwtConfigOptions)
+        public ConfRefreshTokenValidationParameters(IOptions<RefreshJwtOptions> refreshJwtConfigOptions)
         {
             _refreshJwtConfigoptions = refreshJwtConfigOptions.Value;
         }

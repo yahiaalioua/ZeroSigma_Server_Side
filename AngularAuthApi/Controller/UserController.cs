@@ -1,6 +1,8 @@
-﻿using AngularAuthApi.Data_Access;
+﻿using AngularAuthApi.Authentication.Repositories.Abstract;
+using AngularAuthApi.Data_Access;
 using AngularAuthApi.Entities;
 using AngularAuthApi.Entities.Requests;
+using AngularAuthApi.Entities.Responses;
 using AngularAuthApi.Repository;
 using AngularAuthApi.Repository.Abstract;
 using Microsoft.AspNetCore.Authorization;
@@ -16,13 +18,15 @@ namespace AngularAuthApi.Controller
     {
         private readonly IUserRepository _userInfoRepository;
         private readonly UserDbContext _context;
-        public UserController(IUserRepository userInfoRepository, UserDbContext context)
+        private readonly ITokenRepository _tokenRepository;
+        public UserController(IUserRepository userInfoRepository, UserDbContext context, ITokenRepository tokenRepository)
         {
             _userInfoRepository = userInfoRepository;
             _context = context;
+            _tokenRepository = tokenRepository;
         }
         [Authorize]
-        [HttpPut("user-info")]
+        [HttpPut("account/info")]
         public async Task<IActionResult> UpdateUserInfo(UserInfoRequest userInfo)
         {
             var user = await _userInfoRepository.GetUserInfo(userInfo.Id);
@@ -74,6 +78,38 @@ namespace AngularAuthApi.Controller
             await _userInfoRepository.UpdateUser(user);
             return Ok(new { Message = "user name succesfully updated" });
 
+        }
+        //[Authorize]
+        [HttpDelete("{id:int}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var user = await _userInfoRepository.GetUser(id);
+            if (user == null)
+            {
+                return NotFound(new { Message = "user not found", Code = "Auth:0072" });
+            }
+            await _userInfoRepository.DeleteUser(user);
+            return Accepted(new { Message = "User succesfully delated", Code = "Auth:0073" });
+        }
+        //[Authorize]
+        [HttpGet("account/info/{id:int}")]
+        public async Task<IActionResult> GetUserData(int id)
+        {
+            var user= await _userInfoRepository.GetUser(id);
+            if(user == null)
+            {
+                return NotFound(new {Message="User not found", Code = "Auth:0072" });
+            }
+            user.Auth=await _tokenRepository.GetAuthDataById(id);
+            user.UserInfo=await _userInfoRepository.GetUserInfo(id);
+            UserResponse userResponse = new()
+            {
+                Id=user.Id, Name=user.Name, Email=user.Email,
+                YouTube=user.UserInfo.YouTube,
+                Linkedin=user.UserInfo.Linkedin,Website=user.UserInfo.Website,
+                AboutMe=user.UserInfo.AboutMe,
+            };
+            return Ok(userResponse);
         }
 
     }

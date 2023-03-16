@@ -1,6 +1,6 @@
 ﻿namespace AngularAuthApi.Authentication
 {
-    public class JwtConfigOptions
+    public class JwtOptions
     {
         public string AccessTokenSecretKey { get; init; }
         public double AccessTokenExpirationMinutes { get; set; }

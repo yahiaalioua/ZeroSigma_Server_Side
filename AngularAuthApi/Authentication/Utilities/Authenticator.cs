@@ -4,7 +4,7 @@ using AngularAuthApi.Entities.Responses;
 using AngularAuthApi.Entities;
 using AngularAuthApi.Authentication.Utilities.Abstract;
 using AngularAuthApi.Authentication.Repositories.Abstract;
-using AngularAuthApi.Authentication.DTOS;
+using AngularAuthApi.Entities.Requests;
 
 namespace AngularAuthApi.Authentication.Utilities
 {

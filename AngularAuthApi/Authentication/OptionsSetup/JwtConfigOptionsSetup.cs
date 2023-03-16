@@ -3,7 +3,7 @@
 namespace AngularAuthApi.Authentication.OptionsSetup
 {
 
-    public class JwtConfigOptionsSetup : IConfigureOptions<JwtConfigOptions>
+    public class JwtConfigOptionsSetup : IConfigureOptions<JwtOptions>
     {
         private readonly IConfiguration _configuration;
 
@@ -12,7 +12,7 @@ namespace AngularAuthApi.Authentication.OptionsSetup
             _configuration = configuration;
         }
 
-        public void Configure(JwtConfigOptions options)
+        public void Configure(JwtOptions options)
         {
             _configuration.GetSection("JwtConfigOptions").Bind(options);
         }

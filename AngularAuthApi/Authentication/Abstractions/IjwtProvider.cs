@@ -1,5 +1,5 @@
-﻿using AngularAuthApi.Authentication.DTOS;
-using AngularAuthApi.Entities;
+﻿using AngularAuthApi.Entities;
+using AngularAuthApi.Entities.Requests;
 
 namespace AngularAuthApi.Authentication.Abstractions
 {

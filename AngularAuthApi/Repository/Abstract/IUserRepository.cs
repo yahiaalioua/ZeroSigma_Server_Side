@@ -9,6 +9,7 @@ namespace AngularAuthApi.Repository.Abstract
         Task UpdateUserInfo(UserInfo UserInfo);
         Task<User> GetUser(int id);
         Task UpdateUser(User user);
+        Task DeleteUser(User user);
 
 
     }

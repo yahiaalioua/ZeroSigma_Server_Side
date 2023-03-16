@@ -1,8 +1,8 @@
-﻿using AngularAuthApi.Authentication.DTOS;
-using AngularAuthApi.Authentication.Repositories.Abstract;
+﻿using AngularAuthApi.Authentication.Repositories.Abstract;
 using AngularAuthApi.Authentication.Utilities;
 using AngularAuthApi.Data_Access;
 using AngularAuthApi.Entities;
+using AngularAuthApi.Entities.Requests;
 using Microsoft.EntityFrameworkCore;
 using System.Runtime.CompilerServices;
 using System.Text;
@@ -69,12 +69,7 @@ namespace AngularAuthApi.Authentication.Repositories
             await _tokenRepository.RevokeRefreshToken(auth);
 
         }
-        public async Task DeleteUser(User user)
-        {
-            
-            _context.Users.Remove(user);
-            await _context.SaveChangesAsync();
-        }
+        
         
 
     }

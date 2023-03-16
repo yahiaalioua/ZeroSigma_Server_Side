@@ -1,6 +1,5 @@
 ﻿using AngularAuthApi.Authentication;
 using AngularAuthApi.Authentication.Abstractions;
-using AngularAuthApi.Authentication.DTOS;
 using AngularAuthApi.Authentication.Repositories.Abstract;
 using AngularAuthApi.Authentication.Utilities;
 using AngularAuthApi.Authentication.Utilities.Abstract;
@@ -19,22 +18,20 @@ namespace AngularAuthApi.Authentication.Controllers
     [ApiController]
     public class AuthController : ControllerBase
     {
-        private readonly IUserAuthRepository _userRepository;
+        private readonly IUserAuthRepository _userAuthRepository;
         private readonly IRefreshTokenValidate _refreshTokenValidate;
         private readonly IAuthenticator _authenticator;
         private readonly ITokenRepository _tokenRepository;
-        private readonly IUserRepository _userInfoRepository;
 
 
         public AuthController(IUserAuthRepository userRepository,
             ITokenRepository tokenRepository, IRefreshTokenValidate refreshTokenValidate,
-            IAuthenticator authenticator, IUserRepository userInfoRepository)
+            IAuthenticator authenticator)
         {
-            _userRepository = userRepository;
+            _userAuthRepository = userRepository;
             _tokenRepository = tokenRepository;
             _refreshTokenValidate = refreshTokenValidate;
             _authenticator = authenticator;
-            _userInfoRepository = userInfoRepository;
         }
 
 
@@ -46,11 +43,11 @@ namespace AngularAuthApi.Authentication.Controllers
             {
                 return BadRequest();
             }
-            if (await _userRepository.CheckEmailExist(user.Email))
+            if (await _userAuthRepository.CheckEmailExist(user.Email))
             {
                 return BadRequest(new { Message = "Email already exist", code = 4 });
             }
-            var passToCheck = _userRepository.CheckPasswordStrength(user.Password);
+            var passToCheck = _userAuthRepository.CheckPasswordStrength(user.Password);
             if (!string.IsNullOrEmpty(passToCheck))
             {
                 return BadRequest(new { Message = passToCheck.ToString() });
@@ -61,7 +58,7 @@ namespace AngularAuthApi.Authentication.Controllers
                 Email = user.Email,
                 Password = user.Password
             };
-            await _userRepository.RegisterUser(newUser);
+            await _userAuthRepository.RegisterUser(newUser);
             return Ok(new { Message = "You succesfully registered", code = 3 });
         }
 
@@ -73,7 +70,7 @@ namespace AngularAuthApi.Authentication.Controllers
             {
                 return BadRequest();
             }
-            var GetUser = await _userRepository.AuthenticateUser(user);
+            var GetUser = await _userAuthRepository.AuthenticateUser(user);
 
             if (GetUser == null)
             {
@@ -103,7 +100,7 @@ namespace AngularAuthApi.Authentication.Controllers
             {
                 return BadRequest(new { Message = "Refresh Token Not Found", Code = "Auth:0071" });
             }
-            User user = await _userRepository.GetUserById(refreshAuthDto.Id);
+            User user = await _userAuthRepository.GetUserById(refreshAuthDto.Id);
             if (user == null)
             {
                 return NotFound(new { Message = "User not found", Code = "Auth:0072" });
@@ -117,47 +114,15 @@ namespace AngularAuthApi.Authentication.Controllers
 
         public async Task<IActionResult> Logout(int id)
         {
-            var user = await _userRepository.GetUserById(id);
+            var user = await _userAuthRepository.GetUserById(id);
             var auth = await _tokenRepository.GetAuthDataById(id);
             if(user == null)
             {
                 return NotFound(new { Message = "User not found", Code = "Auth:0072" });
             }
-            await _userRepository.Logout(user,auth);
+            await _userAuthRepository.Logout(user,auth);
             return Ok(new { Message = "User succesfully logged out", Code = "Auth:0074"});
         }
 
-        [Authorize]
-        [HttpDelete("{id:int}")]
-        public async Task<IActionResult> Delete(int id)
-        {
-            var user = await _userRepository.GetUserById(id);
-            if (user == null)
-            {
-                return NotFound(new { Message = "user not found", Code = "Auth:0072" });
-            }
-            await _userRepository.DeleteUser(user);
-            return Accepted(new { Message = "User succesfully delated", Code = "Auth:0073" });
-        }
-        [Authorize]
-        [HttpGet("{id:int}")]
-        public async Task<IActionResult> GetUserData(int id)
-        {
-            var user= await _userRepository.GetUserById(id);
-            if(user == null)
-            {
-                return NotFound(new {Message="User not found", Code = "Auth:0072" });
-            }
-            user.Auth=await _tokenRepository.GetAuthDataById(id);
-            user.UserInfo=await _userInfoRepository.GetUserInfo(id);
-            UserResponse UserResponse = new()
-            {
-                Id=user.Id, Name=user.Name, Email=user.Email,
-                YouTube=user.UserInfo.YouTube,
-                Linkedin=user.UserInfo.Linkedin,Website=user.UserInfo.Website,
-                AboutMe=user.UserInfo.AboutMe,
-            };
-            return Ok(UserResponse);
-        }
     }
 }

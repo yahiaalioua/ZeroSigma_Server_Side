@@ -1,5 +1,5 @@
-﻿using AngularAuthApi.Authentication.DTOS;
-using AngularAuthApi.Entities;
+﻿using AngularAuthApi.Entities;
+using AngularAuthApi.Entities.Requests;
 using AngularAuthApi.Entities.Responses;
 
 namespace AngularAuthApi.Authentication.Utilities.Abstract

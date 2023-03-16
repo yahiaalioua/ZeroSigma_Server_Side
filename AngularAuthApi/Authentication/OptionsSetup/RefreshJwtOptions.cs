@@ -1,6 +1,6 @@
 ﻿namespace AngularAuthApi.Authentication.OptionsSetup
 {
-    public class RefreshJwtConfigOptions
+    public class RefreshJwtOptions
     {
         public string RefreshTokenSecretKey { get; init; }
         public double RefreshTokenExpirationHours { get; set; }

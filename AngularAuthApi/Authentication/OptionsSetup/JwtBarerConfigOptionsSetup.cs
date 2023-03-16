@@ -7,8 +7,8 @@ namespace AngularAuthApi.Authentication.OptionsSetup
 {
     public class JwtBarerConfigOptionsSetup : IConfigureOptions<JwtBearerOptions>
     {
-        private readonly JwtConfigOptions _jwtConfigOptions;
-        public JwtBarerConfigOptionsSetup(IOptions<JwtConfigOptions> JwtConfigOptions)
+        private readonly JwtOptions _jwtConfigOptions;
+        public JwtBarerConfigOptionsSetup(IOptions<JwtOptions> JwtConfigOptions)
         {
             _jwtConfigOptions = JwtConfigOptions.Value;
         }

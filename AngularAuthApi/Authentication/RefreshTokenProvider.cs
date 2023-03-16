@@ -9,9 +9,9 @@ namespace AngularAuthApi.Authentication
     public class RefreshTokenProvider:IRefreshTokenProvider
     {
         private readonly ITokenGenerator _tokenGenerator;
-        private readonly RefreshJwtConfigOptions _jwtConfigOptions;
+        private readonly RefreshJwtOptions _jwtConfigOptions;
 
-        public RefreshTokenProvider(ITokenGenerator tokenGenerator,IOptions<RefreshJwtConfigOptions> jwtConfigOptions)
+        public RefreshTokenProvider(ITokenGenerator tokenGenerator,IOptions<RefreshJwtOptions> jwtConfigOptions)
         {
             _tokenGenerator = tokenGenerator;
             _jwtConfigOptions = jwtConfigOptions.Value;

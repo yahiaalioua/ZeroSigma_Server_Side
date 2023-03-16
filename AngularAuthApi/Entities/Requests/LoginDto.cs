@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace AngularAuthApi.Authentication.DTOS
+namespace AngularAuthApi.Entities.Requests
 {
     public record LoginDto
     {

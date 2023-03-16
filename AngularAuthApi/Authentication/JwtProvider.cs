@@ -1,6 +1,6 @@
 ﻿using AngularAuthApi.Authentication.Abstractions;
-using AngularAuthApi.Authentication.DTOS;
 using AngularAuthApi.Entities;
+using AngularAuthApi.Entities.Requests;
 using Google.Protobuf.WellKnownTypes;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
@@ -13,8 +13,8 @@ namespace AngularAuthApi.Authentication
     public class JwtProvider : IJwtProvider
     {   
         private readonly ITokenGenerator _tokenGenerator;
-        private readonly JwtConfigOptions _jwtConfigOptions;
-        public JwtProvider(IOptions<JwtConfigOptions> jwtConfigOptions, ITokenGenerator tokenGenerator)
+        private readonly JwtOptions _jwtConfigOptions;
+        public JwtProvider(IOptions<JwtOptions> jwtConfigOptions, ITokenGenerator tokenGenerator)
         {
             _jwtConfigOptions = jwtConfigOptions.Value;
             _tokenGenerator = tokenGenerator;

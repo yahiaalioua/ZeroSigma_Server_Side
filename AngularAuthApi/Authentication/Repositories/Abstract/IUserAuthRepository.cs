@@ -1,5 +1,5 @@
-﻿using AngularAuthApi.Authentication.DTOS;
-using AngularAuthApi.Entities;
+﻿using AngularAuthApi.Entities;
+using AngularAuthApi.Entities.Requests;
 
 namespace AngularAuthApi.Authentication.Repositories.Abstract
 {
@@ -10,7 +10,6 @@ namespace AngularAuthApi.Authentication.Repositories.Abstract
         Task<bool> CheckEmailExist(string userEmail);
         string CheckPasswordStrength(string password);
         Task<User> GetUserById(int id);
-        Task DeleteUser(User user);
         Task Logout(User user,Auth auth);
 
 
