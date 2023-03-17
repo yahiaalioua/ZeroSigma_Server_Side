@@ -79,7 +79,7 @@ namespace AngularAuthApi.Controller
             return Ok(new { Message = "user name succesfully updated" });
 
         }
-        //[Authorize]
+        [Authorize]
         [HttpDelete("{id:int}")]
         public async Task<IActionResult> Delete(int id)
         {
@@ -91,7 +91,7 @@ namespace AngularAuthApi.Controller
             await _userInfoRepository.DeleteUser(user);
             return Accepted(new { Message = "User succesfully delated", Code = "Auth:0073" });
         }
-        //[Authorize]
+        [Authorize]
         [HttpGet("account/info/{id:int}")]
         public async Task<IActionResult> GetUserData(int id)
         {

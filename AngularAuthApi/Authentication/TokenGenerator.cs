@@ -18,7 +18,7 @@ namespace AngularAuthApi.Authentication
                 issuer: issuer,
                 audience: audience,
                 claims: claims,
-                expires: DateTime.UtcNow.AddMinutes(expires),
+                expires: DateTime.Now.AddMinutes(expires),
                 signingCredentials: signinCredentials
                 );
             string tokenValue = new JwtSecurityTokenHandler().WriteToken(token);

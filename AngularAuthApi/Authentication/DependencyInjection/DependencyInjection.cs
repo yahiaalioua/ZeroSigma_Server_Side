@@ -29,7 +29,7 @@ namespace AngularAuthApi.Authentication.DependencyInjection
             services.AddScoped<IDecodeJwt, DecodeJwt>();
             services.ConfigureOptions<JwtConfigOptionsSetup>();
             services.ConfigureOptions<RefreshJwtConfigOptionsSetup>();
-            //services.ConfigureOptions<JwtBarerConfigOptionsSetup>(); not working, will figure out another time
+            services.ConfigureOptions<JwtBarerConfigOptionsSetup>(); //not working, will figure out another time
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>{
 
                 options.TokenValidationParameters = new TokenValidationParameters()

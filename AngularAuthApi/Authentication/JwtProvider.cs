@@ -29,8 +29,8 @@ namespace AngularAuthApi.Authentication
             {
                 new Claim(ClaimTypes.Email, user.Email),
             };
-            return _tokenGenerator.GenerateToken(_jwtConfigOptions.AccessTokenSecretKey,_jwtConfigOptions.Issuer,_jwtConfigOptions.Audience,_jwtConfigOptions.AccessTokenExpirationMinutes,claims);
-            
+            return _tokenGenerator.GenerateToken(_jwtConfigOptions.AccessTokenSecretKey,_jwtConfigOptions.Issuer,_jwtConfigOptions.Audience,10,claims);//need to fix expiry time to get data from appsettings.json
+
 
         }
     }

@@ -110,6 +110,7 @@ namespace AngularAuthApi.Authentication.Controllers
             return Ok(resp);
 
         }
+        [Authorize]
         [HttpPost("logout")]
 
         public async Task<IActionResult> Logout(int id)

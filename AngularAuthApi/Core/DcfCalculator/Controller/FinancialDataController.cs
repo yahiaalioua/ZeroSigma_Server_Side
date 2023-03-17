@@ -19,7 +19,7 @@ namespace AngularAuthApi.Core.DcfCalculator.Controller
         }
 
         [Authorize]
-        [HttpGet("intristic-value")]
+        [HttpGet("intrinsic-value")]
         public async Task<IActionResult>GetIntristicValue(string ticker)
         {
             double intristicValue=await _coreDcfService.IntristicShareValue(ticker);
