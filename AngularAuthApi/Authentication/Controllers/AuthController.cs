@@ -110,6 +110,24 @@ namespace AngularAuthApi.Authentication.Controllers
             return Ok(resp);
 
         }
+
+        //[Authorize]
+        [HttpGet("password")]
+        public async Task<IActionResult> VerifyPassword(int id, string password)
+        {
+            User user=await _userAuthRepository.GetUserById(id);
+            if (user == null)
+            {
+                return NotFound(new { Message = "user not found", Code = "Auth:0072" });
+            }
+            if (!PasswordHasher.VerifyPassword(password, user.Password!, Convert.FromHexString(user.Salt!)))
+            {
+                return BadRequest(new { Message = "Wrong password", code = "Auth:02" });
+            }
+            return Ok(new { Message = "password verified", Code = "Auth:0090" });
+
+        }
+
         [Authorize]
         [HttpPost("logout")]
 
