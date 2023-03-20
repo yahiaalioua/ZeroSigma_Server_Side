@@ -111,7 +111,7 @@ namespace AngularAuthApi.Authentication.Controllers
 
         }
 
-        //[Authorize]
+        [Authorize]
         [HttpGet("password")]
         public async Task<IActionResult> VerifyPassword(int id, string password)
         {
