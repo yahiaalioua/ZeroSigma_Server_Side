@@ -112,7 +112,7 @@ namespace AngularAuthApi.Authentication.Controllers
         }
 
         [Authorize]
-        [HttpGet("password")]
+        [HttpGet("session/credentials")]
         public async Task<IActionResult> VerifyPassword(int id, string password)
         {
             User user=await _userAuthRepository.GetUserById(id);

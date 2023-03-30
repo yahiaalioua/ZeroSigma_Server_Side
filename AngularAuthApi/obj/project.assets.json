@@ -3666,11 +3666,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\yahia alioua\\Desktop\\ZeroSigma\\AngularAuthApi\\AngularAuthApi.csproj",
-      "projectName": "AngularAuthApi",
-      "projectPath": "C:\\Users\\yahia alioua\\Desktop\\ZeroSigma\\AngularAuthApi\\AngularAuthApi.csproj",
+      "projectUniqueName": "C:\\Users\\yahia alioua\\Desktop\\ZeroSigmaServer\\AngularAuthApi\\ZeroSigmaApi.csproj",
+      "projectName": "ZeroSigmaApi",
+      "projectPath": "C:\\Users\\yahia alioua\\Desktop\\ZeroSigmaServer\\AngularAuthApi\\ZeroSigmaApi.csproj",
       "packagesPath": "C:\\Users\\yahia alioua\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\yahia alioua\\Desktop\\ZeroSigma\\AngularAuthApi\\obj\\",
+      "outputPath": "C:\\Users\\yahia alioua\\Desktop\\ZeroSigmaServer\\AngularAuthApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\yahia alioua\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "O6kfhGg6wrz594MTRuQPZha+DP9nhL5yV9mml+rGPocWH/LuZWTwBobQgeERPArfSNOOLX69icaupCbuTYD/uQ==",
+  "dgSpecHash": "I7863AKO+KeazcR/98EkLHuMkTPkAd7QBcZPh9jgkPL5ITCxh5KHJf2R3uIDOK8rfEnBCd6wPdkKlsaoggt0kQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\yahia alioua\\Desktop\\ZeroSigma\\AngularAuthApi\\AngularAuthApi.csproj",
+  "projectFilePath": "C:\\Users\\yahia alioua\\Desktop\\ZeroSigmaServer\\AngularAuthApi\\ZeroSigmaApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\yahia alioua\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
     "C:\\Users\\yahia alioua\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
