@@ -19,7 +19,6 @@ builder.Services.AddCors(option =>
         .AllowAnyMethod()
         .AllowAnyHeader();
     });
-    
 });
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddDbContext<UserDbContext>(options =>
@@ -54,9 +53,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
-app.UseHttpsRedirection();
 app.UseCors("MyPolicy");
+app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
 
